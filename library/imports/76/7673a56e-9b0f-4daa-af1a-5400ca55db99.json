@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "player_sword_arm_l",
+    "texture": "fda21812-cb5b-472b-a784-236b19177172",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      95,
+      96
+    ],
+    "offset": [
+      1,
+      0
+    ],
+    "originalSize": [
+      97,
+      96
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

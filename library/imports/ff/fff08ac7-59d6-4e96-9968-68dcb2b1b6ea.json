@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "campfire_1",
+    "texture": "7c9d94ea-bcd0-4180-bfe0-b4f35ca4250d",
+    "atlas": "",
+    "rect": [
+      41,
+      34,
+      206,
+      130
+    ],
+    "offset": [
+      1.5,
+      -17
+    ],
+    "originalSize": [
+      285,
+      164
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

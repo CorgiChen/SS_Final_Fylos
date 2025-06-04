@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pickup_effect_coin_2",
+    "texture": "81aa17f7-6d64-45c1-a852-e2f63e57ac09",
+    "atlas": "",
+    "rect": [
+      5,
+      5,
+      44,
+      42
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      54,
+      52
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

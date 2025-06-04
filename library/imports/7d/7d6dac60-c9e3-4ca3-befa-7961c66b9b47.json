@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skeleton_head_die",
+    "texture": "963f4df4-0461-4ca7-b26f-5e4e1f60621a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      92,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      90
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

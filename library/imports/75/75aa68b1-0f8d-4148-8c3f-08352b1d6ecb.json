@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "roll_06",
+    "texture": "36bfa453-65a7-4525-ac3a-47b6603075a7",
+    "atlas": "",
+    "rect": [
+      57,
+      63,
+      132,
+      137
+    ],
+    "offset": [
+      -1.5,
+      -23.5
+    ],
+    "originalSize": [
+      249,
+      216
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

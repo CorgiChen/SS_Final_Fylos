@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "firebowl_2",
+    "texture": "10874d92-f3fd-410f-a9ee-70ff629e29e0",
+    "atlas": "",
+    "rect": [
+      21,
+      68,
+      136,
+      177
+    ],
+    "offset": [
+      -1.5,
+      -34
+    ],
+    "originalSize": [
+      181,
+      245
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

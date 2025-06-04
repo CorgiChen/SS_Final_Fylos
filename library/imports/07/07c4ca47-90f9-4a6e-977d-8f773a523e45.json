@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "teleport_reverse_06",
+    "texture": "cdd2ce86-b868-438a-955a-d0412c096bc6",
+    "atlas": "",
+    "rect": [
+      15,
+      25,
+      164,
+      206
+    ],
+    "offset": [
+      -15.5,
+      6
+    ],
+    "originalSize": [
+      225,
+      268
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

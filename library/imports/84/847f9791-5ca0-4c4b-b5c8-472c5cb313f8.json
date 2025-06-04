@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skeleton_archer_head_die",
+    "texture": "5872d263-fefd-4c3f-abfb-72ef66c03a0b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      108,
+      104
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      108,
+      104
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

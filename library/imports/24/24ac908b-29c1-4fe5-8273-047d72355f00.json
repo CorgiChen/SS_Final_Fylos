@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "npc_leg_r",
+    "texture": "c3db00d4-f78b-4784-9a30-218136ef64c2",
+    "atlas": "",
+    "rect": [
+      1,
+      2,
+      21,
+      28
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      23,
+      30
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

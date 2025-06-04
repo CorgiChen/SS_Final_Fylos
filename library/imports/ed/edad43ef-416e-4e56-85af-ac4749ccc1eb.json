@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skeleton_archer_quiver",
+    "texture": "855057fd-9bcf-45db-a7f3-432d5c4973ab",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      80,
+      106
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      80,
+      106
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

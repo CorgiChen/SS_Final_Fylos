@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "furnace_2",
+    "texture": "de430da5-7dd3-48e8-af54-43a2b6a5900e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      349,
+      300
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      350,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

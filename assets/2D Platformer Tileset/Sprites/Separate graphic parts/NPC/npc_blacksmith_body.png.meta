@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3b88a52e-86cc-4a51-99a1-dbc827558d6f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 60,
+  "height": 49,
+  "platformSettings": {},
+  "subMetas": {
+    "npc_blacksmith_body": {
+      "ver": "1.0.6",
+      "uuid": "8cf800e0-027d-4da9-a64e-df279b70d405",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3b88a52e-86cc-4a51-99a1-dbc827558d6f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 60,
+      "height": 49,
+      "rawWidth": 60,
+      "rawHeight": 49,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shoot_13",
+    "texture": "4f113170-2f60-4455-b9e9-63c85f328dc6",
+    "atlas": "",
+    "rect": [
+      6,
+      5,
+      177,
+      103
+    ],
+    "offset": [
+      -5,
+      -2.5
+    ],
+    "originalSize": [
+      199,
+      108
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

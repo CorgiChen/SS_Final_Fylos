@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "trolley",
+    "texture": "b2375227-cfb8-4c67-9bd6-4d1b17328a86",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      202,
+      106
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      202,
+      106
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

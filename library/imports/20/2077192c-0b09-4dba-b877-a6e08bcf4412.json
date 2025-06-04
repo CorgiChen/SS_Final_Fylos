@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bee_tendril_l",
+    "texture": "488ee793-759a-4176-a92e-5d394bd236af",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      21,
+      33
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      22,
+      33
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

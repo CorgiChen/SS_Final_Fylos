@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cave_background_3",
+    "texture": "9f92a9ae-aeba-4c56-b779-746bc1894600",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      851,
+      294
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      851,
+      294
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

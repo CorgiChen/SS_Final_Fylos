@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "fireplace_3",
+    "texture": "a78a0984-2b6d-4b58-b833-92ab86c69901",
+    "atlas": "",
+    "rect": [
+      9,
+      0,
+      298,
+      292
+    ],
+    "offset": [
+      3,
+      0
+    ],
+    "originalSize": [
+      310,
+      292
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

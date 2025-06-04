@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "boss_leg_r",
+    "texture": "88d990c4-9820-488c-b6d0-77ba87c89686",
+    "atlas": "",
+    "rect": [
+      9,
+      4,
+      42,
+      42
+    ],
+    "offset": [
+      0,
+      5
+    ],
+    "originalSize": [
+      60,
+      60
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "stun_05",
+    "texture": "ff59c00c-91a2-4bbc-b2c2-8967dca05fac",
+    "atlas": "",
+    "rect": [
+      29,
+      19,
+      440,
+      291
+    ],
+    "offset": [
+      2,
+      33.5
+    ],
+    "originalSize": [
+      494,
+      396
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

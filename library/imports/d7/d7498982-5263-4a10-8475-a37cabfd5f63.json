@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dungeon_timber_brace_1",
+    "texture": "3bbee005-a407-4e08-9a53-9893dc4d701a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      76,
+      260
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      76,
+      260
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

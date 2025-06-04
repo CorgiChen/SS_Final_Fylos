@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bird_leg_l",
+    "texture": "b2650e15-1cda-4dd6-aed5-1e12a705338d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      15,
+      13
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      15,
+      13
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "player_bow_arm_l",
+    "texture": "25acbdb5-db73-4acc-bc90-060fe3b16bd1",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      47,
+      150
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      48,
+      150
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

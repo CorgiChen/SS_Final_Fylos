@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skeleton_spear_arm_l",
+    "texture": "d10c44de-cc2a-493d-a3db-796445c0b9aa",
+    "atlas": "",
+    "rect": [
+      5,
+      0,
+      215,
+      36
+    ],
+    "offset": [
+      2.5,
+      0
+    ],
+    "originalSize": [
+      220,
+      36
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

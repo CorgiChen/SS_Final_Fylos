@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "spider_sting_r",
+    "texture": "5e259265-e94f-4e5e-b2d2-406852224a83",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      27,
+      22
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      28,
+      22
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

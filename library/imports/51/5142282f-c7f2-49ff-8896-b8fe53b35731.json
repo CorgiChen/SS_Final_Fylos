@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "attack_1_03",
+    "texture": "9d8a39e5-02e0-4722-af91-6a34e9ea9dc9",
+    "atlas": "",
+    "rect": [
+      30,
+      17,
+      128,
+      147
+    ],
+    "offset": [
+      -53,
+      0.5
+    ],
+    "originalSize": [
+      294,
+      182
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pickup_effect_key_2",
+    "texture": "513b0e2d-bc02-484a-b954-0ca7f78a71ec",
+    "atlas": "",
+    "rect": [
+      5,
+      5,
+      44,
+      42
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      54,
+      52
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

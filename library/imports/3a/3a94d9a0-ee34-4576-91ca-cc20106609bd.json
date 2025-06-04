@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "weapon_bow",
+    "texture": "d1fc3fe8-8d67-488b-a9d9-2a6fc7850aae",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      84,
+      128
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      84,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bat_leg_r",
+    "texture": "1dfd8109-07b8-4ee3-affa-1ec7c75993e4",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      14,
+      22
+    ],
+    "offset": [
+      1,
+      0
+    ],
+    "originalSize": [
+      16,
+      22
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

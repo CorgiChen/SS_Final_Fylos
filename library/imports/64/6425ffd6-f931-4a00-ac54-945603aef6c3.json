@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "npc_blacksmith_arm_l",
+    "texture": "a84cdf40-96cc-448f-abff-d106b2df44f7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      41,
+      12
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      41,
+      12
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

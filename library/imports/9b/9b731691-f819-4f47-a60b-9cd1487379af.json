@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "nightstand",
+    "texture": "2921ff98-d31b-49f5-bb7b-28f295a2f557",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      223,
+      81
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      223,
+      81
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

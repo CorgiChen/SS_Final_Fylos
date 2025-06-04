@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "762017c8-369e-4707-bec7-a3994fb0fb72",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1356,
+  "height": 819,
+  "platformSettings": {},
+  "subMetas": {
+    "house_inside_4": {
+      "ver": "1.0.6",
+      "uuid": "90783a92-dafc-4f2d-8d2c-c1deca02c84c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "762017c8-369e-4707-bec7-a3994fb0fb72",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1356,
+      "height": 819,
+      "rawWidth": 1356,
+      "rawHeight": 819,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

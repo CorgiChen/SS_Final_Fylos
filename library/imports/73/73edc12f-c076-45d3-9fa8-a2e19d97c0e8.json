@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "house_5",
+    "texture": "2aa8ad13-de58-416b-a3cc-ac4c6e024e91",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1066,
+      749
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      1067,
+      749
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

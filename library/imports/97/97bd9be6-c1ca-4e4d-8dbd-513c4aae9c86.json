@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bee_leg2_r",
+    "texture": "a6cb6259-b09e-4e20-a06a-6d61d896becc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      21,
+      24
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      21,
+      24
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

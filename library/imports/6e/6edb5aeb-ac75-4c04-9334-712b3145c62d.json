@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "stump",
+    "texture": "b76cb569-4af0-420a-9cde-3e3ae7171ff0",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      422,
+      187
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      422,
+      188
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

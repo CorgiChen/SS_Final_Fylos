@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "npc_bag_object_1",
+    "texture": "c793f1ee-2fcf-40c1-8723-41655de84013",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      62,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      62,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
