@@ -10,8 +10,10 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}
+require('./assets/Script/Camera');
 require('./assets/Script/Player');
 require('./assets/Script/PressStart');
+require('./assets/Script/Wind');
 
                     }
                     if (nodeEnv) {

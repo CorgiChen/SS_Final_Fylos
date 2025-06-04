@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "004_crossroad_0",
+    "texture": "30b7dc91-6cf9-4350-a2bc-724efaa2fb84",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      3072,
+      864
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      3072,
+      864
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

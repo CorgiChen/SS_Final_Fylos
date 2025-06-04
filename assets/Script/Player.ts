@@ -5,7 +5,7 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class PlayerController extends cc.Component {
@@ -21,7 +21,7 @@ export default class PlayerController extends cc.Component {
     @property
     maxFallSpeed: number = 1000;
 
-    private moveDirection: number = 0;
+    public moveDirection: number = 0;
     private onGround: boolean = false;
     private isJumping: boolean = false;
     private isFalling: boolean = false;
@@ -40,8 +40,8 @@ export default class PlayerController extends cc.Component {
         const manager = cc.director.getPhysicsManager();
         manager.enabled = true;
         manager.gravity = cc.v2(0, -1500);
-        manager.debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit | 
-                               cc.PhysicsManager.DrawBits.e_shapeBit;
+        manager.debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
+            cc.PhysicsManager.DrawBits.e_shapeBit;
 
         // 獲取組件
         this.anim = this.getComponent(cc.Animation);
@@ -70,7 +70,7 @@ export default class PlayerController extends cc.Component {
             this.collider.sensor = false;
             this.collider.friction = 0.3;
             this.collider.restitution = 0;
-            
+
             // 調整碰撞箱大小
             const size = this.node.getContentSize();
             this.collider.size = cc.size(size.width * 0.8, size.height * 0.8);
@@ -102,7 +102,7 @@ export default class PlayerController extends cc.Component {
     }
 
     onKeyDown(event: cc.Event.EventKeyboard) {
-        switch(event.keyCode) {
+        switch (event.keyCode) {
             case cc.macro.KEY.left:
             case cc.macro.KEY.a:
                 this.moveDirection = -1;
@@ -135,7 +135,7 @@ export default class PlayerController extends cc.Component {
     }
 
     onKeyUp(event: cc.Event.EventKeyboard) {
-        switch(event.keyCode) {
+        switch (event.keyCode) {
             case cc.macro.KEY.left:
             case cc.macro.KEY.a:
                 if (this.moveDirection < 0) {
@@ -171,7 +171,7 @@ export default class PlayerController extends cc.Component {
         if (otherCollider.node.name === 'Ground') {
             const normal = contact.getWorldManifold().normal;
             const point = contact.getWorldManifold().points[0];
-            
+
             // 只要有向下的分量就視為可以站在地面上
             if (normal.y < 0) {
                 this.onGround = true;
@@ -179,7 +179,7 @@ export default class PlayerController extends cc.Component {
                 this.isFalling = false;
                 this.verticalVelocity = 0;
                 this.lastGroundContact = point;
-                
+
                 if (this.moveDirection !== 0) {
                     this.playAnimation("move");
                 } else {
@@ -193,11 +193,11 @@ export default class PlayerController extends cc.Component {
         if (otherCollider.node.name === 'Ground') {
             const normal = contact.getWorldManifold().normal;
             const point = contact.getWorldManifold().points[0];
-            
+
             // 檢查是否離開地面
             if (normal.y < 0) {
                 // 檢查是否真的離開了地面（而不是滑到邊緣）
-                if (this.lastGroundContact && 
+                if (this.lastGroundContact &&
                     Math.abs(point.x - this.lastGroundContact.x) > this.collider.size.width * 0.5) {
                     this.onGround = false;
                     if (this.verticalVelocity < 0) {
@@ -216,12 +216,12 @@ export default class PlayerController extends cc.Component {
             const startPos = cc.v2(this.node.position.x, this.node.position.y);
             const rayCount = 3; // 使用3條射線
             const raySpacing = this.collider.size.width / (rayCount - 1);
-            
+
             for (let i = 0; i < rayCount; i++) {
-                const rayX = startPos.x - this.collider.size.width/2 + i * raySpacing;
+                const rayX = startPos.x - this.collider.size.width / 2 + i * raySpacing;
                 const rayStart = cc.v2(rayX, startPos.y);
                 const rayEnd = cc.v2(rayX, startPos.y - this.groundCheckDistance);
-                
+
                 const results = cc.director.getPhysicsManager().rayCast(rayStart, rayEnd, cc.RayCastType.All);
                 if (results.length > 0) {
                     for (const result of results) {
@@ -251,7 +251,7 @@ export default class PlayerController extends cc.Component {
             if (this.verticalVelocity < -this.maxFallSpeed) {
                 this.verticalVelocity = -this.maxFallSpeed;
             }
-            
+
             if (this.verticalVelocity < 0 && !this.isFalling) {
                 this.isFalling = true;
                 this.isJumping = false;
