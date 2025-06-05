@@ -34,6 +34,9 @@ export default class PlayerController extends cc.Component {
     @property(cc.AudioClip)
     footstepSound: cc.AudioClip = null;  // 走路音效
 
+    @property(cc.AudioClip)
+    jumpSound: cc.AudioClip = null;  // 跳跃音效
+
     @property({
         tooltip: "走路音效的音量 (0.0 - 2.0)",
         min: 0,
@@ -41,6 +44,14 @@ export default class PlayerController extends cc.Component {
         step: 0.1
     })
     footstepVolume: number = 2;  // 走路音效的音量，默认设置为 0.3（30%）
+
+    @property({
+        tooltip: "跳跃音效的音量 (0.0 - 5.0)",
+        min: 0,
+        max: 5,
+        step: 0.1
+    })
+    jumpVolume: number = 3;  // 跳跃音效的音量
 
     onLoad() {
         // 初始化物理系統
@@ -165,6 +176,12 @@ export default class PlayerController extends cc.Component {
         }
     }
 
+    private playJumpSound() {
+        if (this.jumpSound) {
+            cc.audioEngine.play(this.jumpSound, false, this.jumpVolume);
+        }
+    }
+
     jump() {
         if (this.onGround) {
             this.onGround = false;
@@ -172,6 +189,7 @@ export default class PlayerController extends cc.Component {
             this.isFalling = false;
             this.verticalVelocity = this.jumpForce;
             this.playAnimation("jump");
+            this.playJumpSound();  // 播放跳跃音效
         }
     }
 
