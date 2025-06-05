@@ -8239,20 +8239,10 @@
     "meta": 1749120654214,
     "relativePath": "Scene\\Scene003_Home_B1.fire"
   },
-  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749120823524,
-    "meta": 1749120825052,
-    "relativePath": "Script\\Player.ts"
-  },
   "f00dce83-7448-4989-8fd7-6c1b1cd72e94": {
-    "asset": 1749121364972,
-    "meta": 1749121392589,
+    "asset": 1749122868346,
+    "meta": 1749122868366,
     "relativePath": "Scene\\Scene401_Mine.fire"
-  },
-  "c304bda6-ef8e-4531-ac1a-b94ab596887e": {
-    "asset": 1749121410030,
-    "meta": 1749121410862,
-    "relativePath": "Image\\Game_Home\\401_mine.png"
   },
   "8a83eb45-9d5d-41d4-b86c-6d315521b3a5": {
     "asset": 1749122315295,
@@ -8273,5 +8263,25 @@
     "asset": 1749122407000,
     "meta": 1749122440228,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_6.png"
+  },
+  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
+    "asset": 1749122652804,
+    "meta": 1749122795579,
+    "relativePath": "Script\\Player.ts"
+  },
+  "0af30a72-4be5-4492-9e4d-a3c2924b322e": {
+    "asset": 1749122652803,
+    "meta": 1749122796336,
+    "relativePath": "Audio\\Jump.mp3"
+  },
+  "88ddf26c-5e40-41f4-af2e-7d7e13d6e803": {
+    "asset": 1749123539316,
+    "meta": 1749123591326,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\magic.png"
+  },
+  "c304bda6-ef8e-4531-ac1a-b94ab596887e": {
+    "asset": 1749123634083,
+    "meta": 1749123824699,
+    "relativePath": "Image\\Game_Home\\401_mine.png"
   }
 }
