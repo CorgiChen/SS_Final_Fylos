@@ -9,9 +9,8 @@ export default class PressStart extends cc.Component {
     }
 
     onButtonClick() {
-
         // 切換場景
-        cc.director.loadScene("Scene000_Home_Outside");
+        cc.director.loadScene("Scene001_Home_Outside");
     }
 
     onDestroy() {

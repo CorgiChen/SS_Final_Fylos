@@ -35,7 +35,7 @@ var PressStart = /** @class */ (function (_super) {
     };
     PressStart.prototype.onButtonClick = function () {
         // 切換場景
-        cc.director.loadScene("Scene000_Home_Outside");
+        cc.director.loadScene("Scene001_Home_Outside");
     };
     PressStart.prototype.onDestroy = function () {
         // 移除事件監聽

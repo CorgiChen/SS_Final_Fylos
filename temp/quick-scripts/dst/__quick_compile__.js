@@ -1,6 +1,6 @@
 
 (function () {
-var scripts = [{"deps":{"./assets/Script/PressStart":1,"./assets/Script/Wind":4,"./assets/Script/Camera":2,"./assets/Script/Player":3},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/PressStart.js"},{"deps":{},"path":"preview-scripts/assets/Script/Camera.js"},{"deps":{},"path":"preview-scripts/assets/Script/Player.js"},{"deps":{},"path":"preview-scripts/assets/Script/Wind.js"}];
+var scripts = [{"deps":{"./assets/Script/PressStart":1,"./assets/Script/VideoPlayerController":5,"./assets/Script/Wind":2,"./assets/Script/Camera":4,"./assets/Script/Player":3},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/PressStart.js"},{"deps":{},"path":"preview-scripts/assets/Script/Wind.js"},{"deps":{},"path":"preview-scripts/assets/Script/Player.js"},{"deps":{},"path":"preview-scripts/assets/Script/Camera.js"},{"deps":{},"path":"preview-scripts/assets/Script/VideoPlayerController.js"}];
 var entries = ["preview-scripts/__qc_index__.js"];
 var bundleScript = 'preview-scripts/__qc_bundle__.js';
 
