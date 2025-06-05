@@ -1,18 +1,18 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "Aqua",
-    "texture": "368027e5-9fd0-41d0-b114-056b940b08e2",
+    "name": "time",
+    "texture": "0fb56f99-9047-4be9-803b-de5d446f289d",
     "atlas": "",
     "rect": [
-      443,
-      254,
-      650,
-      524
+      250,
+      203,
+      1036,
+      661
     ],
     "offset": [
       0,
-      -84
+      -101.5
     ],
     "originalSize": [
       1536,

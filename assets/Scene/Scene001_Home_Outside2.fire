@@ -808,7 +808,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "e28b27ae-f268-4728-9393-077ef6e49e39"
+      "__uuid__": "9d855f07-0d0d-48ff-9bff-6992c6d43bfb"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -1162,7 +1162,7 @@
         "__uuid__": "bd24f5de-43af-4b01-b66e-8bcb45ade566"
       }
     ],
-    "followPlayer": false,
+    "followCamera": true,
     "_id": "b0QlyQlTlJ5rpjZ08dcMUY"
   },
   {

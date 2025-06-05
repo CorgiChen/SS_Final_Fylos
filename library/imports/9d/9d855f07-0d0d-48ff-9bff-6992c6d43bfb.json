@@ -1,18 +1,18 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "Aqua",
-    "texture": "368027e5-9fd0-41d0-b114-056b940b08e2",
+    "name": "001_home_outside",
+    "texture": "c4d3a525-3516-495d-b5eb-6c069f01455a",
     "atlas": "",
     "rect": [
-      443,
-      254,
-      650,
-      524
+      0,
+      0,
+      1536,
+      864
     ],
     "offset": [
       0,
-      -84
+      0
     ],
     "originalSize": [
       1536,

@@ -7700,8 +7700,8 @@
     "relativePath": "Image\\Game_Home\\101_cave_0.png"
   },
   "e8c03913-4db3-4fa2-b7c2-73bb1526fc48": {
-    "asset": 1749084475020,
-    "meta": 1749084475037,
+    "asset": 1749113386762,
+    "meta": 1749113386781,
     "relativePath": "Scene\\Scene101_Ch1.fire"
   },
   "1fcd7773-6178-4a62-84ea-a92f2937b649": {
@@ -7955,13 +7955,13 @@
     "relativePath": "Image\\NPC\\Door.png"
   },
   "cd07493d-ce33-426d-bc55-3a6ed9ab566d": {
-    "asset": 1749111216122,
-    "meta": 1749111216144,
+    "asset": 1749114445718,
+    "meta": 1749114445736,
     "relativePath": "Scene\\Scene001_Home_Outside2.fire"
   },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749101661071,
-    "meta": 1749101661104,
+    "asset": 1749114453317,
+    "meta": 1749114453336,
     "relativePath": "Scene\\Scene001_Home_Outside.fire"
   },
   "d9c14ebb-9131-4d34-9370-0e649963db94": {
@@ -8044,11 +8044,6 @@
     "meta": 1749111162599,
     "relativePath": "Image\\Bulletin\\mission.png"
   },
-  "368027e5-9fd0-41d0-b114-056b940b08e2": {
-    "asset": 1749111160808,
-    "meta": 1749111162605,
-    "relativePath": "Image\\Bulletin\\Aqua.png"
-  },
   "6347d591-7e7d-406b-a3e7-91d04b4aef1d": {
     "asset": 1749111426961,
     "meta": 1749111427513,
@@ -8080,8 +8075,28 @@
     "relativePath": "Image\\Chat\\Chat_with_God\\004.png"
   },
   "bec5c6d7-ee21-4ef9-b5bf-582dba78b2bc": {
-    "asset": 1749113016182,
-    "meta": 1749113016199,
+    "asset": 1749114258951,
+    "meta": 1749114258974,
     "relativePath": "Scene\\Scene004_Subway_2.fire"
+  },
+  "368027e5-9fd0-41d0-b114-056b940b08e2": {
+    "asset": 1749114170242,
+    "meta": 1749114231903,
+    "relativePath": "Image\\Bulletin\\Aqua.png"
+  },
+  "0fb56f99-9047-4be9-803b-de5d446f289d": {
+    "asset": 1749114223775,
+    "meta": 1749114231908,
+    "relativePath": "Image\\Bulletin\\time.png"
+  },
+  "c4d3a525-3516-495d-b5eb-6c069f01455a": {
+    "asset": 1749114366897,
+    "meta": 1749114392913,
+    "relativePath": "Image\\Game_Home\\001_home_outside.png"
+  },
+  "6a136c93-1300-45cf-83cc-e6ce6adba869": {
+    "asset": 1749115197163,
+    "meta": 1749115199563,
+    "relativePath": "Script\\TimeController.ts"
   }
 }

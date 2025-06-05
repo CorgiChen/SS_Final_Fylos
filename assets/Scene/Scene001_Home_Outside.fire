@@ -808,7 +808,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "e28b27ae-f268-4728-9393-077ef6e49e39"
+      "__uuid__": "9d855f07-0d0d-48ff-9bff-6992c6d43bfb"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -941,11 +941,6 @@
       "__id__": 20
     },
     "_enabled": true,
-    "moveSpeed": 200,
-    "jumpForce": 700,
-    "gravity": 800,
-    "maxFallSpeed": 1000,
-    "groundY": -300,
     "_id": "fbkAUyBXVFvL2C74aYiFzs"
   },
   {
@@ -1179,6 +1174,7 @@
         "__uuid__": "3cdf107a-d5b6-4894-ba6a-ce9a7cb23685"
       }
     ],
+    "followCamera": true,
     "_id": "b0QlyQlTlJ5rpjZ08dcMUY"
   },
   {
