@@ -6880,8 +6880,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Separate graphic parts\\Enemy\\Slime\\slime7.png"
   },
   "946212e6-7dc0-4ae1-90ba-d25ce801458b": {
-    "asset": 1749078039297,
-    "meta": 1749078278650,
+    "asset": 1749083910880,
+    "meta": 1749084496359,
     "relativePath": "Animation"
   },
   "bb264e6f-33ef-4529-aadb-8cfd61777131": {
@@ -6900,8 +6900,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Separate graphic parts\\Enemy\\Slime\\slime8.png"
   },
   "a6dc2606-eb88-46a9-978c-b59dab3ed5e8": {
-    "asset": 1749078039567,
-    "meta": 1749078278650,
+    "asset": 1749084636527,
+    "meta": 1749084639361,
     "relativePath": "Image"
   },
   "c2df3cdf-2907-474e-b9b3-a6be3bcd1397": {
@@ -7029,24 +7029,14 @@
     "meta": 1749078289444,
     "relativePath": "2D Platformer Tileset\\Sprites\\Separate graphic parts\\NPC\\Bird\\bird_wing2_r.png"
   },
-  "2a0384c0-2bd1-4126-ad5c-1fab9c081816": {
-    "asset": 1749078039569,
-    "meta": 1749078280404,
-    "relativePath": "Image\\Start\\PressStart\\press_start_0.png"
-  },
-  "d8ebe520-e836-460a-8093-6ff2b6e11ee5": {
-    "asset": 1749078039571,
-    "meta": 1749078280427,
-    "relativePath": "Image\\Start\\PressStart\\press_start_1.png"
-  },
   "4ae77b64-bee1-4b0f-af98-288dd6bbdd30": {
     "asset": 1749078039527,
     "meta": 1749078279275,
     "relativePath": "Image\\Game_Home\\Home_Outside.jpg"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1749078039706,
-    "meta": 1749078278652,
+    "asset": 1749081629680,
+    "meta": 1749084496363,
     "relativePath": "Scene"
   },
   "ecb05875-5d95-4231-81a7-4c7732570a02": {
@@ -7060,8 +7050,8 @@
     "relativePath": "Image\\Start\\StartBack\\p14.jpg"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1749078039719,
-    "meta": 1749078278653,
+    "asset": 1749081091812,
+    "meta": 1749084496365,
     "relativePath": "Script"
   },
   "fc91a87e-7de0-4319-b401-1b8ab3567727": {
@@ -7079,14 +7069,9 @@
     "meta": 1749078280498,
     "relativePath": "Image\\Start\\StartBack\\p13.jpg"
   },
-  "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749078039696,
-    "meta": 1749078278916,
-    "relativePath": "Scene\\Scene001_Home_Outside.fire"
-  },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1749081598192,
-    "meta": 1749081625339,
+    "asset": 1749083640788,
+    "meta": 1749083640801,
     "relativePath": "Scene\\StartClip.fire"
   },
   "31614794-17ca-48c5-a038-98ce3555aed5": {
@@ -7725,8 +7710,8 @@
     "relativePath": "Image\\Game_Home\\101_cave_0.png"
   },
   "e8c03913-4db3-4fa2-b7c2-73bb1526fc48": {
-    "asset": 1749078039702,
-    "meta": 1749078278922,
+    "asset": 1749084475020,
+    "meta": 1749084475037,
     "relativePath": "Scene\\Scene101_Ch1.fire"
   },
   "1fcd7773-6178-4a62-84ea-a92f2937b649": {
@@ -7735,8 +7720,8 @@
     "relativePath": "Script\\Camera.ts"
   },
   "f0c37c4a-6f16-40df-ac2d-a1a6809bd439": {
-    "asset": 1749078039356,
-    "meta": 1749078278656,
+    "asset": 1749084007156,
+    "meta": 1749084496370,
     "relativePath": "Image\\Effect and FX Pixel Part 12 Free"
   },
   "5f437819-734d-45f3-85cd-b0479afd6ffe": {
@@ -7874,11 +7859,6 @@
     "meta": 1749078278656,
     "relativePath": "Animation\\Wind"
   },
-  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749078039714,
-    "meta": 1749078278826,
-    "relativePath": "Script\\Player.ts"
-  },
   "835a431b-93db-4f4c-85a7-c56e54c70155": {
     "asset": 1749078039719,
     "meta": 1749078278891,
@@ -7890,8 +7870,8 @@
     "relativePath": "Image\\Start\\Elements.png"
   },
   "8962a116-4249-43fe-91eb-5a0ca948b0aa": {
-    "asset": 1749080584617,
-    "meta": 1749080584618,
+    "asset": 1749080609584,
+    "meta": 1749084496368,
     "relativePath": "Video"
   },
   "92376ec3-ec62-48fd-87d0-6922b1fed001": {
@@ -7910,8 +7890,133 @@
     "relativePath": "Script\\PressStart.ts"
   },
   "4ff4244c-bcb4-4041-a4c9-1325c5a9eedc": {
-    "asset": 1749082280189,
-    "meta": 1749082281315,
+    "asset": 1749082328830,
+    "meta": 1749082509152,
     "relativePath": "Script\\VideoPlayerController.ts"
+  },
+  "d8ebe520-e836-460a-8093-6ff2b6e11ee5": {
+    "asset": 1749085709224,
+    "meta": 1749085722369,
+    "relativePath": "Image\\Start\\PressStart\\press_start_1.png"
+  },
+  "2a0384c0-2bd1-4126-ad5c-1fab9c081816": {
+    "asset": 1749085720761,
+    "meta": 1749085722386,
+    "relativePath": "Image\\Start\\PressStart\\press_start_0.png"
+  },
+  "7df1314f-52e3-45e5-afd2-ae44987fbb73": {
+    "asset": 1749090131438,
+    "meta": 1749090131449,
+    "relativePath": "Image\\NPC"
+  },
+  "4b5f55b9-9f4b-48c1-9f49-588659d01ea7": {
+    "asset": 1749090168312,
+    "meta": 1749090169215,
+    "relativePath": "Image\\NPC\\Friend.png"
+  },
+  "d4447865-e391-4b94-8ec0-a423202d99d1": {
+    "asset": 1749092771052,
+    "meta": 1749092774621,
+    "relativePath": "Image\\NPC\\Chat_Bubble.png"
+  },
+  "77995b3b-ed08-4374-8a9f-bc9c1a5563d6": {
+    "asset": 1749094049721,
+    "meta": 1749094049722,
+    "relativePath": "Image\\Chat"
+  },
+  "1712477a-261f-4472-a00e-8d46cd6fc9f6": {
+    "asset": 1749094058647,
+    "meta": 1749094058649,
+    "relativePath": "Image\\Chat\\Chat_with_Friend"
+  },
+  "647df98b-48d1-4860-84d5-a80a094a68ed": {
+    "asset": 1749095339362,
+    "meta": 1749095498357,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\002.png"
+  },
+  "404c97d1-9b3f-42ec-9b3e-c582069c5798": {
+    "asset": 1749095380923,
+    "meta": 1749095498358,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\003.png"
+  },
+  "97eccfce-49d5-4a89-88e5-abbeb95d291b": {
+    "asset": 1749095404093,
+    "meta": 1749095498359,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\005.png"
+  },
+  "475be01d-903e-457c-974d-8a140f94547e": {
+    "asset": 1749095138853,
+    "meta": 1749095498362,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\001.png"
+  },
+  "a4f01e50-e467-43d6-9b7d-d781ce7e9ada": {
+    "asset": 1749095369182,
+    "meta": 1749095498381,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\004.png"
+  },
+  "dc734488-388b-4edd-b0f9-e48cbf010174": {
+    "asset": 1749096772659,
+    "meta": 1749096800191,
+    "relativePath": "Image\\NPC\\Chat_Bubble_1.png"
+  },
+  "6347d591-7e7d-406b-a3e7-91d04b4aef1d": {
+    "asset": 1749096827889,
+    "meta": 1749097065989,
+    "relativePath": "Script\\ChatBubbleController.ts"
+  },
+  "40b9b6aa-a204-4ca2-a2f8-a03c1e8a2133": {
+    "asset": 1749097710380,
+    "meta": 1749097712808,
+    "relativePath": "Image\\NPC\\Door.png"
+  },
+  "cd07493d-ce33-426d-bc55-3a6ed9ab566d": {
+    "asset": 1749101677701,
+    "meta": 1749101677720,
+    "relativePath": "Scene\\Scene001_Home_Outside2.fire"
+  },
+  "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
+    "asset": 1749101661071,
+    "meta": 1749101661104,
+    "relativePath": "Scene\\Scene001_Home_Outside.fire"
+  },
+  "d9c14ebb-9131-4d34-9370-0e649963db94": {
+    "asset": 1749098670518,
+    "meta": 1749098729157,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\006.png"
+  },
+  "28a6a051-e065-40d6-b6ec-0637dc35e36a": {
+    "asset": 1749101773848,
+    "meta": 1749101773875,
+    "relativePath": "Scene\\Scene002_Home_1F.fire"
+  },
+  "418ac168-dfba-4c5d-90fe-1dffb575bab1": {
+    "asset": 1749099774952,
+    "meta": 1749099777979,
+    "relativePath": "Script\\Transport.ts"
+  },
+  "0b86d1ee-2cc1-467b-81c9-613f80572d7d": {
+    "asset": 1749101820726,
+    "meta": 1749101820741,
+    "relativePath": "Scene\\Scene002_Home_1F2.fire"
+  },
+  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
+    "asset": 1749101542883,
+    "meta": 1749101565469,
+    "relativePath": "Script\\Player.ts"
+  },
+  "c4c80c5d-a1f9-4314-a7b0-73f86b0a2cd8": {
+    "asset": 1749102333730,
+    "meta": 1749102372071,
+    "relativePath": "Script\\CameraController.ts"
+  },
+  "f13b8a9a-761e-409e-8126-969896cdf211": {
+    "asset": 1749103589147,
+    "meta": 1749103677005,
+    "relativePath": "Scene\\Scene004_Subway.fire"
+  },
+  "af98db21-ff2c-4e1c-906a-fcbad7b52f8f": {
+    "asset": 1749103717294,
+    "meta": 1749103717314,
+    "relativePath": "Scene\\Scene003_Home_B1.fire"
   }
 }

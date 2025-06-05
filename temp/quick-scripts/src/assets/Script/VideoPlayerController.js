@@ -30,7 +30,6 @@ var VideoPlayerController = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.videoPlayer = null;
         _this.hasPlayed = false;
-        _this.fadeMask = null;
         return _this;
     }
     VideoPlayerController.prototype.onLoad = function () {
@@ -47,39 +46,6 @@ var VideoPlayerController = /** @class */ (function (_super) {
             this.videoPlayer.stayOnBottom = false;
             cc.log("VideoPlayer setup completed");
         }
-        // 創建淡出遮罩
-        this.createFadeMask();
-    };
-    VideoPlayerController.prototype.createFadeMask = function () {
-        // 創建遮罩節點
-        this.fadeMask = new cc.Node('FadeMask');
-        // 設置父節點為當前節點
-        this.fadeMask.parent = this.node;
-        // 添加 Sprite 組件
-        var sprite = this.fadeMask.addComponent(cc.Sprite);
-        // 創建純黑色圖片
-        var texture = new cc.Texture2D();
-        var canvas = document.createElement('canvas');
-        canvas.width = 2;
-        canvas.height = 2;
-        var ctx = canvas.getContext('2d');
-        ctx.fillStyle = '#000000';
-        ctx.fillRect(0, 0, 2, 2);
-        texture.initWithElement(canvas);
-        // 設置 Sprite 的圖片
-        var spriteFrame = new cc.SpriteFrame(texture);
-        sprite.spriteFrame = spriteFrame;
-        // 設置遮罩大小為全屏
-        var visibleSize = cc.view.getVisibleSize();
-        this.fadeMask.width = visibleSize.width;
-        this.fadeMask.height = visibleSize.height;
-        // 設置遮罩位置為中心
-        this.fadeMask.x = 0;
-        this.fadeMask.y = 0;
-        // 設置初始透明度為 0
-        this.fadeMask.opacity = 0;
-        // 確保遮罩在最上層
-        this.fadeMask.zIndex = 999;
     };
     VideoPlayerController.prototype.start = function () {
         cc.log("VideoPlayerController start");
@@ -99,22 +65,6 @@ var VideoPlayerController = /** @class */ (function (_super) {
         eventHandler.customEventData = "video_event";
         this.videoPlayer.videoPlayerEvent = [eventHandler];
         cc.log("Video player events setup completed");
-    };
-    VideoPlayerController.prototype.fadeOutAndLoadScene = function () {
-        var _this = this;
-        if (this.fadeMask) {
-            // 創建淡出動畫
-            var fadeAction = cc.fadeTo(1.0, 255);
-            var callback = cc.callFunc(function () {
-                _this.loadStartScene();
-            });
-            // 執行淡出動畫
-            this.fadeMask.runAction(cc.sequence(fadeAction, callback));
-        }
-        else {
-            // 如果沒有遮罩，直接切換場景
-            this.loadStartScene();
-        }
     };
     VideoPlayerController.prototype.loadStartScene = function () {
         cc.director.loadScene("StartScene", function (err, scene) {
@@ -142,7 +92,7 @@ var VideoPlayerController = /** @class */ (function (_super) {
                 break;
             case cc.VideoPlayer.EventType.COMPLETED:
                 cc.log("Video playback completed");
-                this.fadeOutAndLoadScene();
+                this.loadStartScene();
                 break;
             case cc.VideoPlayer.EventType.META_LOADED:
                 cc.log("Video metadata loaded");

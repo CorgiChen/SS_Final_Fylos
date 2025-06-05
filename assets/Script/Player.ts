@@ -13,13 +13,16 @@ export default class PlayerController extends cc.Component {
     moveSpeed: number = 300;
 
     @property
-    jumpForce: number = 700;
+    jumpForce: number = 500;
 
     @property
-    gravity: number = 1500;
+    gravity: number = 1200;
 
     @property
-    maxFallSpeed: number = 1000;
+    maxFallSpeed: number = 800;
+
+    @property
+    groundY: number = -300;  // 添加地面Y座標屬性
 
     public moveDirection: number = 0;
     private onGround: boolean = false;
@@ -31,15 +34,14 @@ export default class PlayerController extends cc.Component {
     private rigidbody: cc.RigidBody = null;
     private collider: cc.PhysicsBoxCollider = null;
     private currentAnimation: string = "idle";
-    private groundCheckDistance: number = 20;
-    private lastGroundContact: cc.Vec2 = null;
-    private lastY: number = 0;
+    private groundCheckDistance: number = 10;
+    private lastVerticalVelocity: number = 0;  // 用於檢測速度方向變化
 
     onLoad() {
         // 初始化物理系統
         const manager = cc.director.getPhysicsManager();
         manager.enabled = true;
-        manager.gravity = cc.v2(0, -1500);
+        manager.gravity = cc.v2(0, -1200);
         manager.debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
             cc.PhysicsManager.DrawBits.e_shapeBit;
 
@@ -85,8 +87,6 @@ export default class PlayerController extends cc.Component {
         if (this.anim) {
             this.anim.play("idle");
         }
-
-        this.lastY = this.node.y;
     }
 
     private playAnimation(animName: string) {
@@ -160,25 +160,24 @@ export default class PlayerController extends cc.Component {
     }
 
     jump() {
-        this.onGround = false;
-        this.isJumping = true;
-        this.isFalling = false;
-        this.verticalVelocity = this.jumpForce;
-        this.playAnimation("jump");
+        if (this.onGround) {
+            this.onGround = false;
+            this.isJumping = true;
+            this.isFalling = false;
+            this.verticalVelocity = this.jumpForce;
+            this.playAnimation("jump");
+        }
     }
 
     onBeginContact(contact: cc.PhysicsContact, selfCollider: cc.PhysicsCollider, otherCollider: cc.PhysicsCollider) {
         if (otherCollider.node.name === 'Ground') {
             const normal = contact.getWorldManifold().normal;
-            const point = contact.getWorldManifold().points[0];
-
-            // 只要有向下的分量就視為可以站在地面上
+            
             if (normal.y < 0) {
                 this.onGround = true;
                 this.isJumping = false;
                 this.isFalling = false;
                 this.verticalVelocity = 0;
-                this.lastGroundContact = point;
 
                 if (this.moveDirection !== 0) {
                     this.playAnimation("move");
@@ -192,18 +191,12 @@ export default class PlayerController extends cc.Component {
     onEndContact(contact: cc.PhysicsContact, selfCollider: cc.PhysicsCollider, otherCollider: cc.PhysicsCollider) {
         if (otherCollider.node.name === 'Ground') {
             const normal = contact.getWorldManifold().normal;
-            const point = contact.getWorldManifold().points[0];
-
-            // 檢查是否離開地面
+            
             if (normal.y < 0) {
-                // 檢查是否真的離開了地面（而不是滑到邊緣）
-                if (this.lastGroundContact &&
-                    Math.abs(point.x - this.lastGroundContact.x) > this.collider.size.width * 0.5) {
-                    this.onGround = false;
-                    if (this.verticalVelocity < 0) {
-                        this.isFalling = true;
-                        this.playAnimation("fall");
-                    }
+                this.onGround = false;
+                if (this.verticalVelocity < 0) {
+                    this.isFalling = true;
+                    this.playAnimation("fall");
                 }
             }
         }
@@ -212,46 +205,43 @@ export default class PlayerController extends cc.Component {
     update(dt: number) {
         // 檢查是否在地面上
         if (!this.onGround) {
-            // 使用多個射線檢測地面
             const startPos = cc.v2(this.node.position.x, this.node.position.y);
-            const rayCount = 3; // 使用3條射線
-            const raySpacing = this.collider.size.width / (rayCount - 1);
+            const rayStart = cc.v2(startPos.x, startPos.y);
+            const rayEnd = cc.v2(startPos.x, startPos.y - this.groundCheckDistance);
 
-            for (let i = 0; i < rayCount; i++) {
-                const rayX = startPos.x - this.collider.size.width / 2 + i * raySpacing;
-                const rayStart = cc.v2(rayX, startPos.y);
-                const rayEnd = cc.v2(rayX, startPos.y - this.groundCheckDistance);
-
-                const results = cc.director.getPhysicsManager().rayCast(rayStart, rayEnd, cc.RayCastType.All);
-                if (results.length > 0) {
-                    for (const result of results) {
-                        if (result.collider.node.name === 'Ground') {
-                            if (result.point.y < this.node.position.y) {
-                                this.onGround = true;
-                                this.isFalling = false;
-                                this.verticalVelocity = 0;
-                                this.lastGroundContact = result.point;
-                                break;
-                            }
+            const results = cc.director.getPhysicsManager().rayCast(rayStart, rayEnd, cc.RayCastType.All);
+            if (results.length > 0) {
+                for (const result of results) {
+                    if (result.collider.node.name === 'Ground') {
+                        // 確保只有在地面Y座標附近才判定為著地
+                        if (Math.abs(result.point.y - this.groundY) < 10) {
+                            this.onGround = true;
+                            this.isFalling = false;
+                            this.isJumping = false;
+                            this.verticalVelocity = 0;
+                            this.node.y = this.groundY;  // 確保角色位置正確
+                            break;
                         }
                     }
                 }
-                if (this.onGround) break;
             }
         }
 
-        // 防止穿過地板
-        if (this.node.y < this.lastY && this.onGround) {
-            this.node.y = this.lastY;
-            this.verticalVelocity = 0;
-        }
-
+        // 應用重力
         if (!this.onGround) {
             this.verticalVelocity -= this.gravity * dt;
             if (this.verticalVelocity < -this.maxFallSpeed) {
                 this.verticalVelocity = -this.maxFallSpeed;
             }
 
+            // 檢測跳躍到最高點
+            if (this.lastVerticalVelocity > 0 && this.verticalVelocity <= 0) {
+                this.isJumping = false;
+                this.isFalling = true;
+                this.playAnimation("fall");
+            }
+
+            // 更新下落狀態
             if (this.verticalVelocity < 0 && !this.isFalling) {
                 this.isFalling = true;
                 this.isJumping = false;
@@ -261,7 +251,17 @@ export default class PlayerController extends cc.Component {
 
         // 更新位置
         let newX = this.node.x + this.horizontalVelocity * dt;
-        const newY = this.node.y + this.verticalVelocity * dt;
+        let newY = this.node.y + this.verticalVelocity * dt;
+
+        // 防止角色掉出地面
+        if (newY < this.groundY) {
+            newY = this.groundY;
+            this.onGround = true;
+            this.isFalling = false;
+            this.isJumping = false;
+            this.verticalVelocity = 0;
+        }
+
         this.node.setPosition(newX, newY);
 
         // 更新動畫
@@ -277,11 +277,11 @@ export default class PlayerController extends cc.Component {
             }
         }
 
-        this.lastY = this.node.y;
+        // 保存當前垂直速度用於下一幀比較
+        this.lastVerticalVelocity = this.verticalVelocity;
     }
 
     onDestroy() {
-        // 移除鍵盤事件監聽
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     }
