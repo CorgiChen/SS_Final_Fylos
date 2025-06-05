@@ -12,6 +12,8 @@ export default class Door_to_002 extends cc.Component {
     promptSpriteFrame: cc.SpriteFrame = null;
     @property
     destinationScene: string = "";
+    @property(cc.AudioClip)
+    transportSound: cc.AudioClip = null;
 
     private readonly DETECTION_RADIUS: number = 70;
     private readonly DOOR_OFFSET: number = 120;
@@ -68,6 +70,10 @@ export default class Door_to_002 extends cc.Component {
     }
 
     private onPromptClicked() {
+        // 播放 Open.mp3 音效，音量設為 2
+        if (this.transportSound) {
+            cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.transportSound, false), 2);
+        }
         // 切換到場景 Scene002_Home_1F
         cc.director.loadScene(this.destinationScene);
     }

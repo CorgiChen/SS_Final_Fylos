@@ -20,6 +20,9 @@ export default class ChatBubbleController extends cc.Component {
     @property(cc.TTFFont)
     timeFont: cc.TTFFont = null;
 
+    @property(cc.AudioClip)
+    openSound: cc.AudioClip = null;
+
     private chatBubble: cc.Node = null;
     private chatImage: cc.Node = null;
     private currentImageIndex: number = 0;
@@ -42,6 +45,10 @@ export default class ChatBubbleController extends cc.Component {
 
         this.createChatBubble();
         this.createChatImage();
+        // 確保 openSound 已設定
+        if (!this.openSound) {
+            cc.error("Open Sound is not assigned!");
+        }
     }
 
     private createChatBubble() {
@@ -140,8 +147,15 @@ export default class ChatBubbleController extends cc.Component {
             if (sprite) {
                 sprite.spriteFrame = this.chatImageSpriteFrames[this.currentImageIndex];
             }
-            this.chatImage.active = true;
-            this.showCurrentTime();
+            // 只有在 chatImage 未顯示時才播放音效
+            if (!this.chatImage.active) {
+                this.chatImage.active = true;
+                this.showCurrentTime();
+                // 播放 Open.mp3 音效，音量設為 5
+                if (this.openSound) {
+                    cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.openSound, false), 3);
+                }
+            }
         }
     }
 

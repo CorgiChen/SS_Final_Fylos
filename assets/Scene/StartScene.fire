@@ -707,7 +707,7 @@
     "_id": "16iJ49XO9AQoovn8FMvTrb"
   },
   {
-    "__type__": "ccfaf6c8X1KMbO9q7cX0QmZ",
+    "__type__": "3c79aEuP7dDiozbTfIbVfcb",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -715,12 +715,12 @@
     },
     "_enabled": true,
     "normalBGM": {
-      "__uuid__": "6718f0ec-d3fa-4aad-88a7-444b4a305b82"
+      "__uuid__": "436e772b-ac62-412e-8f12-ac4de6a76665"
     },
     "endingBGM": null,
-    "volume": 0.5,
+    "volume": 1,
     "loop": true,
-    "_id": "82LSlDh9lNabnRp4IMgeNH"
+    "_id": "09PDBSilhAP6x6RM5On8WY"
   },
   {
     "__type__": "cc.Node",

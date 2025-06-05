@@ -1042,7 +1042,9 @@
     },
     "_enabled": true,
     "footstepSound": null,
+    "jumpSound": null,
     "footstepVolume": 2,
+    "jumpVolume": 3,
     "_id": "fbkAUyBXVFvL2C74aYiFzs"
   },
   {
@@ -1265,6 +1267,7 @@
       }
     ],
     "followCamera": true,
+    "openSound": null,
     "_id": "b0QlyQlTlJ5rpjZ08dcMUY"
   },
   {
@@ -1505,6 +1508,9 @@
     "followCamera": true,
     "timeFont": {
       "__uuid__": "4cb30fb1-3fc5-43eb-8972-4bd434cd7bb5"
+    },
+    "openSound": {
+      "__uuid__": "2918644b-9850-4487-b5a4-deca11fb0b00"
     },
     "_id": "c8eNop0mpFUL2pXRiw72Df"
   },
