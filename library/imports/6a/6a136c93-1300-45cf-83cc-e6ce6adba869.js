@@ -34,6 +34,7 @@ var ChatBubbleController = /** @class */ (function (_super) {
         _this.chatImageSpriteFrames = [];
         _this.followCamera = true;
         _this.timeFont = null;
+        _this.openSound = null;
         _this.chatBubble = null;
         _this.chatImage = null;
         _this.currentImageIndex = 0;
@@ -55,6 +56,10 @@ var ChatBubbleController = /** @class */ (function (_super) {
         }
         this.createChatBubble();
         this.createChatImage();
+        // 確保 openSound 已設定
+        if (!this.openSound) {
+            cc.error("Open Sound is not assigned!");
+        }
     };
     ChatBubbleController.prototype.createChatBubble = function () {
         // 創建一個新的節點作為氣泡
@@ -135,8 +140,15 @@ var ChatBubbleController = /** @class */ (function (_super) {
             if (sprite) {
                 sprite.spriteFrame = this.chatImageSpriteFrames[this.currentImageIndex];
             }
-            this.chatImage.active = true;
-            this.showCurrentTime();
+            // 只有在 chatImage 未顯示時才播放音效
+            if (!this.chatImage.active) {
+                this.chatImage.active = true;
+                this.showCurrentTime();
+                // 播放 Open.mp3 音效，音量設為 5
+                if (this.openSound) {
+                    cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.openSound, false), 3);
+                }
+            }
         }
     };
     ChatBubbleController.prototype.onImageClicked = function () {
@@ -218,6 +230,9 @@ var ChatBubbleController = /** @class */ (function (_super) {
     __decorate([
         property(cc.TTFFont)
     ], ChatBubbleController.prototype, "timeFont", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], ChatBubbleController.prototype, "openSound", void 0);
     ChatBubbleController = __decorate([
         ccclass
     ], ChatBubbleController);

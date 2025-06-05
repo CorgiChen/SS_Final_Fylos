@@ -17,6 +17,9 @@ export default class ChatBubbleController extends cc.Component {
     @property
     followCamera: boolean = true;
 
+    @property(cc.AudioClip)
+    openSound: cc.AudioClip = null;
+
     private chatBubble: cc.Node = null;
     private chatImage: cc.Node = null;
     private currentImageIndex: number = 0;
@@ -96,6 +99,10 @@ export default class ChatBubbleController extends cc.Component {
                 sprite.spriteFrame = this.chatImageSpriteFrames[this.currentImageIndex];
             }
             this.chatImage.active = true;
+            // 播放 Open.mp3 音效，音量設為 5
+            if (this.openSound) {
+                cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.openSound, false), 3);
+            }
         }
     }
 

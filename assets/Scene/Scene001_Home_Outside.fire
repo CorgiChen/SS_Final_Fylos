@@ -1042,7 +1042,9 @@
     },
     "_enabled": true,
     "footstepSound": null,
+    "jumpSound": null,
     "footstepVolume": 2,
+    "jumpVolume": 3,
     "_id": "fbkAUyBXVFvL2C74aYiFzs"
   },
   {
@@ -1277,6 +1279,9 @@
       }
     ],
     "followCamera": true,
+    "openSound": {
+      "__uuid__": "f7921613-da03-4393-b3b0-b3e899127665"
+    },
     "_id": "b0QlyQlTlJ5rpjZ08dcMUY"
   },
   {
@@ -1395,6 +1400,9 @@
       "__uuid__": "1f9745ee-505e-4dac-a0ea-1aa55631740d"
     },
     "destinationScene": "Scene002_Home_1F",
+    "transportSound": {
+      "__uuid__": "e4bd36f3-d328-4132-959a-4bc74b1993a2"
+    },
     "_id": "a49Z3tV+5Ao4KGfCOYNGAz"
   },
   {
@@ -1517,6 +1525,9 @@
     "followCamera": true,
     "timeFont": {
       "__uuid__": "4cb30fb1-3fc5-43eb-8972-4bd434cd7bb5"
+    },
+    "openSound": {
+      "__uuid__": "2918644b-9850-4487-b5a4-deca11fb0b00"
     },
     "_id": "c8eNop0mpFUL2pXRiw72Df"
   },
