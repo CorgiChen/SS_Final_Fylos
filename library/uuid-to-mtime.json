@@ -7985,8 +7985,8 @@
     "relativePath": "Scene\\Scene002_Home_1F2.fire"
   },
   "af98db21-ff2c-4e1c-906a-fcbad7b52f8f": {
-    "asset": 1749110978844,
-    "meta": 1749110978865,
+    "asset": 1749112551652,
+    "meta": 1749112551671,
     "relativePath": "Scene\\Scene003_Home_B1.fire"
   },
   "c4c80c5d-a1f9-4314-a7b0-73f86b0a2cd8": {
@@ -8000,13 +8000,13 @@
     "relativePath": "Script\\Player.ts"
   },
   "d05f5928-18d9-4b37-abc6-0c79b8b54dec": {
-    "asset": 1749107548901,
-    "meta": 1749107548922,
+    "asset": 1749112885910,
+    "meta": 1749112885931,
     "relativePath": "Scene\\Scene003_Home_B1_2.fire"
   },
   "f13b8a9a-761e-409e-8126-969896cdf211": {
-    "asset": 1749106281246,
-    "meta": 1749106281265,
+    "asset": 1749112275597,
+    "meta": 1749112275615,
     "relativePath": "Scene\\Scene004_Subway.fire"
   },
   "dd8ee311-1fd0-4b46-942e-6d0208cb969d": {
@@ -8053,5 +8053,35 @@
     "asset": 1749111426961,
     "meta": 1749111427513,
     "relativePath": "Script\\ChatBubbleController.ts"
+  },
+  "8b7ffd3b-6de4-47f2-b1d3-d91679f0ec62": {
+    "asset": 1749112255386,
+    "meta": 1749112255397,
+    "relativePath": "Image\\Chat\\Chat_with_God"
+  },
+  "c609d1be-6b6d-4c10-bf69-2835912ee694": {
+    "asset": 1749112229341,
+    "meta": 1749112255453,
+    "relativePath": "Image\\Chat\\Chat_with_God\\003.png"
+  },
+  "08e01055-3f89-4941-b87c-b7210cbe3681": {
+    "asset": 1749112210409,
+    "meta": 1749112255457,
+    "relativePath": "Image\\Chat\\Chat_with_God\\002.png"
+  },
+  "05314cfb-8eee-41ab-a73f-04770aeedd5f": {
+    "asset": 1749112191679,
+    "meta": 1749112255458,
+    "relativePath": "Image\\Chat\\Chat_with_God\\001.png"
+  },
+  "8535e2d4-1285-4420-9983-7c0235422890": {
+    "asset": 1749112252182,
+    "meta": 1749112255459,
+    "relativePath": "Image\\Chat\\Chat_with_God\\004.png"
+  },
+  "bec5c6d7-ee21-4ef9-b5bf-582dba78b2bc": {
+    "asset": 1749113016182,
+    "meta": 1749113016199,
+    "relativePath": "Scene\\Scene004_Subway_2.fire"
   }
 }

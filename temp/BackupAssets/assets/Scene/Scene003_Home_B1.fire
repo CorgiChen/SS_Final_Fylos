@@ -2060,8 +2060,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -734.238,
-        -226.898,
+        -731.032,
+        -182.015,
         0,
         0,
         0,
@@ -2137,6 +2137,7 @@
         "__uuid__": "76148318-7299-4dcb-95de-03ad4f7dc05f"
       }
     ],
+    "followCamera": true,
     "_id": "91296dOnlEfKFD/1Z7VaTp"
   },
   {

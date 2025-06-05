@@ -89,15 +89,18 @@
       },
       {
         "__id__": 54
+      },
+      {
+        "__id__": 57
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 57
+        "__id__": 60
       },
       {
-        "__id__": 58
+        "__id__": 61
       }
     ],
     "_prefab": null,
@@ -2138,8 +2141,137 @@
         "__uuid__": "76148318-7299-4dcb-95de-03ad4f7dc05f"
       }
     ],
-    "followPlayer": true,
+    "followCamera": true,
     "_id": "91296dOnlEfKFD/1Z7VaTp"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "God",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 58
+      },
+      {
+        "__id__": 59
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 110,
+      "height": 250
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -1926.847,
+        -60.19,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "ba4bj2SrRLbpt2D8XdwBMJ"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 57
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": null,
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "26m03fVndNnKUDVpTMS3i5"
+  },
+  {
+    "__type__": "6347dWRfn1Aa6PnkdBLSu8d",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 57
+    },
+    "_enabled": true,
+    "player": {
+      "__id__": 6
+    },
+    "friend": {
+      "__id__": 57
+    },
+    "bubbleSpriteFrame": {
+      "__uuid__": "9e02a019-9a3d-4169-89e4-8fbcb9edde5f"
+    },
+    "chatImageSpriteFrames": [
+      {
+        "__uuid__": "33194a9b-342c-4e16-a2cb-526f619c3273"
+      },
+      {
+        "__uuid__": "dc424995-2df3-4b16-9bf4-d84222e3ddbb"
+      },
+      {
+        "__uuid__": "fe79f56e-1068-4bca-bd1e-a23b2551dbb6"
+      },
+      {
+        "__uuid__": "80264b05-b7da-4bbf-a8b0-51d236a60bae"
+      }
+    ],
+    "followCamera": true,
+    "_id": "41Dtlv1Z1DzY7gQNJd3esr"
   },
   {
     "__type__": "cc.Canvas",
