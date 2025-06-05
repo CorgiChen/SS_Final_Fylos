@@ -58,7 +58,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "500ef6fc-e9c5-44be-a103-92611cd9fbb9"
+    "_id": "cf8adb0f-9295-4b79-a30d-fe97c0789552"
   },
   {
     "__type__": "cc.Node",
@@ -976,14 +976,14 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        637.636,
-        -88.364,
+        -128.583,
+        -192.557,
         0,
         0,
         0,
         0,
         1,
-        -1,
+        1,
         1,
         1
       ]
@@ -1183,14 +1183,14 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        131.707,
+        433.065,
         -191.364,
         0,
         0,
         0,
         0,
         1,
-        -1,
+        1,
         1,
         1
       ]
@@ -1255,23 +1255,11 @@
       "__id__": 29
     },
     "bubbleSpriteFrame": {
-      "__uuid__": "2aa50cd7-ef82-4698-8380-c33aeb117aff"
+      "__uuid__": "9e02a019-9a3d-4169-89e4-8fbcb9edde5f"
     },
     "chatImageSpriteFrames": [
       {
-        "__uuid__": "68838cad-5ec6-482c-b99a-be06c2b5b2d1"
-      },
-      {
-        "__uuid__": "bdd32f9f-3448-46cf-a3e6-519b290995e4"
-      },
-      {
-        "__uuid__": "e3005b9e-a4a2-4ee3-aa34-9f460adc5807"
-      },
-      {
-        "__uuid__": "f7ed3d73-1172-457b-bfdb-7e2dd65e85df"
-      },
-      {
-        "__uuid__": "3cdf107a-d5b6-4894-ba6a-ce9a7cb23685"
+        "__uuid__": "bd24f5de-43af-4b01-b66e-8bcb45ade566"
       }
     ],
     "followCamera": true,
@@ -1324,7 +1312,7 @@
         0,
         0,
         1,
-        -1,
+        1,
         1,
         1
       ]

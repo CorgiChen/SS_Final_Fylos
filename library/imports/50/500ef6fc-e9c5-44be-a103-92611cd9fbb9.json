@@ -1042,6 +1042,8 @@
       "__id__": 22
     },
     "_enabled": true,
+    "footstepSound": null,
+    "footstepVolume": 2,
     "_id": "fbkAUyBXVFvL2C74aYiFzs"
   },
   {
@@ -1184,8 +1186,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        131.707,
-        -191.364,
+        133.479,
+        -197.863,
         0,
         0,
         0,

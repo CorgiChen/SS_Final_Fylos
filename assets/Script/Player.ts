@@ -26,10 +26,10 @@ export default class PlayerController extends cc.Component {
     private collider: cc.PhysicsBoxCollider = null;
     private currentAnimation: string = "idle";
     private groundCheckDistance: number = 10;
-    private lastVerticalVelocity: number = 0;  // 用於檢測速度方向變化
-    private footstepSoundId: number = -1;  // 用於追踪音效播放
-    private lastFootstepTime: number = 0;  // 上次播放音效的时间
-    private footstepInterval: number = 0.3;  // 音效播放间隔（秒）
+    private lastVerticalVelocity: number = 0; 
+    private footstepSoundId: number = -1; 
+    private lastFootstepTime: number = 0;
+    private footstepInterval: number = 0.3; 
 
     @property(cc.AudioClip)
     footstepSound: cc.AudioClip = null;  // 走路音效
@@ -47,8 +47,7 @@ export default class PlayerController extends cc.Component {
         const manager = cc.director.getPhysicsManager();
         manager.enabled = true;
         manager.gravity = cc.v2(0, -1200);
-        manager.debugDrawFlags = cc.PhysicsManager.DrawBits.e_aabbBit |
-            cc.PhysicsManager.DrawBits.e_shapeBit;
+        manager.debugDrawFlags = 0;  // 關閉碰撞顯示
 
         // 獲取組件
         this.anim = this.getComponent(cc.Animation);

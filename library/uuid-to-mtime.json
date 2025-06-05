@@ -7950,8 +7950,8 @@
     "relativePath": "Image\\NPC\\Door.png"
   },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749117521729,
-    "meta": 1749117521751,
+    "asset": 1749121243568,
+    "meta": 1749121243586,
     "relativePath": "Scene\\Scene001_Home_Outside.fire"
   },
   "d9c14ebb-9131-4d34-9370-0e649963db94": {
@@ -7984,14 +7984,9 @@
     "meta": 1749119819108,
     "relativePath": "Script\\CameraController.ts"
   },
-  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749104502441,
-    "meta": 1749119819315,
-    "relativePath": "Script\\Player.ts"
-  },
   "f13b8a9a-761e-409e-8126-969896cdf211": {
-    "asset": 1749112275597,
-    "meta": 1749119819478,
+    "asset": 1749121118961,
+    "meta": 1749121118980,
     "relativePath": "Scene\\Scene004_Subway.fire"
   },
   "dd8ee311-1fd0-4b46-942e-6d0208cb969d": {
@@ -8035,8 +8030,8 @@
     "relativePath": "Script\\ChatBubbleController.ts"
   },
   "bec5c6d7-ee21-4ef9-b5bf-582dba78b2bc": {
-    "asset": 1749114258951,
-    "meta": 1749114258974,
+    "asset": 1749121227008,
+    "meta": 1749121227026,
     "relativePath": "Scene\\Scene004_Subway_2.fire"
   },
   "368027e5-9fd0-41d0-b114-056b940b08e2": {
@@ -8100,8 +8095,8 @@
     "relativePath": "Script\\TimeController.ts"
   },
   "cf8adb0f-9295-4b79-a30d-fe97c0789552": {
-    "asset": 1749117744042,
-    "meta": 1749117744060,
+    "asset": 1749121252333,
+    "meta": 1749121252352,
     "relativePath": "Scene\\Scene001_Home_Outside2.fire"
   },
   "193483e6-127e-4432-a54f-54a12a955c47": {
@@ -8225,8 +8220,8 @@
     "relativePath": "Script\\AudioManager.ts"
   },
   "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
-    "asset": 1749119607638,
-    "meta": 1749119633396,
+    "asset": 1749120344879,
+    "meta": 1749120344898,
     "relativePath": "Scene\\StartScene.fire"
   },
   "3e8986cf-3f36-4762-90ea-b81f67144bd2": {
@@ -8234,9 +8229,49 @@
     "meta": 1749119634183,
     "relativePath": "Audio\\StartAudio.mp3"
   },
+  "369e5cc7-ff91-470f-a777-f3bac8a93b26": {
+    "asset": 1749120073256,
+    "meta": 1749120139128,
+    "relativePath": "Audio\\Running.mp3"
+  },
   "4bc1cdef-3109-4ed6-a0a2-1f9106487aa8": {
-    "asset": 1749119862956,
-    "meta": 1749119923125,
+    "asset": 1749120636797,
+    "meta": 1749120654214,
     "relativePath": "Scene\\Scene003_Home_B1.fire"
+  },
+  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
+    "asset": 1749120823524,
+    "meta": 1749120825052,
+    "relativePath": "Script\\Player.ts"
+  },
+  "f00dce83-7448-4989-8fd7-6c1b1cd72e94": {
+    "asset": 1749121364972,
+    "meta": 1749121392589,
+    "relativePath": "Scene\\Scene401_Mine.fire"
+  },
+  "c304bda6-ef8e-4531-ac1a-b94ab596887e": {
+    "asset": 1749121410030,
+    "meta": 1749121410862,
+    "relativePath": "Image\\Game_Home\\401_mine.png"
+  },
+  "8a83eb45-9d5d-41d4-b86c-6d315521b3a5": {
+    "asset": 1749122315295,
+    "meta": 1749122440222,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_5_0.png"
+  },
+  "93dd4752-c918-4ecd-a1f7-f59884b03a70": {
+    "asset": 1749122315255,
+    "meta": 1749122440224,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_4_0.png"
+  },
+  "3c472234-4ec0-4e3e-a3c4-7ce1fbef1d58": {
+    "asset": 1749122315326,
+    "meta": 1749122440226,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_7_0.png"
+  },
+  "76cfad8a-3739-4c58-9e4d-ab89b9664d7b": {
+    "asset": 1749122407000,
+    "meta": 1749122440228,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_6.png"
   }
 }
