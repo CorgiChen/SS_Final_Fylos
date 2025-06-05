@@ -13,12 +13,12 @@
         "type": "dock-h",
         "children": [
           {
-            "width": 291,
+            "width": 267,
             "height": 930,
             "type": "dock-v",
             "children": [
               {
-                "width": 291,
+                "width": 267,
                 "height": 315,
                 "type": "panel",
                 "active": 0,
@@ -27,7 +27,7 @@
                 ]
               },
               {
-                "width": 291,
+                "width": 267,
                 "height": 611.984375,
                 "type": "panel",
                 "active": 0,
@@ -38,12 +38,12 @@
             ]
           },
           {
-            "width": 1242.984375,
+            "width": 1267,
             "height": 930,
             "type": "dock-v",
             "children": [
               {
-                "width": 1242.984375,
+                "width": 1267,
                 "height": 623,
                 "type": "panel",
                 "active": 0,
@@ -52,10 +52,10 @@
                 ]
               },
               {
-                "width": 1242.984375,
+                "width": 1267,
                 "height": 304,
                 "type": "panel",
-                "active": 0,
+                "active": 1,
                 "children": [
                   "console",
                   "timeline",
@@ -86,9 +86,7 @@
         "inspector",
         "cocos-services"
       ]
-    },
-    " common-asset-worker-worker": {},
-    " load-media-worker": {}
+    }
   },
   "panels": {
     "project-settings": {
@@ -104,5 +102,7 @@
       "height": 542
     }
   },
-  "panelLabelWidth": {}
+  "panelLabelWidth": {
+    "inspector": "34.7107%"
+  }
 }

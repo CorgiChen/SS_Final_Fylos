@@ -13,6 +13,7 @@
 require('./assets/Script/AudioManager');
 require('./assets/Script/Camera');
 require('./assets/Script/CameraController');
+require('./assets/Script/ChangePicture');
 require('./assets/Script/ChatBubbleController');
 require('./assets/Script/Player');
 require('./assets/Script/PressStart');

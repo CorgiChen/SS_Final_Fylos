@@ -58,7 +58,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "2d2f792f-a40c-49bb-a189-ed176a246e49"
+    "_id": "22f351ab-b07e-44af-a124-3a4bf77c7419"
   },
   {
     "__type__": "cc.Node",
@@ -306,7 +306,7 @@
     "_resourceType": 1,
     "_remoteURL": "",
     "_clip": {
-      "__uuid__": "92376ec3-ec62-48fd-87d0-6922b1fed001"
+      "__uuid__": "e74cfcbd-71c9-47d0-ab31-0e3bfaccc566"
     },
     "_volume": 1,
     "_mute": false,
@@ -328,6 +328,8 @@
     "videoPlayer": {
       "__id__": 6
     },
+    "autoPlay": true,
+    "nextScene": "Scene403_Chat",
     "_id": "d4O+CCqXZDxbmxN4CsukUu"
   },
   {

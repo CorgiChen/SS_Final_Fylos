@@ -5,6 +5,14 @@ export default class VideoPlayerController extends cc.Component {
     @property(cc.VideoPlayer)
     videoPlayer: cc.VideoPlayer = null;
 
+    @property({
+        tooltip: "是否自動播放視頻"
+    })
+    autoPlay: boolean = false;
+
+    @property
+    nextScene: string = "Scene000_StartScene";
+
     private hasPlayed: boolean = false;
 
     onLoad() {
@@ -46,13 +54,13 @@ export default class VideoPlayerController extends cc.Component {
         cc.log("Video player events setup completed");
     }
 
-    private loadStartScene() {
-        cc.director.loadScene("StartScene", (err, scene) => {
+    private loadScene() {
+        cc.director.loadScene(this.nextScene, (err, scene) => {
             if (err) {
-                cc.error("Failed to load StartScene:", err);
+                cc.error("Failed to load scene:", err);
                 return;
             }
-            cc.log("StartScene loaded successfully");
+            cc.log("Scene loaded successfully");
         });
     }
 
@@ -73,7 +81,7 @@ export default class VideoPlayerController extends cc.Component {
                 break;
             case cc.VideoPlayer.EventType.COMPLETED:
                 cc.log("Video playback completed");
-                this.loadStartScene();
+                this.loadScene();
                 break;
             case cc.VideoPlayer.EventType.META_LOADED:
                 cc.log("Video metadata loaded");
@@ -90,13 +98,17 @@ export default class VideoPlayerController extends cc.Component {
                 break;
             case cc.VideoPlayer.EventType.READY_TO_PLAY:
                 cc.log("Video is ready to play");
+                if (this.autoPlay && !this.hasPlayed) {
+                    cc.log("AutoPlay enabled, starting video playback");
+                    this.videoPlayer.play();
+                    this.hasPlayed = true;
+                }
                 break;
         }
     }
 
     onDestroy() {
         cc.log("VideoPlayerController onDestroy");
-        // Clean up event handlers
         if (this.videoPlayer) {
             this.videoPlayer.videoPlayerEvent = [];
         }

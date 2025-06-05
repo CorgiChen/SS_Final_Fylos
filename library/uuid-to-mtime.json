@@ -70,8 +70,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire"
   },
   "395dd4f5-4b6e-4ecd-8b89-84ba590f658e": {
-    "asset": 1749119505696,
-    "meta": 1749119819758,
+    "asset": 1749123591280,
+    "meta": 1749127775201,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle"
   },
   "0b4436c9-4f28-4a8e-90b3-f36312864169": {
@@ -6910,8 +6910,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Separate graphic parts\\Enemy\\Spider\\spider_body.png"
   },
   "af0e3770-2a12-454f-8a07-543f5aaf23b1": {
-    "asset": 1749114392840,
-    "meta": 1749119819038,
+    "asset": 1749123634078,
+    "meta": 1749127775199,
     "relativePath": "Image\\Game_Home"
   },
   "b464cb30-82f6-4562-b1a3-831910e20b00": {
@@ -7035,8 +7035,8 @@
     "relativePath": "Image\\Game_Home\\Home_Outside.jpg"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1749119607638,
-    "meta": 1749119819032,
+    "asset": 1749121392585,
+    "meta": 1749127775193,
     "relativePath": "Scene"
   },
   "ecb05875-5d95-4231-81a7-4c7732570a02": {
@@ -7050,8 +7050,8 @@
     "relativePath": "Image\\Start\\StartBack\\p14.jpg"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1749119633206,
-    "meta": 1749119819034,
+    "asset": 1749122652804,
+    "meta": 1749127775195,
     "relativePath": "Script"
   },
   "fc91a87e-7de0-4319-b401-1b8ab3567727": {
@@ -7070,9 +7070,9 @@
     "relativePath": "Image\\Start\\StartBack\\p13.jpg"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1749083640788,
-    "meta": 1749119819487,
-    "relativePath": "Scene\\StartClip.fire"
+    "asset": 1749129971070,
+    "meta": 1749129971099,
+    "relativePath": "Scene\\Scene000_StartClip.fire"
   },
   "31614794-17ca-48c5-a038-98ce3555aed5": {
     "asset": 1749078039579,
@@ -7860,8 +7860,8 @@
     "relativePath": "Image\\Start\\Elements.png"
   },
   "8962a116-4249-43fe-91eb-5a0ca948b0aa": {
-    "asset": 1749080609584,
-    "meta": 1749084496368,
+    "asset": 1749127705045,
+    "meta": 1749127775197,
     "relativePath": "Video"
   },
   "92376ec3-ec62-48fd-87d0-6922b1fed001": {
@@ -7873,11 +7873,6 @@
     "asset": 1749081971513,
     "meta": 1749119819330,
     "relativePath": "Script\\PressStart.ts"
-  },
-  "4ff4244c-bcb4-4041-a4c9-1325c5a9eedc": {
-    "asset": 1749082328830,
-    "meta": 1749119819410,
-    "relativePath": "Script\\VideoPlayerController.ts"
   },
   "d8ebe520-e836-460a-8093-6ff2b6e11ee5": {
     "asset": 1749085709224,
@@ -8210,8 +8205,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_6.png"
   },
   "3d0288ac-867a-4ec9-af17-befe8e7445be": {
-    "asset": 1749119633204,
-    "meta": 1749119633218,
+    "asset": 1749122795446,
+    "meta": 1749127775191,
     "relativePath": "Audio"
   },
   "a2249bd3-465f-487f-97c4-16b440231c28": {
@@ -8221,8 +8216,8 @@
   },
   "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
     "asset": 1749120344879,
-    "meta": 1749120344898,
-    "relativePath": "Scene\\StartScene.fire"
+    "meta": 1749129944407,
+    "relativePath": "Scene\\Scene000_StartScene.fire"
   },
   "3e8986cf-3f36-4762-90ea-b81f67144bd2": {
     "asset": 1749119607636,
@@ -8240,8 +8235,8 @@
     "relativePath": "Scene\\Scene003_Home_B1.fire"
   },
   "f00dce83-7448-4989-8fd7-6c1b1cd72e94": {
-    "asset": 1749122868346,
-    "meta": 1749122868366,
+    "asset": 1749130339964,
+    "meta": 1749130339998,
     "relativePath": "Scene\\Scene401_Mine.fire"
   },
   "8a83eb45-9d5d-41d4-b86c-6d315521b3a5": {
@@ -8279,9 +8274,314 @@
     "meta": 1749123591326,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\magic.png"
   },
+  "e74cfcbd-71c9-47d0-ab31-0e3bfaccc566": {
+    "asset": 1749127595671,
+    "meta": 1749127705084,
+    "relativePath": "Video\\Mix.mp4"
+  },
   "c304bda6-ef8e-4531-ac1a-b94ab596887e": {
-    "asset": 1749123634083,
-    "meta": 1749123824699,
+    "asset": 1749127889119,
+    "meta": 1749127890589,
     "relativePath": "Image\\Game_Home\\401_mine.png"
+  },
+  "a3545bc2-78bc-421f-8936-09712ed79ba8": {
+    "asset": 1749127948273,
+    "meta": 1749127948518,
+    "relativePath": "Animation\\Candle"
+  },
+  "0e8c8f1f-3571-4d1f-9f14-64e5d577e42f": {
+    "asset": 1749127948276,
+    "meta": 1749127948612,
+    "relativePath": "Animation\\Candle\\candle_1.png"
+  },
+  "62ce9e78-ed5f-4a99-a68e-c1d102a4cca4": {
+    "asset": 1749127948276,
+    "meta": 1749127948620,
+    "relativePath": "Animation\\Candle\\candle_3.png"
+  },
+  "6f9f8893-29c6-4433-be25-22418be54a4a": {
+    "asset": 1749127948276,
+    "meta": 1749127948625,
+    "relativePath": "Animation\\Candle\\candle_0.png"
+  },
+  "e048a4e8-7b92-48eb-a507-b982300c4584": {
+    "asset": 1749127948276,
+    "meta": 1749127948631,
+    "relativePath": "Animation\\Candle\\candle_4.png"
+  },
+  "7358faf9-d5f5-4493-b707-e318de8f3dec": {
+    "asset": 1749127948276,
+    "meta": 1749127948653,
+    "relativePath": "Animation\\Candle\\candle_2.png"
+  },
+  "e6328e6e-9a71-4d86-84e9-0132a94007ff": {
+    "asset": 1749127948277,
+    "meta": 1749127948657,
+    "relativePath": "Animation\\Candle\\candle_5.png"
+  },
+  "638c6d15-2ce9-4da9-b249-429a7a5a783b": {
+    "asset": 1749127948277,
+    "meta": 1749127948666,
+    "relativePath": "Animation\\Candle\\candle_6.png"
+  },
+  "25284968-e3fa-416d-a395-e880876aa813": {
+    "asset": 1749127948277,
+    "meta": 1749127948672,
+    "relativePath": "Animation\\Candle\\candle_7.png"
+  },
+  "51cd8062-0b6a-45b4-9534-1e528fbf6f5e": {
+    "asset": 1749127948277,
+    "meta": 1749127948690,
+    "relativePath": "Animation\\Candle\\log_0.png"
+  },
+  "4563974a-83fa-439c-b4df-38693eadac79": {
+    "asset": 1749127948277,
+    "meta": 1749127948695,
+    "relativePath": "Animation\\Candle\\log_1.png"
+  },
+  "79cee333-990e-4f7b-867c-244d18668540": {
+    "asset": 1749127948281,
+    "meta": 1749127948701,
+    "relativePath": "Animation\\Candle\\log_3.png"
+  },
+  "ea64d56c-2a74-4e84-84b5-d877415aaf7e": {
+    "asset": 1749127948277,
+    "meta": 1749127948705,
+    "relativePath": "Animation\\Candle\\log_2.png"
+  },
+  "fc84a14c-0044-488f-83c1-b37e0e081ab0": {
+    "asset": 1749127948277,
+    "meta": 1749127948724,
+    "relativePath": "Animation\\Candle\\log_4_0.png"
+  },
+  "0c7da0c0-3ed9-428c-b761-b0bcf5b29bcf": {
+    "asset": 1749127948278,
+    "meta": 1749127948729,
+    "relativePath": "Animation\\Candle\\log_6.png"
+  },
+  "1f9ad748-f60e-4d9c-ab60-e13621bbd78a": {
+    "asset": 1749127948278,
+    "meta": 1749127948733,
+    "relativePath": "Animation\\Candle\\log_5_0.png"
+  },
+  "f1decdda-e056-4b98-8254-b84d7e7e107b": {
+    "asset": 1749127948278,
+    "meta": 1749127948736,
+    "relativePath": "Animation\\Candle\\log_7_0.png"
+  },
+  "99dc231a-144f-45bb-8ad3-7dd2d053918b": {
+    "asset": 1749127948278,
+    "meta": 1749127948817,
+    "relativePath": "Animation\\Candle\\water_0.png"
+  },
+  "4824a5ac-b08c-472c-8905-f89623d9663f": {
+    "asset": 1749127948279,
+    "meta": 1749127948821,
+    "relativePath": "Animation\\Candle\\water_2.png"
+  },
+  "8664cf18-5cbd-4911-acc7-4db16d6489a0": {
+    "asset": 1749127948278,
+    "meta": 1749127948824,
+    "relativePath": "Animation\\Candle\\water_1.png"
+  },
+  "bfbcfcec-0ecd-4c52-ba21-83c6feb542c1": {
+    "asset": 1749127948279,
+    "meta": 1749127948827,
+    "relativePath": "Animation\\Candle\\water_4.png"
+  },
+  "8c2faf38-6cdf-4dc6-bc64-b56aadb8f7ee": {
+    "asset": 1749127948279,
+    "meta": 1749127948859,
+    "relativePath": "Animation\\Candle\\water_3.png"
+  },
+  "b32ac9e6-5d0e-4b45-8207-3d99a771c276": {
+    "asset": 1749127948279,
+    "meta": 1749127948861,
+    "relativePath": "Animation\\Candle\\water_6.png"
+  },
+  "a2bd267a-a69d-49a8-836b-de2150dc1f3b": {
+    "asset": 1749127948281,
+    "meta": 1749127948865,
+    "relativePath": "Animation\\Candle\\water_7.png"
+  },
+  "ce323fd9-d364-4cfd-a364-d783f9696940": {
+    "asset": 1749127948279,
+    "meta": 1749127948867,
+    "relativePath": "Animation\\Candle\\water_5.png"
+  },
+  "954b5f4b-b37f-485f-a6d5-00636711c9fd": {
+    "asset": 1749127948281,
+    "meta": 1749127948965,
+    "relativePath": "Animation\\Candle\\wind_2.png"
+  },
+  "9cf4b4ae-ab77-456a-b1e1-38841e7d890c": {
+    "asset": 1749127948280,
+    "meta": 1749127948969,
+    "relativePath": "Animation\\Candle\\wind_0.png"
+  },
+  "a6deae65-96e7-43b6-ae95-343b40f14a39": {
+    "asset": 1749127948280,
+    "meta": 1749127948976,
+    "relativePath": "Animation\\Candle\\wind_1.png"
+  },
+  "c1723562-f15b-4f6e-be2f-6189a5f6289e": {
+    "asset": 1749127948281,
+    "meta": 1749127948980,
+    "relativePath": "Animation\\Candle\\wind_3.png"
+  },
+  "82218758-a056-433c-95ea-448b3d4cdc9e": {
+    "asset": 1749127948281,
+    "meta": 1749127948984,
+    "relativePath": "Animation\\Candle\\wind_5.png"
+  },
+  "27ae27ab-9699-4845-80a5-0b4d79d69010": {
+    "asset": 1749127948282,
+    "meta": 1749127948987,
+    "relativePath": "Animation\\Candle\\wind_4.png"
+  },
+  "c84b4e1c-5e3d-4797-bb2e-d9429b60bd45": {
+    "asset": 1749127948291,
+    "meta": 1749127948991,
+    "relativePath": "Animation\\Candle\\wind_6.png"
+  },
+  "ff59f8a4-4483-4609-8fa0-c5e23432432c": {
+    "asset": 1749127948321,
+    "meta": 1749127949024,
+    "relativePath": "Animation\\Candle\\wind_7.png"
+  },
+  "8fb4fe74-3cee-4f23-aa61-156c821cb36d": {
+    "asset": 1749128314081,
+    "meta": 1749128314112,
+    "relativePath": "Animation\\Candle_Log.anim"
+  },
+  "6bb942a7-08bb-41b2-b516-fe11beccb815": {
+    "asset": 1749128302946,
+    "meta": 1749128302980,
+    "relativePath": "Animation\\Candle_Water.anim"
+  },
+  "dd0537c5-695c-4a9d-9ebc-9267d5bd1c74": {
+    "asset": 1749128292943,
+    "meta": 1749128292969,
+    "relativePath": "Animation\\Candle_Wind.anim"
+  },
+  "78778b08-cb9e-4375-b107-73ba3d4b874c": {
+    "asset": 1749129247613,
+    "meta": 1749129247621,
+    "relativePath": "Image\\Chat\\Chat_with_Aether"
+  },
+  "f9ec6815-123c-4582-b67b-b7054aec3c0f": {
+    "asset": 1749129078559,
+    "meta": 1749129248001,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\003.png"
+  },
+  "616020be-ef42-46f9-806e-b9c8e40616f1": {
+    "asset": 1749128976602,
+    "meta": 1749129248004,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\001.png"
+  },
+  "2e6f57a9-faf9-4f40-be22-1a7a42800591": {
+    "asset": 1749129169411,
+    "meta": 1749129248008,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\006.png"
+  },
+  "6be9c6ec-7887-4dd5-868b-3ac738189548": {
+    "asset": 1749129185329,
+    "meta": 1749129248018,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\007.png"
+  },
+  "88356623-055b-4a73-b9c8-eb5acd92f7d2": {
+    "asset": 1749129099194,
+    "meta": 1749129248063,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\004.png"
+  },
+  "611deedd-f5d2-4832-bb31-8649a0928657": {
+    "asset": 1749129056886,
+    "meta": 1749129248066,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\002.png"
+  },
+  "e39feea9-5a1b-47aa-8988-a05509855bec": {
+    "asset": 1749129203623,
+    "meta": 1749129248077,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\008.png"
+  },
+  "153d6e5a-7c8c-41dd-b61b-b92c382f2e5a": {
+    "asset": 1749129218390,
+    "meta": 1749129248080,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\009.png"
+  },
+  "d2603f14-3405-4039-a99a-8ed3fa8daa54": {
+    "asset": 1749129239211,
+    "meta": 1749129248112,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\010.png"
+  },
+  "9a135efa-0243-4acf-8cd6-a5503c2fc9c8": {
+    "asset": 1749129116600,
+    "meta": 1749129248122,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\005.png"
+  },
+  "91ae7c65-2a5f-41c6-b3af-329eef4e96cc": {
+    "asset": 1749132986299,
+    "meta": 1749132986322,
+    "relativePath": "Scene\\Scene403_Chat.fire"
+  },
+  "22f351ab-b07e-44af-a124-3a4bf77c7419": {
+    "asset": 1749132967043,
+    "meta": 1749132967079,
+    "relativePath": "Scene\\Scene402_EndClip.fire"
+  },
+  "4ff4244c-bcb4-4041-a4c9-1325c5a9eedc": {
+    "asset": 1749130091166,
+    "meta": 1749130094927,
+    "relativePath": "Script\\VideoPlayerController.ts"
+  },
+  "1dbc7cbb-b8e2-48a0-88ed-fc8b1f6feb31": {
+    "asset": 1749130426225,
+    "meta": 1749130492079,
+    "relativePath": "Image\\Chat\\Chat_with_Aether\\000.png"
+  },
+  "ad823bff-befa-4a72-bc8c-c68ba0dab7b1": {
+    "asset": 1749131670865,
+    "meta": 1749131674739,
+    "relativePath": "Script\\ChangePicture.ts"
+  },
+  "1f5f3caf-bb64-44e0-bc82-9e28095a3252": {
+    "asset": 1749135368641,
+    "meta": 1749135368675,
+    "relativePath": "Scene\\Scene404_Final.fire"
+  },
+  "92ab5a1a-0169-4809-9f53-5024a1f32502": {
+    "asset": 1749132756271,
+    "meta": 1749132758101,
+    "relativePath": "Image\\Game_Home\\404_final.png"
+  },
+  "f00fcd60-fc73-4cd9-b4f4-74e9a2439122": {
+    "asset": 1749134208815,
+    "meta": 1749134225799,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\008.png"
+  },
+  "9a2d776a-ec0f-4999-8b06-cf02cd63c901": {
+    "asset": 1749134223302,
+    "meta": 1749134225804,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\009.png"
+  },
+  "4b30e0e9-e510-481a-910f-9ff8acf3993c": {
+    "asset": 1749135235601,
+    "meta": 1749135235627,
+    "relativePath": "Animation\\Chat.anim"
+  },
+  "c2af5d5d-b0ed-482b-89e8-6c7a5c75947a": {
+    "asset": 1749135099604,
+    "meta": 1749135102613,
+    "relativePath": "Image\\Chat\\Chat_with_Friend\\007.png"
+  },
+  "362a04be-2d6b-476d-a183-25e885bccc1b": {
+    "asset": 1749135533120,
+    "meta": 1749135557563,
+    "relativePath": "Image\\Start\\PressStart\\Leaderboard_0.png"
+  },
+  "bf2dd575-9b57-4a53-b04b-e85df332c6cc": {
+    "asset": 1749135552621,
+    "meta": 1749135557603,
+    "relativePath": "Image\\Start\\PressStart\\Leaderboard_1.png"
   }
 }
