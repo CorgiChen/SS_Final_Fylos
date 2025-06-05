@@ -7699,11 +7699,6 @@
     "meta": 1749119820498,
     "relativePath": "Image\\Game_Home\\101_cave_0.png"
   },
-  "e8c03913-4db3-4fa2-b7c2-73bb1526fc48": {
-    "asset": 1749113386762,
-    "meta": 1749113386781,
-    "relativePath": "Scene\\Scene101_Ch1.fire"
-  },
   "1fcd7773-6178-4a62-84ea-a92f2937b649": {
     "asset": 1749078039710,
     "meta": 1749119819071,
@@ -7779,11 +7774,6 @@
     "meta": 1749119819757,
     "relativePath": "Image\\Effect and FX Pixel Part 12 Free\\586.png"
   },
-  "2c59b424-3bfb-4b46-9fea-58f0903ec000": {
-    "asset": 1749078039297,
-    "meta": 1749119819473,
-    "relativePath": "Animation\\Wind1.anim"
-  },
   "9e2473ba-8e91-4fef-b207-a98778f767cb": {
     "asset": 1749078039278,
     "meta": 1749119819555,
@@ -7848,11 +7838,6 @@
     "asset": 1749078039296,
     "meta": 1749078278656,
     "relativePath": "Animation\\Wind"
-  },
-  "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749078039719,
-    "meta": 1749119819458,
-    "relativePath": "Script\\Wind.ts"
   },
   "160bc73e-2a6d-402c-a48b-7b9bb2d8a57f": {
     "asset": 1749078226810,
@@ -7944,25 +7929,10 @@
     "meta": 1749119819773,
     "relativePath": "Image\\NPC\\Door.png"
   },
-  "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749121243568,
-    "meta": 1749121243586,
-    "relativePath": "Scene\\Scene001_Home_Outside.fire"
-  },
   "d9c14ebb-9131-4d34-9370-0e649963db94": {
     "asset": 1749098670518,
     "meta": 1749119821107,
     "relativePath": "Image\\Chat\\Chat_with_Friend\\006.png"
-  },
-  "28a6a051-e065-40d6-b6ec-0637dc35e36a": {
-    "asset": 1749107749115,
-    "meta": 1749119819471,
-    "relativePath": "Scene\\Scene002_Home_1F.fire"
-  },
-  "418ac168-dfba-4c5d-90fe-1dffb575bab1": {
-    "asset": 1749099774952,
-    "meta": 1749119819367,
-    "relativePath": "Script\\Transport.ts"
   },
   "0b86d1ee-2cc1-467b-81c9-613f80572d7d": {
     "asset": 1749117959638,
@@ -8019,11 +7989,6 @@
     "meta": 1749119819657,
     "relativePath": "Image\\Bulletin\\mission.png"
   },
-  "6347d591-7e7d-406b-a3e7-91d04b4aef1d": {
-    "asset": 1749111426961,
-    "meta": 1749119819191,
-    "relativePath": "Script\\ChatBubbleController.ts"
-  },
   "bec5c6d7-ee21-4ef9-b5bf-582dba78b2bc": {
     "asset": 1749121227008,
     "meta": 1749121227026,
@@ -8038,11 +8003,6 @@
     "asset": 1749114366897,
     "meta": 1749114392913,
     "relativePath": "Image\\Game_Home\\001_home_outside.png"
-  },
-  "0fb56f99-9047-4be9-803b-de5d446f289d": {
-    "asset": 1749115878770,
-    "meta": 1749115892807,
-    "relativePath": "Image\\Bulletin\\time.png"
   },
   "09bae750-6498-4fac-9d8a-7c8061b14553": {
     "asset": 1749112255386,
@@ -8083,16 +8043,6 @@
     "asset": 1749116731373,
     "meta": 1749116732212,
     "relativePath": "Image\\Bulletin\\timer_blank.png"
-  },
-  "6a136c93-1300-45cf-83cc-e6ce6adba869": {
-    "asset": 1749117431011,
-    "meta": 1749117434677,
-    "relativePath": "Script\\TimeController.ts"
-  },
-  "cf8adb0f-9295-4b79-a30d-fe97c0789552": {
-    "asset": 1749121252333,
-    "meta": 1749121252352,
-    "relativePath": "Scene\\Scene001_Home_Outside2.fire"
   },
   "193483e6-127e-4432-a54f-54a12a955c47": {
     "asset": 1749117941063,
@@ -8213,11 +8163,6 @@
     "asset": 1749119607639,
     "meta": 1749119633313,
     "relativePath": "Script\\AudioManager.ts"
-  },
-  "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
-    "asset": 1749120344879,
-    "meta": 1749129944407,
-    "relativePath": "Scene\\Scene000_StartScene.fire"
   },
   "3e8986cf-3f36-4762-90ea-b81f67144bd2": {
     "asset": 1749119607636,
@@ -8583,5 +8528,220 @@
     "asset": 1749135552621,
     "meta": 1749135557603,
     "relativePath": "Image\\Start\\PressStart\\Leaderboard_1.png"
+  },
+  "6347d591-7e7d-406b-a3e7-91d04b4aef1d": {
+    "asset": 1749136080791,
+    "meta": 1749136177184,
+    "relativePath": "Script\\ChatBubbleController.ts"
+  },
+  "6a136c93-1300-45cf-83cc-e6ce6adba869": {
+    "asset": 1749136080798,
+    "meta": 1749136177357,
+    "relativePath": "Script\\TimeController.ts"
+  },
+  "418ac168-dfba-4c5d-90fe-1dffb575bab1": {
+    "asset": 1749136080800,
+    "meta": 1749136177441,
+    "relativePath": "Script\\Transport.ts"
+  },
+  "835a431b-93db-4f4c-85a7-c56e54c70155": {
+    "asset": 1749136080802,
+    "meta": 1749136177504,
+    "relativePath": "Script\\Wind.ts"
+  },
+  "9029643f-0bfe-4938-9b8b-58980dfdcac0": {
+    "asset": 1749136177016,
+    "meta": 1749136177550,
+    "relativePath": "Image\\Menu"
+  },
+  "2c59b424-3bfb-4b46-9fea-58f0903ec000": {
+    "asset": 1749136080753,
+    "meta": 1749136177578,
+    "relativePath": "Animation\\Wind1.anim"
+  },
+  "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
+    "asset": 1749136080782,
+    "meta": 1749136177584,
+    "relativePath": "Scene\\Scene000_StartScene.fire"
+  },
+  "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
+    "asset": 1749136080784,
+    "meta": 1749136177590,
+    "relativePath": "Scene\\Scene001_Home_Outside.fire"
+  },
+  "e8c03913-4db3-4fa2-b7c2-73bb1526fc48": {
+    "asset": 1749136080789,
+    "meta": 1749136177596,
+    "relativePath": "Scene\\Scene101_Ch1.fire"
+  },
+  "385f8646-9277-4b26-8d87-0975db5ef875": {
+    "asset": 1749136080754,
+    "meta": 1749136177602,
+    "relativePath": "Animation\\Wind2.anim"
+  },
+  "28a6a051-e065-40d6-b6ec-0637dc35e36a": {
+    "asset": 1749136080787,
+    "meta": 1749136177609,
+    "relativePath": "Scene\\Scene002_Home_1F.fire"
+  },
+  "cf8adb0f-9295-4b79-a30d-fe97c0789552": {
+    "asset": 1749136080786,
+    "meta": 1749136177614,
+    "relativePath": "Scene\\Scene001_Home_Outside2.fire"
+  },
+  "0fb56f99-9047-4be9-803b-de5d446f289d": {
+    "asset": 1749115878770,
+    "meta": 1749136177725,
+    "relativePath": "Image\\Bulletin\\time.png"
+  },
+  "db09bdaa-6ab3-46cf-9b19-70a7a2e967f3": {
+    "asset": 1749136080767,
+    "meta": 1749136177731,
+    "relativePath": "Image\\Menu\\button_login_active.png"
+  },
+  "65f314ff-9b6f-4587-a7ed-556c182dd293": {
+    "asset": 1749136080768,
+    "meta": 1749136177741,
+    "relativePath": "Image\\Menu\\button_login_hover.png"
+  },
+  "dc874bd3-b984-4774-af67-7618666895aa": {
+    "asset": 1749136080818,
+    "meta": 1749136184595,
+    "relativePath": "Script\\firebase.js"
+  },
+  "4a711dde-8eae-4991-9e50-ed5ad2b922a4": {
+    "asset": 1749136080792,
+    "meta": 1749136184629,
+    "relativePath": "Script\\GotoLeaderboard.ts"
+  },
+  "26942b56-3a8e-4c15-a18b-ecff8b240f08": {
+    "asset": 1749136080766,
+    "meta": 1749136177754,
+    "relativePath": "Image\\Menu\\button_login.png"
+  },
+  "f89bc1f0-c2ec-4038-8c85-979dafef6082": {
+    "asset": 1749136080768,
+    "meta": 1749136177773,
+    "relativePath": "Image\\Menu\\button_signup.png"
+  },
+  "dca4788a-9300-48d4-8533-3dafc7a11bbf": {
+    "asset": 1749136080793,
+    "meta": 1749136184718,
+    "relativePath": "Script\\Leaderboard.ts"
+  },
+  "324e74a1-dc42-4bb0-b7df-301c18d3ddad": {
+    "asset": 1749136080771,
+    "meta": 1749136177780,
+    "relativePath": "Image\\Menu\\multiple.png"
+  },
+  "dba57c00-9d03-478e-86b4-f251f1bbaf58": {
+    "asset": 1749136080794,
+    "meta": 1749136184773,
+    "relativePath": "Script\\Login.ts"
+  },
+  "515534c3-f356-4b53-a0d2-93d06bbd9ebe": {
+    "asset": 1749136080769,
+    "meta": 1749136177785,
+    "relativePath": "Image\\Menu\\button_signup_active.png"
+  },
+  "707e6675-23ee-4d85-8219-04b8040d487f": {
+    "asset": 1749136080778,
+    "meta": 1749136184779,
+    "relativePath": "Scene\\Leaderboard.fire"
+  },
+  "bf7801d0-cdb8-4c3f-987d-af7a1860e218": {
+    "asset": 1749136080795,
+    "meta": 1749136184809,
+    "relativePath": "Script\\Menu.ts"
+  },
+  "d0952aba-bc4b-41ac-8f0e-827864564053": {
+    "asset": 1749136080772,
+    "meta": 1749136177793,
+    "relativePath": "Image\\Menu\\sign_menu.png"
+  },
+  "0e12cdab-e1d5-4e98-a2f6-a025f1fc9371": {
+    "asset": 1749136080779,
+    "meta": 1749136184815,
+    "relativePath": "Scene\\Login.fire"
+  },
+  "72e9dcfd-c19a-4e9b-8121-589f577db762": {
+    "asset": 1749136080796,
+    "meta": 1749136184873,
+    "relativePath": "Script\\Signup.ts"
+  },
+  "b1114987-c96a-4c9d-ad35-6de69bd440ff": {
+    "asset": 1749136080770,
+    "meta": 1749136177800,
+    "relativePath": "Image\\Menu\\button_signup_hover.png"
+  },
+  "0a3578cb-fc5e-44f8-84ee-a843d1350729": {
+    "asset": 1749136080780,
+    "meta": 1749136184882,
+    "relativePath": "Scene\\Menu.fire"
+  },
+  "9da7b075-0c49-4298-8dba-54301471ab86": {
+    "asset": 1749136080790,
+    "meta": 1749136184890,
+    "relativePath": "Scene\\Signup.fire"
+  },
+  "3f734d63-b70f-4656-afbb-d90e5408c8df": {
+    "asset": 1749136080770,
+    "meta": 1749136177826,
+    "relativePath": "Image\\Menu\\login_menu.png"
+  },
+  "c45b2977-094a-4226-842b-8bdd8641ffb7": {
+    "asset": 1749136080774,
+    "meta": 1749136184640,
+    "relativePath": "Image\\Menu\\submit_login_active.png"
+  },
+  "61617ddb-9791-480c-9635-5edea57629ab": {
+    "asset": 1749136080773,
+    "meta": 1749136184723,
+    "relativePath": "Image\\Menu\\submit_login.png"
+  },
+  "14262282-b82c-46b7-810f-27279d7a30f8": {
+    "asset": 1749136080756,
+    "meta": 1749136185857,
+    "relativePath": "Audio\\Open_chat.mp3"
+  },
+  "6cbd14cc-d6dc-44cf-849f-d5aebf64cac2": {
+    "asset": 1749136080756,
+    "meta": 1749136185859,
+    "relativePath": "Audio\\Open.mp3"
+  },
+  "91e93a76-6c72-4616-8de2-54db78429d96": {
+    "asset": 1749136080763,
+    "meta": 1749136185862,
+    "relativePath": "Audio\\Transprot.mp3"
+  },
+  "667048aa-75bb-4c72-85be-918799a54927": {
+    "asset": 1749136080760,
+    "meta": 1749136185871,
+    "relativePath": "Audio\\Transport.mp3"
+  },
+  "9b88d42c-32ac-49b8-b875-94ff28a9954e": {
+    "asset": 1749136080774,
+    "meta": 1749136184955,
+    "relativePath": "Image\\Menu\\submit_login_hover.png"
+  },
+  "37085201-9132-4fa3-8c22-82c6e8f2b381": {
+    "asset": 1749136080776,
+    "meta": 1749136184961,
+    "relativePath": "Image\\Menu\\submit_signup_active.png"
+  },
+  "ed3719be-9205-47f3-8c6c-e2796e4cde60": {
+    "asset": 1749136080776,
+    "meta": 1749136184976,
+    "relativePath": "Image\\Menu\\submit_signup_hover.png"
+  },
+  "4e7c7fa5-a799-4540-bce3-d83eae54896b": {
+    "asset": 1749136080775,
+    "meta": 1749136184980,
+    "relativePath": "Image\\Menu\\submit_signup.png"
+  },
+  "85c17cb3-691d-4db1-bc2b-5f692b4a8a81": {
+    "asset": 1749136080776,
+    "meta": 1749136184986,
+    "relativePath": "Image\\Menu\\textarea.png"
   }
 }
