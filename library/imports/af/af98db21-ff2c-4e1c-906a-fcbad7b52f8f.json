@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "Scene003_Home_B1",
+    "_name": "Scene003_Home_B1_2",
     "_objFlags": 0,
     "_native": "",
     "scene": {
@@ -194,7 +194,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
+        -3076.147,
         0,
         0,
         0,
@@ -327,14 +327,14 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        487.594,
-        -91.824,
+        -3619.09,
+        -220.768,
         0,
         0,
         0,
         0,
         1,
-        -1,
+        1,
         1,
         1
       ]

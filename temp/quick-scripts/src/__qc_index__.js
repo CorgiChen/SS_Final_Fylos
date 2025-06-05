@@ -1,4 +1,5 @@
 
+require('./assets/Script/AudioManager');
 require('./assets/Script/Camera');
 require('./assets/Script/CameraController');
 require('./assets/Script/ChatBubbleController');
