@@ -17,6 +17,9 @@ export default class ChatBubbleController extends cc.Component {
     @property
     followCamera: boolean = true;
 
+    @property(cc.TTFFont)
+    timeFont: cc.TTFFont = null;
+
     private chatBubble: cc.Node = null;
     private chatImage: cc.Node = null;
     private currentImageIndex: number = 0;
@@ -98,8 +101,8 @@ export default class ChatBubbleController extends cc.Component {
         this.timeLabel = new cc.Node('TimeLabel');
         const label = this.timeLabel.addComponent(cc.Label);
         // 設定字型大小、顏色
-        label.fontSize = 32;
-        label.lineHeight = 36;
+        label.fontSize = 60; // 字體大小
+        label.lineHeight = 100; // 行高略大於字體
         label.string = this.getCurrentTimeString();
         label.horizontalAlign = cc.Label.HorizontalAlign.CENTER;
         label.verticalAlign = cc.Label.VerticalAlign.CENTER;
@@ -107,9 +110,12 @@ export default class ChatBubbleController extends cc.Component {
         // 設 parent 跟圖片一樣
         this.timeLabel.parent = this.chatImage.parent;
         // 設定在圖片上方 (0, 120) 或正中央 (0, 0)
-        this.timeLabel.setPosition(0, 120);
-        this.timeLabel.zIndex = 1100;
+        this.timeLabel.setPosition(0, 60);
+        this.timeLabel.zIndex = 1500;
         this.timeLabel.active = true;
+        if (this.timeFont) {
+            label.font = this.timeFont;
+        }
     }
 
     private hideCurrentTime() {
@@ -122,8 +128,9 @@ export default class ChatBubbleController extends cc.Component {
     private getCurrentTimeString(): string {
         const now = new Date();
         const pad = (n: number) => n < 10 ? '0' + n : n;
-        return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ` +
-               `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        const dateStr = ` ${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} `;
+        const timeStr = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        return `${dateStr}\n${timeStr}`;
     }
 
     private onBubbleClicked() {

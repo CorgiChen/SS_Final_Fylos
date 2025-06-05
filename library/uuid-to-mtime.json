@@ -7954,14 +7954,9 @@
     "meta": 1749097712808,
     "relativePath": "Image\\NPC\\Door.png"
   },
-  "cd07493d-ce33-426d-bc55-3a6ed9ab566d": {
-    "asset": 1749114445718,
-    "meta": 1749114445736,
-    "relativePath": "Scene\\Scene001_Home_Outside2.fire"
-  },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749114453317,
-    "meta": 1749114453336,
+    "asset": 1749117521729,
+    "meta": 1749117521751,
     "relativePath": "Scene\\Scene001_Home_Outside.fire"
   },
   "d9c14ebb-9131-4d34-9370-0e649963db94": {
@@ -7980,13 +7975,13 @@
     "relativePath": "Script\\Transport.ts"
   },
   "0b86d1ee-2cc1-467b-81c9-613f80572d7d": {
-    "asset": 1749108103764,
-    "meta": 1749108103782,
+    "asset": 1749117959638,
+    "meta": 1749117959658,
     "relativePath": "Scene\\Scene002_Home_1F2.fire"
   },
   "af98db21-ff2c-4e1c-906a-fcbad7b52f8f": {
-    "asset": 1749112551652,
-    "meta": 1749112551671,
+    "asset": 1749118475391,
+    "meta": 1749118475424,
     "relativePath": "Scene\\Scene003_Home_B1.fire"
   },
   "c4c80c5d-a1f9-4314-a7b0-73f86b0a2cd8": {
@@ -8000,8 +7995,8 @@
     "relativePath": "Script\\Player.ts"
   },
   "d05f5928-18d9-4b37-abc6-0c79b8b54dec": {
-    "asset": 1749112885910,
-    "meta": 1749112885931,
+    "asset": 1749118398446,
+    "meta": 1749118398463,
     "relativePath": "Scene\\Scene003_Home_B1_2.fire"
   },
   "f13b8a9a-761e-409e-8126-969896cdf211": {
@@ -8049,31 +8044,6 @@
     "meta": 1749111427513,
     "relativePath": "Script\\ChatBubbleController.ts"
   },
-  "8b7ffd3b-6de4-47f2-b1d3-d91679f0ec62": {
-    "asset": 1749112255386,
-    "meta": 1749112255397,
-    "relativePath": "Image\\Chat\\Chat_with_God"
-  },
-  "c609d1be-6b6d-4c10-bf69-2835912ee694": {
-    "asset": 1749112229341,
-    "meta": 1749112255453,
-    "relativePath": "Image\\Chat\\Chat_with_God\\003.png"
-  },
-  "08e01055-3f89-4941-b87c-b7210cbe3681": {
-    "asset": 1749112210409,
-    "meta": 1749112255457,
-    "relativePath": "Image\\Chat\\Chat_with_God\\002.png"
-  },
-  "05314cfb-8eee-41ab-a73f-04770aeedd5f": {
-    "asset": 1749112191679,
-    "meta": 1749112255458,
-    "relativePath": "Image\\Chat\\Chat_with_God\\001.png"
-  },
-  "8535e2d4-1285-4420-9983-7c0235422890": {
-    "asset": 1749112252182,
-    "meta": 1749112255459,
-    "relativePath": "Image\\Chat\\Chat_with_God\\004.png"
-  },
   "bec5c6d7-ee21-4ef9-b5bf-582dba78b2bc": {
     "asset": 1749114258951,
     "meta": 1749114258974,
@@ -8084,19 +8054,174 @@
     "meta": 1749114231903,
     "relativePath": "Image\\Bulletin\\Aqua.png"
   },
-  "0fb56f99-9047-4be9-803b-de5d446f289d": {
-    "asset": 1749114223775,
-    "meta": 1749114231908,
-    "relativePath": "Image\\Bulletin\\time.png"
-  },
   "c4d3a525-3516-495d-b5eb-6c069f01455a": {
     "asset": 1749114366897,
     "meta": 1749114392913,
     "relativePath": "Image\\Game_Home\\001_home_outside.png"
   },
+  "0fb56f99-9047-4be9-803b-de5d446f289d": {
+    "asset": 1749115878770,
+    "meta": 1749115892807,
+    "relativePath": "Image\\Bulletin\\time.png"
+  },
+  "09bae750-6498-4fac-9d8a-7c8061b14553": {
+    "asset": 1749112255386,
+    "meta": 1749115911685,
+    "relativePath": "Image\\Chat\\Chat_with_GOD"
+  },
+  "05314cfb-8eee-41ab-a73f-04770aeedd5f": {
+    "asset": 1749112191679,
+    "meta": 1749115911745,
+    "relativePath": "Image\\Chat\\Chat_with_GOD\\001.png"
+  },
+  "c609d1be-6b6d-4c10-bf69-2835912ee694": {
+    "asset": 1749112229341,
+    "meta": 1749115911747,
+    "relativePath": "Image\\Chat\\Chat_with_GOD\\003.png"
+  },
+  "8535e2d4-1285-4420-9983-7c0235422890": {
+    "asset": 1749112252182,
+    "meta": 1749115911759,
+    "relativePath": "Image\\Chat\\Chat_with_GOD\\004.png"
+  },
+  "08e01055-3f89-4941-b87c-b7210cbe3681": {
+    "asset": 1749112210409,
+    "meta": 1749115911761,
+    "relativePath": "Image\\Chat\\Chat_with_GOD\\002.png"
+  },
+  "b53fc812-9c8c-4d41-9bd1-79a3d73c022b": {
+    "asset": 1749116077058,
+    "meta": 1749116077070,
+    "relativePath": "Font"
+  },
+  "4cb30fb1-3fc5-43eb-8972-4bd434cd7bb5": {
+    "asset": 1749116053987,
+    "meta": 1749116077073,
+    "relativePath": "Font\\Bangers-Regular.ttf"
+  },
+  "ed3728d1-4b52-4f48-9a64-03de3eab2d43": {
+    "asset": 1749116731373,
+    "meta": 1749116732212,
+    "relativePath": "Image\\Bulletin\\timer_blank.png"
+  },
   "6a136c93-1300-45cf-83cc-e6ce6adba869": {
-    "asset": 1749115197163,
-    "meta": 1749115199563,
+    "asset": 1749117431011,
+    "meta": 1749117434677,
     "relativePath": "Script\\TimeController.ts"
+  },
+  "cf8adb0f-9295-4b79-a30d-fe97c0789552": {
+    "asset": 1749117744042,
+    "meta": 1749117744060,
+    "relativePath": "Scene\\Scene001_Home_Outside2.fire"
+  },
+  "193483e6-127e-4432-a54f-54a12a955c47": {
+    "asset": 1749117941063,
+    "meta": 1749117942416,
+    "relativePath": "Image\\Bulletin\\welcome2.png"
+  },
+  "81d803b5-7c7d-405b-bf3b-98b3def441bf": {
+    "asset": 1749118445292,
+    "meta": 1749118445308,
+    "relativePath": "Animation\\Candle.anim"
+  },
+  "c718a90d-1131-4bbd-bdb2-e4718a389f85": {
+    "asset": 1749119460161,
+    "meta": 1749119505787,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_0.png"
+  },
+  "32a2ffa2-23f7-48af-b17d-fe260505317b": {
+    "asset": 1749119102395,
+    "meta": 1749119505791,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_1.png"
+  },
+  "3c39a71b-1b70-48f7-b636-2f4b1239a7e7": {
+    "asset": 1749119501237,
+    "meta": 1749119505794,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_3.png"
+  },
+  "90a4bd0f-7b06-4d44-a283-321219084a46": {
+    "asset": 1749119474899,
+    "meta": 1749119505801,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_1.png"
+  },
+  "02b9ecb8-9bc0-4e15-ae49-df8f87dd5815": {
+    "asset": 1749119183652,
+    "meta": 1749119505807,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_5.png"
+  },
+  "b76972b8-5282-4074-84e7-3870f1112f37": {
+    "asset": 1749119087372,
+    "meta": 1749119505812,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_0.png"
+  },
+  "5f7fe872-9a84-4674-a120-af402b527446": {
+    "asset": 1749119486920,
+    "meta": 1749119505821,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\log_2.png"
+  },
+  "d86ce459-3714-4a38-99fa-cb2145d80ffe": {
+    "asset": 1749119162388,
+    "meta": 1749119505824,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_4.png"
+  },
+  "4548b00f-e229-44ee-895d-4bedcd0b2087": {
+    "asset": 1749119200907,
+    "meta": 1749119505827,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_6.png"
+  },
+  "be05498d-e9da-4b62-88da-734b7f1bfa19": {
+    "asset": 1749119123355,
+    "meta": 1749119505834,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_2.png"
+  },
+  "e3a6d16a-d784-4e4c-af8d-8e944e0b3eb9": {
+    "asset": 1749119143757,
+    "meta": 1749119505845,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_3.png"
+  },
+  "6c94fff5-e737-40e7-b6ce-d0befc3f657a": {
+    "asset": 1749119224004,
+    "meta": 1749119505847,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\water_7.png"
+  },
+  "5189d377-b56a-4418-9ed4-3254c9acba0f": {
+    "asset": 1749119240956,
+    "meta": 1749119505849,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_0.png"
+  },
+  "e5af4c1e-41e0-421f-8612-dbd9be6af7b2": {
+    "asset": 1749119279829,
+    "meta": 1749119505857,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_2.png"
+  },
+  "a1595733-d0bf-4c61-88b5-a3ebf1b10194": {
+    "asset": 1749119262275,
+    "meta": 1749119505863,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_1.png"
+  },
+  "68d51989-8d12-4cdf-96a2-150bb690cc02": {
+    "asset": 1749119297807,
+    "meta": 1749119505864,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_3.png"
+  },
+  "401d8f6c-f60b-4e9b-ade2-2d52cefa04c4": {
+    "asset": 1749119355674,
+    "meta": 1749119505890,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_4.png"
+  },
+  "ee3ad4a3-ac28-4fc0-a7d0-000133b8a486": {
+    "asset": 1749119372771,
+    "meta": 1749119505896,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_5.png"
+  },
+  "9acd43d2-7e7a-46c8-9782-06c112414be9": {
+    "asset": 1749119401028,
+    "meta": 1749119505900,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_7.png"
+  },
+  "8ca731a7-3cf2-4e95-849e-a0d3625022b1": {
+    "asset": 1749119386911,
+    "meta": 1749119505903,
+    "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_6.png"
   }
 }

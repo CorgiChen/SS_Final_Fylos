@@ -33,6 +33,7 @@ var ChatBubbleController = /** @class */ (function (_super) {
         _this.bubbleSpriteFrame = null;
         _this.chatImageSpriteFrames = [];
         _this.followCamera = true;
+        _this.timeFont = null;
         _this.chatBubble = null;
         _this.chatImage = null;
         _this.currentImageIndex = 0;
@@ -98,8 +99,8 @@ var ChatBubbleController = /** @class */ (function (_super) {
         this.timeLabel = new cc.Node('TimeLabel');
         var label = this.timeLabel.addComponent(cc.Label);
         // 設定字型大小、顏色
-        label.fontSize = 32;
-        label.lineHeight = 36;
+        label.fontSize = 60; // 字體大小
+        label.lineHeight = 100; // 行高略大於字體
         label.string = this.getCurrentTimeString();
         label.horizontalAlign = cc.Label.HorizontalAlign.CENTER;
         label.verticalAlign = cc.Label.VerticalAlign.CENTER;
@@ -107,9 +108,12 @@ var ChatBubbleController = /** @class */ (function (_super) {
         // 設 parent 跟圖片一樣
         this.timeLabel.parent = this.chatImage.parent;
         // 設定在圖片上方 (0, 120) 或正中央 (0, 0)
-        this.timeLabel.setPosition(0, 120);
-        this.timeLabel.zIndex = 1100;
+        this.timeLabel.setPosition(0, 60);
+        this.timeLabel.zIndex = 1500;
         this.timeLabel.active = true;
+        if (this.timeFont) {
+            label.font = this.timeFont;
+        }
     };
     ChatBubbleController.prototype.hideCurrentTime = function () {
         if (this.timeLabel && cc.isValid(this.timeLabel)) {
@@ -120,8 +124,9 @@ var ChatBubbleController = /** @class */ (function (_super) {
     ChatBubbleController.prototype.getCurrentTimeString = function () {
         var now = new Date();
         var pad = function (n) { return n < 10 ? '0' + n : n; };
-        return now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate()) + " " +
-            (pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds()));
+        var dateStr = " " + now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate()) + " ";
+        var timeStr = pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds());
+        return dateStr + "\n" + timeStr;
     };
     ChatBubbleController.prototype.onBubbleClicked = function () {
         if (this.chatImage) {
@@ -210,6 +215,9 @@ var ChatBubbleController = /** @class */ (function (_super) {
     __decorate([
         property
     ], ChatBubbleController.prototype, "followCamera", void 0);
+    __decorate([
+        property(cc.TTFFont)
+    ], ChatBubbleController.prototype, "timeFont", void 0);
     ChatBubbleController = __decorate([
         ccclass
     ], ChatBubbleController);
