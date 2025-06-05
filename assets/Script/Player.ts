@@ -27,6 +27,20 @@ export default class PlayerController extends cc.Component {
     private currentAnimation: string = "idle";
     private groundCheckDistance: number = 10;
     private lastVerticalVelocity: number = 0;  // 用於檢測速度方向變化
+    private footstepSoundId: number = -1;  // 用於追踪音效播放
+    private lastFootstepTime: number = 0;  // 上次播放音效的时间
+    private footstepInterval: number = 0.3;  // 音效播放间隔（秒）
+
+    @property(cc.AudioClip)
+    footstepSound: cc.AudioClip = null;  // 走路音效
+
+    @property({
+        tooltip: "走路音效的音量 (0.0 - 2.0)",
+        min: 0,
+        max: 2,
+        step: 0.1
+    })
+    footstepVolume: number = 2;  // 走路音效的音量，默认设置为 0.3（30%）
 
     onLoad() {
         // 初始化物理系統
@@ -134,6 +148,7 @@ export default class PlayerController extends cc.Component {
                     this.horizontalVelocity = 0;
                     if (!this.isJumping) {
                         this.playAnimation("idle");
+                        this.stopFootstepSound();  // 停止走路音效
                     }
                 }
                 break;
@@ -144,6 +159,7 @@ export default class PlayerController extends cc.Component {
                     this.horizontalVelocity = 0;
                     if (!this.isJumping) {
                         this.playAnimation("idle");
+                        this.stopFootstepSound();  // 停止走路音效
                     }
                 }
                 break;
@@ -190,6 +206,28 @@ export default class PlayerController extends cc.Component {
                     this.playAnimation("fall");
                 }
             }
+        }
+    }
+
+    private playFootstepSound() {
+        const currentTime = Date.now() / 1000;  // 转换为秒
+        if (currentTime - this.lastFootstepTime >= this.footstepInterval) {
+            if (this.footstepSound) {
+                // 如果之前的音效还在播放，先停止它
+                if (this.footstepSoundId !== -1) {
+                    cc.audioEngine.stop(this.footstepSoundId);
+                }
+                // 播放新的音效，使用配置的音量
+                this.footstepSoundId = cc.audioEngine.play(this.footstepSound, false, this.footstepVolume);
+                this.lastFootstepTime = currentTime;
+            }
+        }
+    }
+
+    private stopFootstepSound() {
+        if (this.footstepSoundId !== -1) {
+            cc.audioEngine.stop(this.footstepSoundId);
+            this.footstepSoundId = -1;
         }
     }
 
@@ -243,6 +281,13 @@ export default class PlayerController extends cc.Component {
         // 更新位置
         let newX = this.node.x + this.horizontalVelocity * dt;
         let newY = this.node.y + this.verticalVelocity * dt;
+
+        // 如果在地面上且正在移动，播放走路音效
+        if (this.onGround && this.moveDirection !== 0) {
+            this.playFootstepSound();
+        } else {
+            this.stopFootstepSound();  // 如果不在移动，停止音效
+        }
 
         // 防止角色掉出地面
         if (newY < this.groundY) {
