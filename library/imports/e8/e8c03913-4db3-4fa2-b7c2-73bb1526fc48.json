@@ -30,7 +30,7 @@
         "__id__": 30
       },
       {
-        "__id__": 33
+        "__id__": 34
       }
     ],
     "_active": true,
@@ -999,6 +999,10 @@
       "__id__": 23
     },
     "_enabled": true,
+    "footstepSound": null,
+    "jumpSound": null,
+    "footstepVolume": 2,
+    "jumpVolume": 3,
     "_id": "957eKc5bFA86o/LMsUD4/Z"
   },
   {
@@ -1103,7 +1107,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Sprite(Splash)",
+    "_name": "Wind",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -1116,6 +1120,9 @@
       },
       {
         "__id__": 32
+      },
+      {
+        "__id__": 33
       }
     ],
     "_prefab": null,
@@ -1182,7 +1189,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "fb791aec-7e93-4dba-ba77-9469dfc8518d"
+      "__uuid__": "5d624597-0505-449d-a45b-6d2115e3a876"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1212,10 +1219,30 @@
     "_clips": [
       {
         "__uuid__": "2c59b424-3bfb-4b46-9fea-58f0903ec000"
+      },
+      {
+        "__uuid__": "63afbffe-6bc9-4308-a0f5-596cc356a960"
       }
     ],
     "playOnLoad": false,
     "_id": "7bY2i/VApBcb8SWrFD/5Ut"
+  },
+  {
+    "__type__": "835a4Mbk9tPTIWnxW5UxwFV",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 30
+    },
+    "_enabled": true,
+    "label": null,
+    "text": "hello",
+    "playerNode": {
+      "__id__": 23
+    },
+    "offsetX": 160,
+    "offsetY": 30,
+    "_id": "a1oSdQlq5P2IjHJINxz32n"
   },
   {
     "__type__": "cc.Node",
@@ -1228,10 +1255,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 34
+        "__id__": 35
       },
       {
-        "__id__": 35
+        "__id__": 36
       }
     ],
     "_prefab": null,
@@ -1287,7 +1314,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 33
+      "__id__": 34
     },
     "_enabled": true,
     "_materials": [
@@ -1317,14 +1344,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 33
+      "__id__": 34
     },
     "_enabled": true,
     "player": {
       "__id__": 23
     },
     "door": {
-      "__id__": 33
+      "__id__": 34
     },
     "doorSpriteFrame": {
       "__uuid__": "1f9745ee-505e-4dac-a0ea-1aa55631740d"

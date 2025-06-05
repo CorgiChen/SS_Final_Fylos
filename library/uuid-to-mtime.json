@@ -7700,8 +7700,8 @@
     "relativePath": "Image\\Game_Home\\101_cave_0.png"
   },
   "e8c03913-4db3-4fa2-b7c2-73bb1526fc48": {
-    "asset": 1749128576854,
-    "meta": 1749128621892,
+    "asset": 1749130021706,
+    "meta": 1749130021718,
     "relativePath": "Scene\\Scene101_Ch1.fire"
   },
   "1fcd7773-6178-4a62-84ea-a92f2937b649": {
@@ -8279,14 +8279,134 @@
     "meta": 1749128624265,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\magic.png"
   },
-  "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749128861711,
-    "meta": 1749128863733,
-    "relativePath": "Script\\Wind.ts"
-  },
   "63afbffe-6bc9-4308-a0f5-596cc356a960": {
     "asset": 1749129379845,
     "meta": 1749129379859,
     "relativePath": "Animation\\Wind2.anim"
+  },
+  "835a431b-93db-4f4c-85a7-c56e54c70155": {
+    "asset": 1749129455000,
+    "meta": 1749129627055,
+    "relativePath": "Script\\Wind.ts"
+  },
+  "2bcbf4cd-4fed-4497-b902-c3751a9dcc2d": {
+    "asset": 1749130394490,
+    "meta": 1749130394505,
+    "relativePath": "Scene\\Login.fire"
+  },
+  "3081f6e6-a216-4574-9b60-47d3c72c8621": {
+    "asset": 1749130277362,
+    "meta": 1749130277378,
+    "relativePath": "Scene\\Menu.fire"
+  },
+  "0226cc6c-064a-4b01-9753-9436e5573a34": {
+    "asset": 1749130455454,
+    "meta": 1749130455467,
+    "relativePath": "Scene\\Signup.fire"
+  },
+  "e2015c27-ba31-48f1-951f-a71e49a651e2": {
+    "asset": 1749130132693,
+    "meta": 1749130132701,
+    "relativePath": "Image\\Menu"
+  },
+  "69aa6651-47c0-4ddc-878e-750a1c097ce8": {
+    "asset": 1747807093505,
+    "meta": 1749130132771,
+    "relativePath": "Image\\Menu\\button_login_hover.png"
+  },
+  "a2a59e47-c0ab-4ac7-aebd-e550e1985373": {
+    "asset": 1747807093469,
+    "meta": 1749130132772,
+    "relativePath": "Image\\Menu\\button_login_active.png"
+  },
+  "069a5940-5ed3-4602-a23a-14baab13818b": {
+    "asset": 1747807093432,
+    "meta": 1749130132773,
+    "relativePath": "Image\\Menu\\button_login.png"
+  },
+  "df0f8775-ed5d-43eb-96c3-66556ba2b7f4": {
+    "asset": 1747807093696,
+    "meta": 1749130132776,
+    "relativePath": "Image\\Menu\\button_signup_active.png"
+  },
+  "88caf235-a257-4f97-969c-18565766d52b": {
+    "asset": 1747807093731,
+    "meta": 1749130132777,
+    "relativePath": "Image\\Menu\\button_signup_hover.png"
+  },
+  "72f9dc23-7cb9-4462-ba28-458d98415630": {
+    "asset": 1747807093658,
+    "meta": 1749130132778,
+    "relativePath": "Image\\Menu\\button_signup.png"
+  },
+  "ce9a6484-ad85-4456-8183-86b2c39bf50d": {
+    "asset": 1747807094299,
+    "meta": 1749130132780,
+    "relativePath": "Image\\Menu\\login_menu.png"
+  },
+  "07eaaced-1fee-40e7-a805-1352cccb6a81": {
+    "asset": 1747807094966,
+    "meta": 1749130132782,
+    "relativePath": "Image\\Menu\\sign_menu.png"
+  },
+  "3e69d72d-59be-487c-b0d4-e9449b032835": {
+    "asset": 1747807095129,
+    "meta": 1749130132783,
+    "relativePath": "Image\\Menu\\submit_login_hover.png"
+  },
+  "f4ec8f7d-e57f-4d6d-8adc-d8744a9af598": {
+    "asset": 1747807094463,
+    "meta": 1749130132785,
+    "relativePath": "Image\\Menu\\multiple.png"
+  },
+  "65226be5-f3d9-4478-8f32-1dfff253ab49": {
+    "asset": 1747807095202,
+    "meta": 1749130132790,
+    "relativePath": "Image\\Menu\\submit_signup_active.png"
+  },
+  "0d975710-4bd0-4993-9c08-f460be46e3cd": {
+    "asset": 1747807095038,
+    "meta": 1749130132792,
+    "relativePath": "Image\\Menu\\submit_login.png"
+  },
+  "cd685d76-45f6-45db-85c9-e355b9349b54": {
+    "asset": 1747807095166,
+    "meta": 1749130132793,
+    "relativePath": "Image\\Menu\\submit_signup.png"
+  },
+  "5d3a0e3d-0b15-4116-a029-dbd8d089eeeb": {
+    "asset": 1747807095357,
+    "meta": 1749130132795,
+    "relativePath": "Image\\Menu\\textarea.png"
+  },
+  "d56f4eec-923b-4481-aeb0-8ffade35d587": {
+    "asset": 1747807095085,
+    "meta": 1749130132798,
+    "relativePath": "Image\\Menu\\submit_login_active.png"
+  },
+  "421e9423-8ebe-46e4-bedb-9e9ecaa170f5": {
+    "asset": 1747807095244,
+    "meta": 1749130132799,
+    "relativePath": "Image\\Menu\\submit_signup_hover.png"
+  },
+  "377e3935-c9d5-4385-9f48-d72de53e6fda": {
+    "asset": 1749123418368,
+    "meta": 1749130206078,
+    "relativePath": "Script\\Login.ts"
+  },
+  "8cf5d70f-0a69-4ef8-abf9-38776fafe652": {
+    "asset": 1749122243915,
+    "meta": 1749130206090,
+    "relativePath": "Script\\Menu.ts"
+  },
+  "23f323ab-6828-483f-8dfa-8e16751172fa": {
+    "asset": 1749123450962,
+    "meta": 1749130206110,
+    "relativePath": "Script\\Signup.ts"
+  },
+  "a4bf347a-21b4-4d51-be90-3ef1c51391b0": {
+    "asset": 1748011964048,
+    "meta": 1749130437023,
+    "relativePath": "Script\\firebase.js"
   }
 }
