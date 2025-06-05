@@ -13,13 +13,13 @@
         "type": "dock-h",
         "children": [
           {
-            "width": 267,
-            "height": 930,
+            "width": 264.765625,
+            "height": 914,
             "type": "dock-v",
             "children": [
               {
-                "width": 267,
-                "height": 315,
+                "width": 264.765625,
+                "height": 309.5625,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 267,
-                "height": 611.984375,
+                "width": 264.765625,
+                "height": 601.421875,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,13 +38,13 @@
             ]
           },
           {
-            "width": 1267,
-            "height": 930,
+            "width": 1256.40625,
+            "height": 914,
             "type": "dock-v",
             "children": [
               {
-                "width": 1267,
-                "height": 623,
+                "width": 1256.40625,
+                "height": 612.25,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -52,10 +52,10 @@
                 ]
               },
               {
-                "width": 1267,
-                "height": 304,
+                "width": 1256.40625,
+                "height": 298.75,
                 "type": "panel",
-                "active": 1,
+                "active": 0,
                 "children": [
                   "console",
                   "timeline",
@@ -65,8 +65,8 @@
             ]
           },
           {
-            "width": 380,
-            "height": 930,
+            "width": 376.828125,
+            "height": 914,
             "type": "panel",
             "active": 0,
             "children": [
@@ -87,6 +87,7 @@
         "cocos-services"
       ]
     },
+    " common-asset-worker-worker": {},
     " load-media-worker": {}
   },
   "panels": {
@@ -101,6 +102,12 @@
       "y": 179,
       "width": 522,
       "height": 542
+    },
+    "preferences": {
+      "x": 672,
+      "y": 236,
+      "width": 600,
+      "height": 565
     }
   },
   "panelLabelWidth": {

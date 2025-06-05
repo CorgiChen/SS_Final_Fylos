@@ -1173,13 +1173,9 @@
       "__id__": 26
     },
     "_enabled": true,
-    "_defaultClip": {
-      "__uuid__": "81d803b5-7c7d-405b-bf3b-98b3def441bf"
-    },
+    "_defaultClip": null,
     "_clips": [
-      {
-        "__uuid__": "81d803b5-7c7d-405b-bf3b-98b3def441bf"
-      }
+      null
     ],
     "playOnLoad": true,
     "_id": "8au5ihn55H4J22JCyb1DWJ"
@@ -1643,6 +1639,7 @@
       "__uuid__": "1f9745ee-505e-4dac-a0ea-1aa55631740d"
     },
     "destinationScene": "Scene101_Ch1",
+    "transportSound": null,
     "_id": "a49Z3tV+5Ao4KGfCOYNGAz"
   },
   {
@@ -1761,6 +1758,7 @@
       "__uuid__": "1f9745ee-505e-4dac-a0ea-1aa55631740d"
     },
     "destinationScene": "Scene402_EndClip",
+    "transportSound": null,
     "_id": "5cCKaqrQJG87bydbV+B29W"
   },
   {

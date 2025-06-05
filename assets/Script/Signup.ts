@@ -9,11 +9,14 @@ export default class Signup extends cc.Component {
     // Called once when the component is enabled
     start() {
         // Register quit button event
-        cc.find("small_canvas_bg/quit").on(
-            cc.Node.EventType.MOUSE_DOWN,
-            this.loadMenuScene,
-            this
-        );
+        const quitButton = cc.find("small_canvas_bg/quit");
+        if (quitButton) {
+            quitButton.on(
+                cc.Node.EventType.TOUCH_END,
+                this.loadMenuScene,
+                this
+            );
+        }
 
         // Register submit button event
         cc.find("small_canvas_bg/submit").on(
@@ -30,7 +33,7 @@ export default class Signup extends cc.Component {
 
     // Loads the menu scene
     loadMenuScene() {
-        cc.director.loadScene("Menu");
+        cc.director.loadScene("Scene000_Menu");
     }
 
     // Called every frame, logs the current username input
@@ -69,7 +72,7 @@ export default class Signup extends cc.Component {
                 });
 
                 alert("You have successfully created the account!");
-                cc.director.loadScene("login");
+                cc.director.loadScene("Scene000_Login");
 
                 // Update user profile with username
                 return result.user.updateProfile({

@@ -1041,8 +1041,12 @@
       "__id__": 22
     },
     "_enabled": true,
-    "footstepSound": null,
-    "jumpSound": null,
+    "footstepSound": {
+      "__uuid__": "369e5cc7-ff91-470f-a777-f3bac8a93b26"
+    },
+    "jumpSound": {
+      "__uuid__": "0af30a72-4be5-4492-9e4d-a3c2924b322e"
+    },
     "footstepVolume": 2,
     "jumpVolume": 3,
     "_id": "fbkAUyBXVFvL2C74aYiFzs"
@@ -1280,7 +1284,7 @@
     ],
     "followCamera": true,
     "openSound": {
-      "__uuid__": "f7921613-da03-4393-b3b0-b3e899127665"
+      "__uuid__": "14262282-b82c-46b7-810f-27279d7a30f8"
     },
     "_id": "b0QlyQlTlJ5rpjZ08dcMUY"
   },
@@ -1401,7 +1405,7 @@
     },
     "destinationScene": "Scene002_Home_1F",
     "transportSound": {
-      "__uuid__": "e4bd36f3-d328-4132-959a-4bc74b1993a2"
+      "__uuid__": "667048aa-75bb-4c72-85be-918799a54927"
     },
     "_id": "a49Z3tV+5Ao4KGfCOYNGAz"
   },
@@ -1527,7 +1531,7 @@
       "__uuid__": "4cb30fb1-3fc5-43eb-8972-4bd434cd7bb5"
     },
     "openSound": {
-      "__uuid__": "2918644b-9850-4487-b5a4-deca11fb0b00"
+      "__uuid__": "6cbd14cc-d6dc-44cf-849f-d5aebf64cac2"
     },
     "_id": "c8eNop0mpFUL2pXRiw72Df"
   },

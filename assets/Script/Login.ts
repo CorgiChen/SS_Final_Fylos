@@ -64,7 +64,7 @@ export default class Login extends cc.Component {
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(() => {
                 alert("Login Success");
-                cc.director.loadScene("StartClip");
+                cc.director.loadScene("Scene000_StartScene");
             })
             .catch((error) => {
                 // Show error message
@@ -76,7 +76,7 @@ export default class Login extends cc.Component {
      * Load the menu scene
      */
     loadMenuScene() {
-        cc.director.loadScene("Menu");
+        cc.director.loadScene("Scene000_Menu");
     }
 
     // /**

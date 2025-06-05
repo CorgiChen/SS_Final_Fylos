@@ -37,14 +37,14 @@ export default class Menu extends cc.Component {
    * Load the login scene
    */
   loadLoginScene(): void {
-    cc.director.loadScene("Login");
+    cc.director.loadScene("Scene000_Login");
   }
 
   /**
    * Load the signup scene
    */
   loadSignupScene(): void {
-    cc.director.loadScene("Signup");
+    cc.director.loadScene("Scene000_Signup");
   }
 
   // /**

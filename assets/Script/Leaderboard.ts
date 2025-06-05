@@ -54,7 +54,7 @@ export default class Leaderboard extends cc.Component {
 
     // Load menu scene
     private loadMenuScene() {
-        cc.director.loadScene("StartScene");
+        cc.director.loadScene("Scene000_StartScene");
     }
 
     // Load leaderboard data from Firebase

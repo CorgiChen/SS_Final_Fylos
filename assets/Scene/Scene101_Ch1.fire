@@ -1219,9 +1219,7 @@
       {
         "__uuid__": "2c59b424-3bfb-4b46-9fea-58f0903ec000"
       },
-      {
-        "__uuid__": "63afbffe-6bc9-4308-a0f5-596cc356a960"
-      }
+      null
     ],
     "playOnLoad": false,
     "_id": "7bY2i/VApBcb8SWrFD/5Ut"
@@ -1359,6 +1357,7 @@
       "__uuid__": "1f9745ee-505e-4dac-a0ea-1aa55631740d"
     },
     "destinationScene": "Scene004_Subway_2",
+    "transportSound": null,
     "_id": "55f5VtPQpGd6P+OUZZD3+N"
   }
 ]

@@ -10,7 +10,7 @@ export default class GotoLeaderboard extends cc.Component {
 
     onButtonClick() {
         // 切換場景
-        cc.director.loadScene("Leaderboard");
+        cc.director.loadScene("Scene000_Leaderboard");
     }
 
     onDestroy() {
