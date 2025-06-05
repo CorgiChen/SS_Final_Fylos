@@ -14,6 +14,9 @@ export default class ChatBubbleController extends cc.Component {
     @property([cc.SpriteFrame])
     chatImageSpriteFrames: cc.SpriteFrame[] = [];
 
+    @property
+    followCamera: boolean = true;
+
     private chatBubble: cc.Node = null;
     private chatImage: cc.Node = null;
     private currentImageIndex: number = 0;
@@ -53,7 +56,7 @@ export default class ChatBubbleController extends cc.Component {
         
         // 設置聊天氣泡的初始位置（在朋友頭頂上方）
         this.chatBubble.y = this.BUBBLE_OFFSET;
-        
+
         // 確保氣泡在最上層
         this.chatBubble.zIndex = 999;
         
@@ -67,7 +70,7 @@ export default class ChatBubbleController extends cc.Component {
     private createChatImage() {
         // 創建聊天圖片節點
         this.chatImage = new cc.Node('Chat_Image');
-        
+
         // 添加 Sprite 組件
         const sprite = this.chatImage.addComponent(cc.Sprite);
         sprite.spriteFrame = this.chatImageSpriteFrames[0];
@@ -75,14 +78,11 @@ export default class ChatBubbleController extends cc.Component {
         // 設置父節點為 Canvas
         this.chatImage.parent = cc.director.getScene().getChildByName('Canvas');
         
-        // 設置位置在畫面中央
-        this.chatImage.setPosition(cc.v2(0, 0));
-        
-        // 確保圖片在最上層
-        this.chatImage.zIndex = 1000;
-        
         // 初始時隱藏圖片
         this.chatImage.active = false;
+
+        // 確保圖片在最上層
+        this.chatImage.zIndex = 1000;
 
         // 添加點擊事件（點擊圖片時顯示下一張或隱藏）
         this.chatImage.on(cc.Node.EventType.TOUCH_END, this.onImageClicked, this);
@@ -118,6 +118,11 @@ export default class ChatBubbleController extends cc.Component {
 
     update() {
         if (!this.player || !this.friend || !this.chatBubble) return;
+
+        if (this.followCamera) {
+            const camera = cc.director.getScene().getChildByName('Canvas').getChildByName('Main Camera');
+            this.chatImage.x = camera.x;
+        }
 
         // 將 Vec3 轉換為 Vec2
         const playerPos = new cc.Vec2(this.player.position.x, this.player.position.y);

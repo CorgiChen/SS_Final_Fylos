@@ -32,6 +32,7 @@ var ChatBubbleController = /** @class */ (function (_super) {
         _this.friend = null;
         _this.bubbleSpriteFrame = null;
         _this.chatImageSpriteFrames = [];
+        _this.followCamera = true;
         _this.chatBubble = null;
         _this.chatImage = null;
         _this.currentImageIndex = 0;
@@ -80,12 +81,10 @@ var ChatBubbleController = /** @class */ (function (_super) {
         sprite.spriteFrame = this.chatImageSpriteFrames[0];
         // 設置父節點為 Canvas
         this.chatImage.parent = cc.director.getScene().getChildByName('Canvas');
-        // 設置位置在畫面中央
-        this.chatImage.setPosition(cc.v2(0, 0));
-        // 確保圖片在最上層
-        this.chatImage.zIndex = 1000;
         // 初始時隱藏圖片
         this.chatImage.active = false;
+        // 確保圖片在最上層
+        this.chatImage.zIndex = 1000;
         // 添加點擊事件（點擊圖片時顯示下一張或隱藏）
         this.chatImage.on(cc.Node.EventType.TOUCH_END, this.onImageClicked, this);
     };
@@ -119,6 +118,10 @@ var ChatBubbleController = /** @class */ (function (_super) {
     ChatBubbleController.prototype.update = function () {
         if (!this.player || !this.friend || !this.chatBubble)
             return;
+        if (this.followCamera) {
+            var camera = cc.director.getScene().getChildByName('Canvas').getChildByName('Main Camera');
+            this.chatImage.x = camera.x;
+        }
         // 將 Vec3 轉換為 Vec2
         var playerPos = new cc.Vec2(this.player.position.x, this.player.position.y);
         var friendPos = new cc.Vec2(this.friend.position.x, this.friend.position.y);
@@ -161,6 +164,9 @@ var ChatBubbleController = /** @class */ (function (_super) {
     __decorate([
         property([cc.SpriteFrame])
     ], ChatBubbleController.prototype, "chatImageSpriteFrames", void 0);
+    __decorate([
+        property
+    ], ChatBubbleController.prototype, "followCamera", void 0);
     ChatBubbleController = __decorate([
         ccclass
     ], ChatBubbleController);

@@ -9,20 +9,11 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class PlayerController extends cc.Component {
-    @property
     moveSpeed: number = 300;
-
-    @property
-    jumpForce: number = 500;
-
-    @property
+    jumpForce: number = 800;
     gravity: number = 1200;
-
-    @property
     maxFallSpeed: number = 800;
-
-    @property
-    groundY: number = -300;  // 添加地面Y座標屬性
+    groundY: number = -300;
 
     public moveDirection: number = 0;
     private onGround: boolean = false;

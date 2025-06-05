@@ -230,8 +230,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\NPC\\NPC_Blacksmith"
   },
   "2d57858e-a9e9-4f7e-b1d3-fc8f5243f166": {
-    "asset": 1749078038315,
-    "meta": 1749078279307,
+    "asset": 1749093470886,
+    "meta": 1749106773487,
     "relativePath": "2D Platformer Tileset\\Sprites\\NPC\\NPC_Merchant"
   },
   "b1546fcb-cf48-4f31-8ecf-f9de83d4fc4e": {
@@ -866,42 +866,42 @@
   },
   "a3dabeb5-467c-4f3c-8a82-e3784f170db4": {
     "asset": 1749078030240,
-    "meta": 1749078280894,
+    "meta": 1749107060146,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_0.png"
   },
   "353f6754-9909-4391-bedd-3b4c8bc32478": {
     "asset": 1749078030249,
-    "meta": 1749078280941,
+    "meta": 1749107092624,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_2.png"
   },
   "8ae2dcc3-c5b6-4af7-a0eb-f9fcd1850a9d": {
     "asset": 1749078030253,
-    "meta": 1749078280903,
+    "meta": 1749107101346,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_3.png"
   },
   "7c9d94ea-bcd0-4180-bfe0-b4f35ca4250d": {
     "asset": 1749078030246,
-    "meta": 1749078280915,
+    "meta": 1749107080405,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_1.png"
   },
   "7646e736-63fd-4751-b6d6-ba0ba4083ea6": {
     "asset": 1749078030255,
-    "meta": 1749078280934,
+    "meta": 1749107112622,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_4.png"
   },
   "712a297f-c0ac-484f-b6fd-e87372a83618": {
     "asset": 1749078030257,
-    "meta": 1749078280931,
+    "meta": 1749107124858,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_5.png"
   },
   "0dc19284-339a-4379-8186-fc656b52fed5": {
     "asset": 1749078030259,
-    "meta": 1749078280918,
+    "meta": 1749107134112,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_6.png"
   },
   "db921af1-6702-42e5-8428-78d9d8c08331": {
     "asset": 1749078030264,
-    "meta": 1749078280929,
+    "meta": 1749107140941,
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Campfire\\campfire_7.png"
   },
   "5f6c24e9-fc9f-44a5-a16a-83357e011ab0": {
@@ -6880,8 +6880,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Separate graphic parts\\Enemy\\Slime\\slime7.png"
   },
   "946212e6-7dc0-4ae1-90ba-d25ce801458b": {
-    "asset": 1749083910880,
-    "meta": 1749084496359,
+    "asset": 1749106651539,
+    "meta": 1749106773478,
     "relativePath": "Animation"
   },
   "bb264e6f-33ef-4529-aadb-8cfd61777131": {
@@ -6900,8 +6900,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Separate graphic parts\\Enemy\\Slime\\slime8.png"
   },
   "a6dc2606-eb88-46a9-978c-b59dab3ed5e8": {
-    "asset": 1749084636527,
-    "meta": 1749084639361,
+    "asset": 1749094056775,
+    "meta": 1749106773479,
     "relativePath": "Image"
   },
   "c2df3cdf-2907-474e-b9b3-a6be3bcd1397": {
@@ -6910,8 +6910,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Separate graphic parts\\Enemy\\Spider\\spider_body.png"
   },
   "af0e3770-2a12-454f-8a07-543f5aaf23b1": {
-    "asset": 1749078039565,
-    "meta": 1749078278658,
+    "asset": 1749106362251,
+    "meta": 1749106773483,
     "relativePath": "Image\\Game_Home"
   },
   "b464cb30-82f6-4562-b1a3-831910e20b00": {
@@ -6930,8 +6930,8 @@
     "relativePath": "Image\\Start"
   },
   "7b00bacd-ab68-4e73-a56b-ee9c09e63cd8": {
-    "asset": 1749078039572,
-    "meta": 1749078279126,
+    "asset": 1749085720661,
+    "meta": 1749106773486,
     "relativePath": "Image\\Start\\PressStart"
   },
   "03d80e46-7b51-4367-be24-4817fcd5edc3": {
@@ -7035,8 +7035,8 @@
     "relativePath": "Image\\Game_Home\\Home_Outside.jpg"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1749081629680,
-    "meta": 1749084496363,
+    "asset": 1749105143861,
+    "meta": 1749106773480,
     "relativePath": "Scene"
   },
   "ecb05875-5d95-4231-81a7-4c7732570a02": {
@@ -7050,8 +7050,8 @@
     "relativePath": "Image\\Start\\StartBack\\p14.jpg"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1749081091812,
-    "meta": 1749084496365,
+    "asset": 1749102372020,
+    "meta": 1749106773481,
     "relativePath": "Script"
   },
   "fc91a87e-7de0-4319-b401-1b8ab3567727": {
@@ -7689,20 +7689,10 @@
     "meta": 1749078279232,
     "relativePath": "Image\\Game_Home\\002_home_1F_0.png"
   },
-  "30b7dc91-6cf9-4350-a2bc-724efaa2fb84": {
-    "asset": 1749078039406,
-    "meta": 1749078279305,
-    "relativePath": "Image\\Game_Home\\004_crossroad_0.png"
-  },
   "74abc6a5-81da-4528-9560-f9b17847b503": {
     "asset": 1749078039364,
     "meta": 1749078279281,
     "relativePath": "Image\\Game_Home\\001_home_outside_0.png"
-  },
-  "323a4276-9147-45ef-9891-7ddbf4447b53": {
-    "asset": 1749078039398,
-    "meta": 1749078279359,
-    "relativePath": "Image\\Game_Home\\003_home_B1_0.png"
   },
   "c6b361c1-6f7f-4a2d-8af2-346a561a74bf": {
     "asset": 1749078039478,
@@ -7905,8 +7895,8 @@
     "relativePath": "Image\\Start\\PressStart\\press_start_0.png"
   },
   "7df1314f-52e3-45e5-afd2-ae44987fbb73": {
-    "asset": 1749090131438,
-    "meta": 1749090131449,
+    "asset": 1749097710382,
+    "meta": 1749106773484,
     "relativePath": "Image\\NPC"
   },
   "4b5f55b9-9f4b-48c1-9f49-588659d01ea7": {
@@ -7920,13 +7910,13 @@
     "relativePath": "Image\\NPC\\Chat_Bubble.png"
   },
   "77995b3b-ed08-4374-8a9f-bc9c1a5563d6": {
-    "asset": 1749094049721,
-    "meta": 1749094049722,
+    "asset": 1749094073559,
+    "meta": 1749106773482,
     "relativePath": "Image\\Chat"
   },
   "1712477a-261f-4472-a00e-8d46cd6fc9f6": {
-    "asset": 1749094058647,
-    "meta": 1749094058649,
+    "asset": 1749098729086,
+    "meta": 1749106773485,
     "relativePath": "Image\\Chat\\Chat_with_Friend"
   },
   "647df98b-48d1-4860-84d5-a80a094a68ed": {
@@ -7959,19 +7949,14 @@
     "meta": 1749096800191,
     "relativePath": "Image\\NPC\\Chat_Bubble_1.png"
   },
-  "6347d591-7e7d-406b-a3e7-91d04b4aef1d": {
-    "asset": 1749096827889,
-    "meta": 1749097065989,
-    "relativePath": "Script\\ChatBubbleController.ts"
-  },
   "40b9b6aa-a204-4ca2-a2f8-a03c1e8a2133": {
     "asset": 1749097710380,
     "meta": 1749097712808,
     "relativePath": "Image\\NPC\\Door.png"
   },
   "cd07493d-ce33-426d-bc55-3a6ed9ab566d": {
-    "asset": 1749101677701,
-    "meta": 1749101677720,
+    "asset": 1749111216122,
+    "meta": 1749111216144,
     "relativePath": "Scene\\Scene001_Home_Outside2.fire"
   },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
@@ -7985,8 +7970,8 @@
     "relativePath": "Image\\Chat\\Chat_with_Friend\\006.png"
   },
   "28a6a051-e065-40d6-b6ec-0637dc35e36a": {
-    "asset": 1749101773848,
-    "meta": 1749101773875,
+    "asset": 1749107749115,
+    "meta": 1749107749134,
     "relativePath": "Scene\\Scene002_Home_1F.fire"
   },
   "418ac168-dfba-4c5d-90fe-1dffb575bab1": {
@@ -7995,28 +7980,78 @@
     "relativePath": "Script\\Transport.ts"
   },
   "0b86d1ee-2cc1-467b-81c9-613f80572d7d": {
-    "asset": 1749101820726,
-    "meta": 1749101820741,
+    "asset": 1749108103764,
+    "meta": 1749108103782,
     "relativePath": "Scene\\Scene002_Home_1F2.fire"
   },
-  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749101542883,
-    "meta": 1749101565469,
-    "relativePath": "Script\\Player.ts"
+  "af98db21-ff2c-4e1c-906a-fcbad7b52f8f": {
+    "asset": 1749110978844,
+    "meta": 1749110978865,
+    "relativePath": "Scene\\Scene003_Home_B1.fire"
   },
   "c4c80c5d-a1f9-4314-a7b0-73f86b0a2cd8": {
-    "asset": 1749102333730,
-    "meta": 1749102372071,
+    "asset": 1749103781941,
+    "meta": 1749103854426,
     "relativePath": "Script\\CameraController.ts"
   },
+  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
+    "asset": 1749104502441,
+    "meta": 1749104503044,
+    "relativePath": "Script\\Player.ts"
+  },
+  "d05f5928-18d9-4b37-abc6-0c79b8b54dec": {
+    "asset": 1749107548901,
+    "meta": 1749107548922,
+    "relativePath": "Scene\\Scene003_Home_B1_2.fire"
+  },
   "f13b8a9a-761e-409e-8126-969896cdf211": {
-    "asset": 1749103589147,
-    "meta": 1749103677005,
+    "asset": 1749106281246,
+    "meta": 1749106281265,
     "relativePath": "Scene\\Scene004_Subway.fire"
   },
-  "af98db21-ff2c-4e1c-906a-fcbad7b52f8f": {
-    "asset": 1749103717294,
-    "meta": 1749103717314,
-    "relativePath": "Scene\\Scene003_Home_B1.fire"
+  "dd8ee311-1fd0-4b46-942e-6d0208cb969d": {
+    "asset": 1749106051368,
+    "meta": 1749106051980,
+    "relativePath": "Image\\Game_Home\\004_subway.png"
+  },
+  "323a4276-9147-45ef-9891-7ddbf4447b53": {
+    "asset": 1749106362260,
+    "meta": 1749106365305,
+    "relativePath": "Image\\Game_Home\\003_home_B1.png"
+  },
+  "bb203354-e269-4a45-9fdf-9987e954cf35": {
+    "asset": 1749107156682,
+    "meta": 1749107156700,
+    "relativePath": "Animation\\Campfire.anim"
+  },
+  "741da34b-353f-4bdf-8b4f-1634dd9ae444": {
+    "asset": 1749107536241,
+    "meta": 1749107536253,
+    "relativePath": "Image\\Bulletin"
+  },
+  "cbdb91af-02b2-4c22-895a-4218f32774bb": {
+    "asset": 1749107725599,
+    "meta": 1749107727265,
+    "relativePath": "Image\\NPC\\bulletinchat.png"
+  },
+  "fd95393e-f4b2-4344-a050-279321a31562": {
+    "asset": 1749111121344,
+    "meta": 1749111162592,
+    "relativePath": "Image\\Bulletin\\welcome.png"
+  },
+  "b5f0983a-6e74-4ca1-9e01-6f1745d98197": {
+    "asset": 1749111138313,
+    "meta": 1749111162599,
+    "relativePath": "Image\\Bulletin\\mission.png"
+  },
+  "368027e5-9fd0-41d0-b114-056b940b08e2": {
+    "asset": 1749111160808,
+    "meta": 1749111162605,
+    "relativePath": "Image\\Bulletin\\Aqua.png"
+  },
+  "6347d591-7e7d-406b-a3e7-91d04b4aef1d": {
+    "asset": 1749111426961,
+    "meta": 1749111427513,
+    "relativePath": "Script\\ChatBubbleController.ts"
   }
 }

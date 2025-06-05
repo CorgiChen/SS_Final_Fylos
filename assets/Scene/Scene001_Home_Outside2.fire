@@ -941,11 +941,6 @@
       "__id__": 20
     },
     "_enabled": true,
-    "moveSpeed": 200,
-    "jumpForce": 700,
-    "gravity": 800,
-    "maxFallSpeed": 1000,
-    "groundY": -300,
     "_id": "fbkAUyBXVFvL2C74aYiFzs"
   },
   {
@@ -1167,6 +1162,7 @@
         "__uuid__": "bd24f5de-43af-4b01-b66e-8bcb45ade566"
       }
     ],
+    "followPlayer": false,
     "_id": "b0QlyQlTlJ5rpjZ08dcMUY"
   },
   {

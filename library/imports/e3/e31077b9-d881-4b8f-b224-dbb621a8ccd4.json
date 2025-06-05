@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bulletinchat",
+    "texture": "cbdb91af-02b2-4c22-895a-4218f32774bb",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      78,
+      67
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      78,
+      67
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

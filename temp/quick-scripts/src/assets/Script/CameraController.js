@@ -48,7 +48,6 @@ var CameraController = /** @class */ (function (_super) {
         // 設置相機屬性
         this.camera.backgroundColor = cc.Color.BLACK;
         this.camera.zoomRatio = 1;
-        this.camera.clearFlags = cc.Camera.ClearFlag.SOLID_COLOR;
     };
     CameraController.prototype.update = function (dt) {
         if (!this.target)

@@ -35,10 +35,10 @@ var PlayerController = /** @class */ (function (_super) {
     function PlayerController() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.moveSpeed = 300;
-        _this.jumpForce = 500;
+        _this.jumpForce = 800;
         _this.gravity = 1200;
         _this.maxFallSpeed = 800;
-        _this.groundY = -300; // 添加地面Y座標屬性
+        _this.groundY = -300;
         _this.moveDirection = 0;
         _this.onGround = false;
         _this.isJumping = false;
@@ -279,21 +279,6 @@ var PlayerController = /** @class */ (function (_super) {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     };
-    __decorate([
-        property
-    ], PlayerController.prototype, "moveSpeed", void 0);
-    __decorate([
-        property
-    ], PlayerController.prototype, "jumpForce", void 0);
-    __decorate([
-        property
-    ], PlayerController.prototype, "gravity", void 0);
-    __decorate([
-        property
-    ], PlayerController.prototype, "maxFallSpeed", void 0);
-    __decorate([
-        property
-    ], PlayerController.prototype, "groundY", void 0);
     PlayerController = __decorate([
         ccclass
     ], PlayerController);

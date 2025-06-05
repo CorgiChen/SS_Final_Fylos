@@ -1,21 +1,21 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "004_crossroad_0",
-    "texture": "30b7dc91-6cf9-4350-a2bc-724efaa2fb84",
+    "name": "mission",
+    "texture": "b5f0983a-6e74-4ca1-9e01-6f1745d98197",
     "atlas": "",
     "rect": [
-      0,
-      0,
-      3072,
-      864
+      566,
+      142,
+      404,
+      580
     ],
     "offset": [
       0,
       0
     ],
     "originalSize": [
-      3072,
+      1536,
       864
     ],
     "capInsets": [

@@ -85,15 +85,18 @@
       },
       {
         "__id__": 51
+      },
+      {
+        "__id__": 54
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 54
+        "__id__": 57
       },
       {
-        "__id__": 55
+        "__id__": 58
       }
     ],
     "_prefab": null,
@@ -482,11 +485,6 @@
       "__id__": 6
     },
     "_enabled": true,
-    "moveSpeed": 300,
-    "jumpForce": 500,
-    "gravity": 1200,
-    "maxFallSpeed": 800,
-    "groundY": -300,
     "_id": "99kppejGJK/Zl4KQf0RUbG"
   },
   {
@@ -2021,6 +2019,126 @@
     },
     "destinationScene": "Scene004_Subway",
     "_id": "00q4d8U/tFqJLCEWZxl4Kn"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Bulletin",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 55
+      },
+      {
+        "__id__": 56
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 110,
+      "height": 154
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -731.032,
+        -182.015,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "5eA3AlIFhN54W8PRuufdiY"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 54
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": null,
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "d5Iw5glT1E6rz/tDStFKcH"
+  },
+  {
+    "__type__": "6347dWRfn1Aa6PnkdBLSu8d",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 54
+    },
+    "_enabled": true,
+    "player": {
+      "__id__": 6
+    },
+    "friend": {
+      "__id__": 54
+    },
+    "bubbleSpriteFrame": {
+      "__uuid__": "e31077b9-d881-4b8f-b224-dbb621a8ccd4"
+    },
+    "chatImageSpriteFrames": [
+      {
+        "__uuid__": "76148318-7299-4dcb-95de-03ad4f7dc05f"
+      }
+    ],
+    "followPlayer": true,
+    "_id": "91296dOnlEfKFD/1Z7VaTp"
   },
   {
     "__type__": "cc.Canvas",
