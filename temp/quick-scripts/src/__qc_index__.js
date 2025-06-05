@@ -3,6 +3,8 @@ require('./assets/Script/AudioManager');
 require('./assets/Script/Camera');
 require('./assets/Script/CameraController');
 require('./assets/Script/ChatBubbleController');
+require('./assets/Script/GotoLeaderboard');
+require('./assets/Script/Leaderboard');
 require('./assets/Script/Login');
 require('./assets/Script/Menu');
 require('./assets/Script/Player');

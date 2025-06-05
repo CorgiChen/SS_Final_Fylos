@@ -8205,8 +8205,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Animations\\Candle\\wind_6.png"
   },
   "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
-    "asset": 1749128872427,
-    "meta": 1749128872449,
+    "asset": 1749132386733,
+    "meta": 1749132386749,
     "relativePath": "Scene\\StartScene.fire"
   },
   "4bc1cdef-3109-4ed6-a0a2-1f9106487aa8": {
@@ -8408,5 +8408,20 @@
     "asset": 1748011964048,
     "meta": 1749130437023,
     "relativePath": "Script\\firebase.js"
+  },
+  "468399db-b026-4445-938a-867814473c7c": {
+    "asset": 1749132650053,
+    "meta": 1749132650066,
+    "relativePath": "Scene\\Leaderboard.fire"
+  },
+  "52da2c57-4343-4329-8c95-8dc167eef788": {
+    "asset": 1749132084885,
+    "meta": 1749132092031,
+    "relativePath": "Script\\GotoLeaderboard.ts"
+  },
+  "82f5c3d1-0fea-4c67-9227-0e87e23ba0ca": {
+    "asset": 1749132816983,
+    "meta": 1749132817301,
+    "relativePath": "Script\\Leaderboard.ts"
   }
 }
