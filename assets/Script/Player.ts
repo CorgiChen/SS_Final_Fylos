@@ -32,6 +32,7 @@ export default class PlayerController extends cc.Component {
     private lastFootstepTime: number = 0;
     private footstepInterval: number = 0.3; 
     private isDied: boolean = false;
+    
 
     @property(cc.AudioClip)
     footstepSound: cc.AudioClip = null;  // 走路音效

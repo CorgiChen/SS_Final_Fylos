@@ -7,6 +7,7 @@ require('./assets/Script/ChatBubbleController');
 require('./assets/Script/Crate');
 require('./assets/Script/Fire');
 require('./assets/Script/GotoLeaderboard');
+require('./assets/Script/Lake');
 require('./assets/Script/Leaderboard');
 require('./assets/Script/Login');
 require('./assets/Script/Menu');

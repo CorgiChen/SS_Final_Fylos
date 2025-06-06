@@ -9094,25 +9094,10 @@
     "meta": 1749199060243,
     "relativePath": "Image\\Chat\\Chat_with_GOD\\002.png"
   },
-  "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749199276535,
-    "meta": 1749199277683,
-    "relativePath": "Script\\Wind.ts"
-  },
-  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749206798549,
-    "meta": 1749206807528,
-    "relativePath": "Script\\Player.ts"
-  },
   "c6b361c1-6f7f-4a2d-8af2-346a561a74bf": {
     "asset": 1749208424436,
     "meta": 1749208426667,
     "relativePath": "Image\\Game_Home\\101_cave_0.png"
-  },
-  "78e899ac-be52-4048-9333-8b00e3f10a7d": {
-    "asset": 1749209899583,
-    "meta": 1749209901236,
-    "relativePath": "Script\\Fire.ts"
   },
   "e9279a92-6cd0-474f-93c8-1a229cf10e45": {
     "asset": 1749210427248,
@@ -9183,5 +9168,35 @@
     "asset": 1749211729129,
     "meta": 1749211729143,
     "relativePath": "Animation\\Water2.anim"
+  },
+  "f9692c53-e045-4611-876d-5cf0b468d350": {
+    "asset": 1749217040357,
+    "meta": 1749217042609,
+    "relativePath": "Image\\ch1\\spine.png"
+  },
+  "0b3ab177-0593-4230-b36e-fb5acbb06856": {
+    "asset": 1749220661492,
+    "meta": 1749220663448,
+    "relativePath": "Image\\ch1\\lake.png"
+  },
+  "78e899ac-be52-4048-9333-8b00e3f10a7d": {
+    "asset": 1749220876572,
+    "meta": 1749220975392,
+    "relativePath": "Script\\Fire.ts"
+  },
+  "1513774c-0e73-4c34-b5d4-c87b7edfb0a4": {
+    "asset": 1749221377537,
+    "meta": 1749221383536,
+    "relativePath": "Script\\Lake.ts"
+  },
+  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
+    "asset": 1749222355284,
+    "meta": 1749222356815,
+    "relativePath": "Script\\Player.ts"
+  },
+  "835a431b-93db-4f4c-85a7-c56e54c70155": {
+    "asset": 1749222353129,
+    "meta": 1749222356998,
+    "relativePath": "Script\\Wind.ts"
   }
 }

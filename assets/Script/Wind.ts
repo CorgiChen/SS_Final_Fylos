@@ -53,6 +53,7 @@ export default class NewClass extends cc.Component {
     private iceEffectTimeout: any = null;
     private iceCreated: boolean = false; // 新增：冰塊是否已經生成
     private iceRemoveTimeout: any = null;
+    private isRising: boolean = true;  // 控制橋的升降狀態
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -132,13 +133,27 @@ export default class NewClass extends cc.Component {
             });
         }
         // 持續推動橋
-        if (this.isBlowing && this.bridgeNode && this.playerNode) {
+        if (this.isBlowing && this.bridgeNode && this.playerNode && this.playerNode.scaleX > 0) {
             const dx = this.bridgeNode.x - this.playerNode.x;
             const dy = this.bridgeNode.y - this.playerNode.y;
             const distance = Math.sqrt(dx * dx + dy * dy);
             cc.log("Bridge distance:", distance);
-            if (distance < 300 && this.bridgeNode.y < 1200 && this.playerNode.scaleX > 0) {
-                this.bridgeNode.y += 100 * dt; // 每秒上升100單位
+            if (distance < 300) {
+                if(this.isRising) {
+                    if(this.bridgeNode.y < 1200) {
+                        this.bridgeNode.y += 50 * dt; // 每秒上升100單位
+                    }
+                    else {
+                        this.isRising = false;
+                    }
+                } else {
+                    if(this.bridgeNode.y > 100) {
+                        this.bridgeNode.y -= 50 * dt; // 每秒下降100單位
+                    }
+                    else {
+                        this.isRising = true;
+                    }
+                }
             }
         }
         if (this.switchNode && this.playerNode.scaleX > 0) {
@@ -150,7 +165,7 @@ export default class NewClass extends cc.Component {
                     const dy = this.bridgeNode.y - this.playerNode.y;
                     const distance = Math.sqrt(dx * dx + dy * dy);
                     cc.log("Bridge distance:", distance);
-                    if (distance < 300 && this.bridgeNode.y < 1000) {
+                    if (distance < 300 && this.bridgeNode.y < 1200) {
                         switchScript.setState(1);
                     }
                     else {
