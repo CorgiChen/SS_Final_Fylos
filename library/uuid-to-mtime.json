@@ -684,11 +684,6 @@
     "meta": 1749173423680,
     "relativePath": "Scene\\Scene002_Home_1F.fire"
   },
-  "e8c03913-4db3-4fa2-b7c2-73bb1526fc48": {
-    "asset": 1749173461964,
-    "meta": 1749173462001,
-    "relativePath": "Scene\\Scene101_Ch1.fire"
-  },
   "22f351ab-b07e-44af-a124-3a4bf77c7419": {
     "asset": 1749136535699,
     "meta": 1749136640711,
@@ -9010,9 +9005,9 @@
     "relativePath": "Script\\VideoPlayerController.ts"
   },
   "11d5a93a-8d62-4621-82d1-d88caa7ff378": {
-    "asset": 1749194226203,
-    "meta": 1749194226227,
-    "relativePath": "Scene\\Scene101_Ch1_2.fire"
+    "asset": 1749197565591,
+    "meta": 1749197573636,
+    "relativePath": "Scene\\Scene101_Ch1.fire"
   },
   "c3feebd7-18a9-41a7-bb1f-e66291ad7abb": {
     "asset": 1749190984504,
@@ -9054,11 +9049,6 @@
     "meta": 1749192169733,
     "relativePath": "Audio\\become_ice.mp3"
   },
-  "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749192469117,
-    "meta": 1749192471667,
-    "relativePath": "Script\\Wind.ts"
-  },
   "1fcd7773-6178-4a62-84ea-a92f2937b649": {
     "asset": 1749190984390,
     "meta": 1749193090279,
@@ -9098,5 +9088,25 @@
     "asset": 1749193984963,
     "meta": 1749194172228,
     "relativePath": "Script\\Transport.ts"
+  },
+  "835a431b-93db-4f4c-85a7-c56e54c70155": {
+    "asset": 1749194424435,
+    "meta": 1749194427059,
+    "relativePath": "Script\\Wind.ts"
+  },
+  "0d71cba2-08ea-4478-8125-a976260c07ad": {
+    "asset": 1749195069982,
+    "meta": 1749195069984,
+    "relativePath": "Prefab"
+  },
+  "5a6f68d8-a57b-4fca-9f59-6f412173c273": {
+    "asset": 1749195085200,
+    "meta": 1749195085220,
+    "relativePath": "Prefab\\DieArea.prefab"
+  },
+  "6c4033e1-e0fc-467c-a5d6-9ec0e74447f2": {
+    "asset": 1749195328901,
+    "meta": 1749195328920,
+    "relativePath": "Prefab\\Ground.prefab"
   }
 }

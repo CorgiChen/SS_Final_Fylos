@@ -137,7 +137,7 @@ export default class NewClass extends cc.Component {
             const dy = this.bridgeNode.y - this.playerNode.y;
             const distance = Math.sqrt(dx * dx + dy * dy);
             cc.log("Bridge distance:", distance);
-            if (distance < 300 && this.bridgeNode.y < 1000) {
+            if (distance < 300 && this.bridgeNode.y < 1200) {
                 this.bridgeNode.y += 100 * dt; // 每秒上升100單位
             }
         }
