@@ -80,7 +80,7 @@ export default class ChatBubbleController extends cc.Component {
         sprite.spriteFrame = this.chatImageSpriteFrames[0];
         
         // 設置父節點為 Canvas
-        this.chatImage.parent = cc.director.getScene().getChildByName('Canvas');
+        this.chatImage.parent = cc.director.getScene().getChildByName('Canvas').getChildByName('Main Camera');
         
         // 初始時隱藏圖片
         this.chatImage.active = false;
@@ -93,7 +93,7 @@ export default class ChatBubbleController extends cc.Component {
     }
 
     private onBubbleClicked() {
-        if (this.chatImage && !PlayerController.wind) {
+        if (this.chatImage && !PlayerController.plant) {
             this.currentImageIndex = 0;
             const sprite = this.chatImage.getComponent(cc.Sprite);
             if (sprite) {
@@ -129,12 +129,6 @@ export default class ChatBubbleController extends cc.Component {
 
     update() {
         if (!this.player || !this.friend || !this.chatBubble || PlayerController.plant) return;
-
-        if (this.followCamera) {
-            const camera = cc.director.getScene().getChildByName('Canvas').getChildByName('Main Camera');
-            this.chatImage.x = camera.x;
-        }
-
         // 將 Vec3 轉換為 Vec2
         const playerPos = new cc.Vec2(this.player.position.x, this.player.position.y);
         const friendPos = new cc.Vec2(this.friend.position.x, this.friend.position.y);

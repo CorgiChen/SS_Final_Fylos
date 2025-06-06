@@ -93,7 +93,7 @@ export default class ChatBubbleController extends cc.Component {
     }
 
     private onBubbleClicked() {
-        if (this.chatImage && !PlayerController.wind) {
+        if (this.chatImage && !PlayerController.fire) {
             this.currentImageIndex = 0;
             const sprite = this.chatImage.getComponent(cc.Sprite);
             if (sprite) {
@@ -148,7 +148,7 @@ export default class ChatBubbleController extends cc.Component {
             this.chatBubble.active = shouldShow;
             if (shouldShow) {
                 // 確保氣泡在最上層
-                this.chatBubble.zIndex = 999;
+                this.chatBubble.zIndex = 100000;
             }
         }
     }

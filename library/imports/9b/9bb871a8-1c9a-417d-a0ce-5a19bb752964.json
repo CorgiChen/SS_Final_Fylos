@@ -1108,7 +1108,9 @@
     "normalBGM": {
       "__uuid__": "3e8986cf-3f36-4762-90ea-b81f67144bd2"
     },
-    "endingBGM": null,
+    "endingBGM": {
+      "__uuid__": "7d5a7704-f738-44dc-9d1e-a7cadc4d4098"
+    },
     "volume": 0.5,
     "loop": true,
     "_id": "cafeSPoctOx7mkoFAginSV"

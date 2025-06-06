@@ -645,8 +645,8 @@
     "relativePath": "Animation\\Campfire.anim"
   },
   "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
-    "asset": 1749235068412,
-    "meta": 1749235068446,
+    "asset": 1749253464642,
+    "meta": 1749253464680,
     "relativePath": "Scene\\Scene000_StartScene.fire"
   },
   "0a3578cb-fc5e-44f8-84ee-a843d1350729": {
@@ -655,8 +655,8 @@
     "relativePath": "Scene\\Scene000_Menu.fire"
   },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749237793736,
-    "meta": 1749237793770,
+    "asset": 1749253805239,
+    "meta": 1749253805265,
     "relativePath": "Scene\\Scene001_Home_Outside.fire"
   },
   "707e6675-23ee-4d85-8219-04b8040d487f": {
@@ -670,8 +670,8 @@
     "relativePath": "Scene\\Scene000_Login.fire"
   },
   "cf8adb0f-9295-4b79-a30d-fe97c0789552": {
-    "asset": 1749237898629,
-    "meta": 1749237898661,
+    "asset": 1749253791849,
+    "meta": 1749253791875,
     "relativePath": "Scene\\Scene001_Home_Outside2.fire"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
@@ -680,8 +680,8 @@
     "relativePath": "Scene\\Scene000_StartClip.fire"
   },
   "28a6a051-e065-40d6-b6ec-0637dc35e36a": {
-    "asset": 1749237909376,
-    "meta": 1749237909402,
+    "asset": 1749253747714,
+    "meta": 1749253747755,
     "relativePath": "Scene\\Scene002_Home_1F.fire"
   },
   "22f351ab-b07e-44af-a124-3a4bf77c7419": {
@@ -690,18 +690,18 @@
     "relativePath": "Scene\\Scene402_EndClip.fire"
   },
   "f00dce83-7448-4989-8fd7-6c1b1cd72e94": {
-    "asset": 1749238058097,
-    "meta": 1749238058125,
+    "asset": 1749253541695,
+    "meta": 1749253541738,
     "relativePath": "Scene\\Scene401_Mine.fire"
   },
   "91ae7c65-2a5f-41c6-b3af-329eef4e96cc": {
-    "asset": 1749136533820,
-    "meta": 1749136640805,
+    "asset": 1749253988175,
+    "meta": 1749253988200,
     "relativePath": "Scene\\Scene403_Chat.fire"
   },
   "0b86d1ee-2cc1-467b-81c9-613f80572d7d": {
-    "asset": 1749237954118,
-    "meta": 1749237954158,
+    "asset": 1749253737422,
+    "meta": 1749253737506,
     "relativePath": "Scene\\Scene002_Home_1F2.fire"
   },
   "c4c80c5d-a1f9-4314-a7b0-73f86b0a2cd8": {
@@ -710,23 +710,23 @@
     "relativePath": "Script\\CameraController.ts"
   },
   "af98db21-ff2c-4e1c-906a-fcbad7b52f8f": {
-    "asset": 1749237781538,
-    "meta": 1749237781569,
+    "asset": 1749253690189,
+    "meta": 1749253690469,
     "relativePath": "Scene\\Scene003_Home_B1_2.fire"
   },
   "bec5c6d7-ee21-4ef9-b5bf-582dba78b2bc": {
-    "asset": 1749238036504,
-    "meta": 1749238036537,
+    "asset": 1749253707112,
+    "meta": 1749253707140,
     "relativePath": "Scene\\Scene004_Subway_2.fire"
   },
   "4bc1cdef-3109-4ed6-a0a2-1f9106487aa8": {
-    "asset": 1749237759683,
-    "meta": 1749237759715,
+    "asset": 1749253679251,
+    "meta": 1749253679277,
     "relativePath": "Scene\\Scene003_Home_B1.fire"
   },
   "f13b8a9a-761e-409e-8126-969896cdf211": {
-    "asset": 1749237981758,
-    "meta": 1749237981786,
+    "asset": 1749253698399,
+    "meta": 1749253698445,
     "relativePath": "Scene\\Scene004_Subway.fire"
   },
   "6a136c93-1300-45cf-83cc-e6ce6adba869": {
@@ -780,8 +780,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Tileset"
   },
   "1f5f3caf-bb64-44e0-bc82-9e28095a3252": {
-    "asset": 1749238071397,
-    "meta": 1749238071429,
+    "asset": 1749253559024,
+    "meta": 1749253559070,
     "relativePath": "Scene\\Scene404_Final.fire"
   },
   "9da7b075-0c49-4298-8dba-54301471ab86": {
@@ -9165,8 +9165,8 @@
     "relativePath": "Script\\Switch.ts"
   },
   "11d5a93a-8d62-4621-82d1-d88caa7ff378": {
-    "asset": 1749237701662,
-    "meta": 1749237701698,
+    "asset": 1749253844895,
+    "meta": 1749253844934,
     "relativePath": "Scene\\Scene101_Ch1.fire"
   },
   "b2da83a2-f543-4d33-a33a-dddc07864eb0": {
@@ -9379,21 +9379,6 @@
     "meta": 1749237035798,
     "relativePath": "Image\\Spell\\Water_1.png"
   },
-  "2f5630bf-b021-4658-887c-c39abd38a0c8": {
-    "asset": 1749237510528,
-    "meta": 1749237677524,
-    "relativePath": "Script\\GainFireController.ts"
-  },
-  "7cbba388-cbcb-483c-8b4e-513501c9bcb5": {
-    "asset": 1749237659975,
-    "meta": 1749237677623,
-    "relativePath": "Script\\GainPlantController.ts"
-  },
-  "b89ade58-ce59-4c91-b236-5acca33d357b": {
-    "asset": 1749237241133,
-    "meta": 1749237677701,
-    "relativePath": "Script\\GainWaterController.ts"
-  },
   "d18f2b1e-2cbb-4930-a893-49d42f3b4142": {
     "asset": 1749238267713,
     "meta": 1749238916776,
@@ -9499,29 +9484,134 @@
     "meta": 1749245486141,
     "relativePath": "Script\\Camere_Ch2.ts"
   },
-  "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749245511950,
-    "meta": 1749245512496,
-    "relativePath": "Script\\Wind.ts"
+  "806c5e7c-a85d-4ae0-9fee-4d5ce9ecfc5f": {
+    "asset": 1749253947936,
+    "meta": 1749253947993,
+    "relativePath": "Scene\\Scene201_Ch2 .fire"
   },
-  "6406f957-f7e3-4677-8afc-ccb66d29ded6": {
-    "asset": 1749245511954,
-    "meta": 1749245512625,
-    "relativePath": "Script\\Water.ts"
+  "b4426a50-9070-4128-b0f0-b6647aa29425": {
+    "asset": 1749247114995,
+    "meta": 1749247115013,
+    "relativePath": "Image\\Chat\\Chat_with_Mystery"
+  },
+  "c9111e51-2556-4209-819b-c1d27ec3458f": {
+    "asset": 1749247026430,
+    "meta": 1749247115442,
+    "relativePath": "Image\\Chat\\Chat_with_Mystery\\002.png"
+  },
+  "8b4748e3-ba43-436d-99da-3daa891d3dee": {
+    "asset": 1749247085700,
+    "meta": 1749247115446,
+    "relativePath": "Image\\Chat\\Chat_with_Mystery\\005.png"
+  },
+  "221f0fdb-cd90-4b03-a8c4-5775a47ef948": {
+    "asset": 1749247011021,
+    "meta": 1749247115449,
+    "relativePath": "Image\\Chat\\Chat_with_Mystery\\001.png"
+  },
+  "2e8cb921-bdb5-47aa-bbdb-f2c179288e58": {
+    "asset": 1749247058975,
+    "meta": 1749247115456,
+    "relativePath": "Image\\Chat\\Chat_with_Mystery\\004.png"
+  },
+  "15fb8e69-94ee-4b2a-898b-79ecb7bbea2f": {
+    "asset": 1749247041196,
+    "meta": 1749247115495,
+    "relativePath": "Image\\Chat\\Chat_with_Mystery\\003.png"
+  },
+  "d04e2d4f-e621-45b9-bbbd-6ad19bdc2a55": {
+    "asset": 1749247110799,
+    "meta": 1749247115512,
+    "relativePath": "Image\\Chat\\Chat_with_Mystery\\006.png"
+  },
+  "adc050cc-ab5d-4e12-8eba-9ee6c625abc4": {
+    "asset": 1749253716524,
+    "meta": 1749253716558,
+    "relativePath": "Scene\\Scene004_Subway_3.fire"
   },
   "f373b3c1-8455-4921-aae7-713d9a97f776": {
-    "asset": 1749245511946,
-    "meta": 1749245512825,
+    "asset": 1749247789988,
+    "meta": 1749247891179,
     "relativePath": "Script\\Flame.ts"
   },
-  "725213ec-efc8-4990-a942-4ce8f559e395": {
-    "asset": 1749245511948,
-    "meta": 1749245512920,
-    "relativePath": "Script\\Wood.ts"
+  "2f5630bf-b021-4658-887c-c39abd38a0c8": {
+    "asset": 1749250410552,
+    "meta": 1749250435902,
+    "relativePath": "Script\\GainFireController.ts"
   },
-  "806c5e7c-a85d-4ae0-9fee-4d5ce9ecfc5f": {
-    "asset": 1749245678555,
-    "meta": 1749246165851,
-    "relativePath": "Scene\\Scene201_Ch2 .fire"
+  "7cbba388-cbcb-483c-8b4e-513501c9bcb5": {
+    "asset": 1749251107087,
+    "meta": 1749251193515,
+    "relativePath": "Script\\GainPlantController.ts"
+  },
+  "b89ade58-ce59-4c91-b236-5acca33d357b": {
+    "asset": 1749251187366,
+    "meta": 1749251193612,
+    "relativePath": "Script\\GainWaterController.ts"
+  },
+  "e264f86d-16ae-456d-bf9b-ee26f822d001": {
+    "asset": 1749253851646,
+    "meta": 1749253851681,
+    "relativePath": "Scene\\Scene101_Ch1_2.fire"
+  },
+  "066464ee-dd76-4c54-9a7c-a6d433717347": {
+    "asset": 1749252194525,
+    "meta": 1749252196253,
+    "relativePath": "Audio\\Wind.mp3"
+  },
+  "9279f538-10de-468e-a3ef-1c0e5f6b2eca": {
+    "asset": 1749252194547,
+    "meta": 1749252196257,
+    "relativePath": "Audio\\Water.mp3"
+  },
+  "c03aa48f-5764-42a8-b211-61fbe7edd141": {
+    "asset": 1749252194547,
+    "meta": 1749252196262,
+    "relativePath": "Audio\\ObtainSkills.mp3"
+  },
+  "77023f5b-da54-476c-9495-90801a5956de": {
+    "asset": 1749252194525,
+    "meta": 1749252196265,
+    "relativePath": "Audio\\Flame.mp3"
+  },
+  "6791b300-3f91-4002-963b-7dcd175c502b": {
+    "asset": 1749252194524,
+    "meta": 1749252196268,
+    "relativePath": "Audio\\Mushroom.mp3"
+  },
+  "71ed1692-21d6-41c7-bdc2-eddb289ab980": {
+    "asset": 1749252194525,
+    "meta": 1749252196287,
+    "relativePath": "Audio\\Lake.mp3"
+  },
+  "10dca341-856b-4cfc-b99b-49c367f0ba2d": {
+    "asset": 1749252194525,
+    "meta": 1749252196291,
+    "relativePath": "Audio\\TreeGrowing.mp3"
+  },
+  "d5203144-83fc-4c6d-bdd7-e65e83323f2b": {
+    "asset": 1749252194525,
+    "meta": 1749252196295,
+    "relativePath": "Audio\\Extinguish.mp3"
+  },
+  "7d5a7704-f738-44dc-9d1e-a7cadc4d4098": {
+    "asset": 1749252194567,
+    "meta": 1749252196304,
+    "relativePath": "Audio\\Win.mp3"
+  },
+  "6406f957-f7e3-4677-8afc-ccb66d29ded6": {
+    "asset": 1749253451887,
+    "meta": 1749253455111,
+    "relativePath": "Script\\Water.ts"
+  },
+  "835a431b-93db-4f4c-85a7-c56e54c70155": {
+    "asset": 1749253372577,
+    "meta": 1749253455354,
+    "relativePath": "Script\\Wind.ts"
+  },
+  "725213ec-efc8-4990-a942-4ce8f559e395": {
+    "asset": 1749253416124,
+    "meta": 1749253455442,
+    "relativePath": "Script\\Wood.ts"
   }
 }

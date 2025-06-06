@@ -41,6 +41,7 @@ export default class Water extends cc.Component {
     private lastMoveDir: number = 1;
     private fireExtinguished: boolean[] = []; // 追蹤每個火焰的狀態
     private lakeAppeared: boolean = false; // 修改：改為單一布爾值
+    waterAudio: any;
 
     start() {
         // 預設隱形
@@ -104,6 +105,10 @@ export default class Water extends cc.Component {
                         anim.play(firstClip.name);
                     }
                 }
+            }
+            // 播放音效
+            if (this.waterAudio) {
+                cc.audioEngine.playEffect(this.waterAudio, false);
             }
             this.isWatering = true;
 

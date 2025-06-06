@@ -1,3 +1,5 @@
+import PlayerController from "./Player";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -70,6 +72,7 @@ export default class Flame extends cc.Component {
     }
 
     update(dt: number) {
+        if (!PlayerController.fire) return;
         if (this.playerNode) {
             const playerScript = this.playerNode.getComponent('Player');
             let moveDir = 1;
@@ -101,6 +104,7 @@ export default class Flame extends cc.Component {
     }
 
     onKeyDown(event: cc.Event.EventKeyboard) {
+        if (!PlayerController.fire) return;
         if (event.keyCode === cc.macro.KEY.e) {
             // 火焰動畫功能
             if (!this.node.active) {
@@ -256,6 +260,7 @@ export default class Flame extends cc.Component {
     }
 
     onKeyUp(event: cc.Event.EventKeyboard) {
+        if (!PlayerController.fire) return;
         if (event.keyCode === cc.macro.KEY.e) {
             this.node.active = false;
             this.isBurning = false;

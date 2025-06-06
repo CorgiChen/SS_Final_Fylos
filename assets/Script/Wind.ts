@@ -59,6 +59,7 @@ export default class NewClass extends cc.Component {
     private lakeIceCreated: boolean = false; // 湖泊冰塊是否已經生成
     private lakeIceRemoveTimeout: any = null; // 湖泊冰塊的移除計時器
     private isRising: boolean = true;  // 控制橋的升降狀態
+    windAudio: any;
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -213,6 +214,11 @@ export default class NewClass extends cc.Component {
                         anim.play(firstClip.name);
                     }
                 }
+            }
+
+            // 播放音效
+            if (this.windAudio) {
+                cc.audioEngine.playEffect(this.windAudio, false);
             }
             this.isBlowing = true;
 

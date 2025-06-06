@@ -223,6 +223,10 @@ var NewClass = /** @class */ (function (_super) {
                     }
                 }
             }
+            // 播放音效
+            if (this.windAudio) {
+                cc.audioEngine.playEffect(this.windAudio, false);
+            }
             this.isBlowing = true;
             // 檢查是否可以讓湖泊結冰
             if (!this.lakeIceCreated && this.lakeNode && this.playerNode && this.lakeIceImageNode) {

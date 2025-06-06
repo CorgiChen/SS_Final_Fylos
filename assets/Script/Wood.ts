@@ -5,6 +5,8 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
+import PlayerController from "./Player";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -41,6 +43,7 @@ export default class Wood extends cc.Component {
     private lastMoveDir: number = 1;
     private treeGrown: boolean = false;
     private currentImageIndex: number = 0;
+    woodAudio: any;
 
     start() {
         // 預設隱形
@@ -54,6 +57,7 @@ export default class Wood extends cc.Component {
     }
 
     update(dt: number) {
+        if (!PlayerController.plant) return;
         if (this.playerNode) {
             const playerScript = this.playerNode.getComponent('Player');
             let moveDir = 1;
@@ -83,6 +87,7 @@ export default class Wood extends cc.Component {
     }
 
     onKeyDown(event: cc.Event.EventKeyboard) {
+        if (!PlayerController.plant) return;
         if (event.keyCode === cc.macro.KEY.r) {
             if (!this.node.active) {
                 this.node.active = true;
@@ -101,6 +106,10 @@ export default class Wood extends cc.Component {
                         anim.play(firstClip.name);
                     }
                 }
+            }
+            // 播放音效
+            if (this.woodAudio) {
+                cc.audioEngine.playEffect(this.woodAudio, false);
             }
             this.isWatering = true;
 
@@ -156,6 +165,7 @@ export default class Wood extends cc.Component {
     }
 
     onKeyUp(event: cc.Event.EventKeyboard) {
+        if (!PlayerController.plant) return;
         if (event.keyCode === cc.macro.KEY.r) {
             this.node.active = false;
             this.isWatering = false;
