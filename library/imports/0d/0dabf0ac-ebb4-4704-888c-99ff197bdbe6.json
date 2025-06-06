@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "torch_2",
+    "texture": "1c023b5a-58c3-417e-8d95-aee7de90dd5a",
+    "atlas": "",
+    "rect": [
+      6,
+      28,
+      60,
+      150
+    ],
+    "offset": [
+      1,
+      -13.5
+    ],
+    "originalSize": [
+      70,
+      179
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

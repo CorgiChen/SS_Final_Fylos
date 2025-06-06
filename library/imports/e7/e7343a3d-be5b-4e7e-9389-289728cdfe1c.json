@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dash_10",
+    "texture": "1a3da25c-108b-4fd5-bffb-998e4cb83554",
+    "atlas": "",
+    "rect": [
+      19,
+      3,
+      423,
+      283
+    ],
+    "offset": [
+      2,
+      25.5
+    ],
+    "originalSize": [
+      457,
+      340
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -137,11 +137,11 @@ export default class NewClass extends cc.Component {
             const dy = this.bridgeNode.y - this.playerNode.y;
             const distance = Math.sqrt(dx * dx + dy * dy);
             cc.log("Bridge distance:", distance);
-            if (distance < 300 && this.bridgeNode.y < 1200) {
+            if (distance < 300 && this.bridgeNode.y < 1200 && this.playerNode.scaleX > 0) {
                 this.bridgeNode.y += 100 * dt; // 每秒上升100單位
             }
         }
-        if (this.switchNode) {
+        if (this.switchNode && this.playerNode.scaleX > 0) {
             const switchScript = this.switchNode.getComponent('Switch');
             if (switchScript) {
                 switchScript.setState(0);

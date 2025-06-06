@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Scene000_Menu",
+    "texture": "20888e47-d01c-4d5a-8a85-51f2adf68205",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1536,
+      864
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1536,
+      864
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

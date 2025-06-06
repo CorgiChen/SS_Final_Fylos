@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "house_lantern_off",
+    "texture": "71282355-b3fb-4c06-aae7-5b9abb15f302",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      112,
+      128
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      112,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

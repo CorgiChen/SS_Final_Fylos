@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "crate",
+    "texture": "e89c71d1-910d-4144-b00c-cc19a8bce112",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      138,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      138,
+      90
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

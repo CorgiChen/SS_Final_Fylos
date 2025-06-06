@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "boss_head_die",
+    "texture": "ef8fdca4-2ef8-4b51-826c-b68ac214bbc8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      213,
+      179
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      213,
+      179
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

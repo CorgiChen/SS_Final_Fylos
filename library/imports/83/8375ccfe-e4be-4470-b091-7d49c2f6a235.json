@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "spider_leg1_l",
+    "texture": "2a320291-0f61-4ae8-b51d-2079380fae06",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      19,
+      52
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      19,
+      52
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

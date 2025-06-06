@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chandelier_2",
+    "texture": "2325847d-afdd-4729-a290-c2df911e1cac",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      116,
+      141
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      116,
+      141
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

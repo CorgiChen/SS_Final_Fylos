@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Signup_1",
+    "texture": "6654c393-25f4-4277-8037-9eb70ebbe848",
+    "atlas": "",
+    "rect": [
+      13,
+      16,
+      238,
+      130
+    ],
+    "offset": [
+      0.5,
+      6
+    ],
+    "originalSize": [
+      263,
+      174
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

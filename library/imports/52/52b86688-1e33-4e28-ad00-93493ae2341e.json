@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dungeon_door_closed",
+    "texture": "2c692fcd-0f83-41cf-a146-aab47bc5c61d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      273,
+      238
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      273,
+      238
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

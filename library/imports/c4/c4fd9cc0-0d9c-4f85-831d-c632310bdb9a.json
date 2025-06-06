@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "log_2",
+    "texture": "ea64d56c-2a74-4e84-84b5-d877415aaf7e",
+    "atlas": "",
+    "rect": [
+      10,
+      12,
+      27,
+      40
+    ],
+    "offset": [
+      -0.5,
+      1
+    ],
+    "originalSize": [
+      48,
+      66
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

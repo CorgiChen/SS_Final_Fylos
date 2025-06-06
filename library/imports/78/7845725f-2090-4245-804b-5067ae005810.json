@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "button_signup_hover",
+    "texture": "b1114987-c96a-4c9d-ad35-6de69bd440ff",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      200,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      68
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

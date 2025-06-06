@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lever_01",
+    "texture": "c16472b7-7dd9-4512-91ed-c3cebfdad85a",
+    "atlas": "",
+    "rect": [
+      10,
+      23,
+      136,
+      89
+    ],
+    "offset": [
+      -10,
+      -6
+    ],
+    "originalSize": [
+      176,
+      123
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

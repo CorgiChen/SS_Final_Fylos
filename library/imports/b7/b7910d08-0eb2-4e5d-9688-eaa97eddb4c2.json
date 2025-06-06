@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "fall",
+    "texture": "29933b52-6f56-4184-aaca-e01acce1a603",
+    "atlas": "",
+    "rect": [
+      1,
+      7,
+      131,
+      154
+    ],
+    "offset": [
+      -4.5,
+      -2.5
+    ],
+    "originalSize": [
+      142,
+      163
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

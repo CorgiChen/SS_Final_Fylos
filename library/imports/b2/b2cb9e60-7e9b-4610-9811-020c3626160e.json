@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chain",
+    "texture": "483a26ee-92ff-4a8f-8c53-d428863031be",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      72,
+      236
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      72,
+      236
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

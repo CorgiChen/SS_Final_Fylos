@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skeleton_mage_head",
+    "texture": "6ae8718a-c98a-475b-a9c1-e33433ffa0b1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      110,
+      120
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      110,
+      120
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

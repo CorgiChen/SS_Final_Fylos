@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "spider_den",
+    "texture": "9f638942-7f2b-467d-8f16-be619acda35a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      208,
+      153
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      208,
+      153
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

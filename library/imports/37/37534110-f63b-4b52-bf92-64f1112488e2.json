@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "crystal_4",
+    "texture": "f435b838-a52b-4ca1-a728-2dd1696beeef",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      76,
+      107
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      76,
+      108
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

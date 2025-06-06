@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bee_sting",
+    "texture": "3e6bb983-a6c9-41f5-b84e-3177041c8d40",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      21,
+      20
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      22,
+      20
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

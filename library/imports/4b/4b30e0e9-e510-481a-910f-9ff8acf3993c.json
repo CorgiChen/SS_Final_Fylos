@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Chat",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.9,
+  "sample": 10,
+  "speed": 0.5,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "90ed5047-cf57-496f-aa1e-42d61faafe56"
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__uuid__": "059516db-4a61-4d87-aa49-8ef5d3a95bf9"
+            }
+          },
+          {
+            "frame": 1.2,
+            "value": {
+              "__uuid__": "f774ca11-792d-4476-81c1-57eaeebdc671"
+            }
+          },
+          {
+            "frame": 1.8,
+            "value": {
+              "__uuid__": "90ed5047-cf57-496f-aa1e-42d61faafe56"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

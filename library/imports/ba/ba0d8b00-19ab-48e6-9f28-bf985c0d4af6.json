@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "spider_head_die",
+    "texture": "03d80e46-7b51-4367-be24-4817fcd5edc3",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      65,
+      56
+    ],
+    "offset": [
+      0,
+      2.5
+    ],
+    "originalSize": [
+      65,
+      63
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

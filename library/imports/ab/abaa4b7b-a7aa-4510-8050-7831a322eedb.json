@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shed_inside",
+    "texture": "dfc5425d-1679-4e8b-a049-13307eec427b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      719,
+      435
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      719,
+      435
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

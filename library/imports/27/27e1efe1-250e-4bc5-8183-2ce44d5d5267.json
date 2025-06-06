@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "boss_hand_r",
+    "texture": "e7980f0d-438e-4c51-a529-8feac0926220",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      82,
+      72
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      84,
+      72
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

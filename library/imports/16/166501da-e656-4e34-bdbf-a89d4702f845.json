@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rise",
+    "texture": "16505ddf-7c8c-4fba-af80-264222294a95",
+    "atlas": "",
+    "rect": [
+      5,
+      13,
+      149,
+      154
+    ],
+    "offset": [
+      -16.5,
+      -4.5
+    ],
+    "originalSize": [
+      192,
+      171
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

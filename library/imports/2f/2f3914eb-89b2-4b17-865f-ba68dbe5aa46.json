@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "house_sign_3",
+    "texture": "15e43962-21b7-46c0-b978-057bdec26b00",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      133,
+      145
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      145
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

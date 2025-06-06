@@ -655,8 +655,8 @@
     "relativePath": "Scene\\Scene000_Menu.fire"
   },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749171179687,
-    "meta": 1749171179723,
+    "asset": 1749199528897,
+    "meta": 1749199528917,
     "relativePath": "Scene\\Scene001_Home_Outside.fire"
   },
   "707e6675-23ee-4d85-8219-04b8040d487f": {
@@ -670,8 +670,8 @@
     "relativePath": "Scene\\Scene000_Login.fire"
   },
   "cf8adb0f-9295-4b79-a30d-fe97c0789552": {
-    "asset": 1749171190756,
-    "meta": 1749171190815,
+    "asset": 1749199532729,
+    "meta": 1749199532744,
     "relativePath": "Scene\\Scene001_Home_Outside2.fire"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
@@ -2194,11 +2194,6 @@
     "meta": 1749136645991,
     "relativePath": "Image\\Chat\\Chat_with_GOD\\001.png"
   },
-  "08e01055-3f89-4941-b87c-b7210cbe3681": {
-    "asset": 1749112210409,
-    "meta": 1749136646021,
-    "relativePath": "Image\\Chat\\Chat_with_GOD\\002.png"
-  },
   "c609d1be-6b6d-4c10-bf69-2835912ee694": {
     "asset": 1749112229341,
     "meta": 1749136646055,
@@ -2213,11 +2208,6 @@
     "asset": 1749135552621,
     "meta": 1749136646081,
     "relativePath": "Image\\Start\\PressStart\\Leaderboard_1.png"
-  },
-  "8535e2d4-1285-4420-9983-7c0235422890": {
-    "asset": 1749112252182,
-    "meta": 1749136646118,
-    "relativePath": "Image\\Chat\\Chat_with_GOD\\004.png"
   },
   "d8ebe520-e836-460a-8093-6ff2b6e11ee5": {
     "asset": 1749085709224,
@@ -9005,8 +8995,8 @@
     "relativePath": "Script\\VideoPlayerController.ts"
   },
   "11d5a93a-8d62-4621-82d1-d88caa7ff378": {
-    "asset": 1749197565591,
-    "meta": 1749197573636,
+    "asset": 1749199488324,
+    "meta": 1749199488348,
     "relativePath": "Scene\\Scene101_Ch1.fire"
   },
   "c3feebd7-18a9-41a7-bb1f-e66291ad7abb": {
@@ -9089,11 +9079,6 @@
     "meta": 1749194172228,
     "relativePath": "Script\\Transport.ts"
   },
-  "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749194424435,
-    "meta": 1749194427059,
-    "relativePath": "Script\\Wind.ts"
-  },
   "0d71cba2-08ea-4478-8125-a976260c07ad": {
     "asset": 1749195069982,
     "meta": 1749195069984,
@@ -9108,5 +9093,20 @@
     "asset": 1749195328901,
     "meta": 1749195328920,
     "relativePath": "Prefab\\Ground.prefab"
+  },
+  "8535e2d4-1285-4420-9983-7c0235422890": {
+    "asset": 1749199019844,
+    "meta": 1749199060240,
+    "relativePath": "Image\\Chat\\Chat_with_GOD\\004.png"
+  },
+  "08e01055-3f89-4941-b87c-b7210cbe3681": {
+    "asset": 1749198930022,
+    "meta": 1749199060243,
+    "relativePath": "Image\\Chat\\Chat_with_GOD\\002.png"
+  },
+  "835a431b-93db-4f4c-85a7-c56e54c70155": {
+    "asset": 1749199276535,
+    "meta": 1749199277683,
+    "relativePath": "Script\\Wind.ts"
   }
 }

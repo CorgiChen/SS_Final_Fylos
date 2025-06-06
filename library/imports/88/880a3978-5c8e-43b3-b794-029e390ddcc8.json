@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skeleton_mage_arm_l",
+    "texture": "e291261f-3385-4b1f-93e8-78d202a30ce5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      50,
+      171
+    ],
+    "offset": [
+      0,
+      13
+    ],
+    "originalSize": [
+      50,
+      197
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "die_05",
+    "texture": "5b0254f5-4faa-4a71-a1be-b228db2df1e7",
+    "atlas": "",
+    "rect": [
+      12,
+      77,
+      309,
+      88
+    ],
+    "offset": [
+      3,
+      -17.5
+    ],
+    "originalSize": [
+      327,
+      207
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

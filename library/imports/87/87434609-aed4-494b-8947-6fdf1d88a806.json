@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Trans",
+    "texture": "4f94d03e-c82b-4e41-a8eb-11100de8683c",
+    "atlas": "",
+    "rect": [
+      1535,
+      863,
+      1,
+      1
+    ],
+    "offset": [
+      767.5,
+      -431.5
+    ],
+    "originalSize": [
+      1536,
+      864
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

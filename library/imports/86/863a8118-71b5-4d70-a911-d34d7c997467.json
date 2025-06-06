@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "boss_helmet",
+    "texture": "5fb532e9-6d93-447c-ac24-5d0b5e1ba6b3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      213,
+      159
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      213,
+      159
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "house_inside_1",
+    "texture": "5527f375-d030-4b56-a658-9df8a917c304",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1121,
+      508
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1121,
+      508
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

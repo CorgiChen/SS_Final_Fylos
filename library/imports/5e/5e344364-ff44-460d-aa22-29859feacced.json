@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "timber_brace_2",
+    "texture": "23339186-a92b-46f4-9851-4c502c2b96db",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      86,
+      274
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      86,
+      274
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
