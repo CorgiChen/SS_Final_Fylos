@@ -352,14 +352,4 @@ export default class PlayerController extends cc.Component {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     }
-
-    onCollisionEnter(other, self) {
-        cc.log('onCollisionEnter:', other.node.name);
-        if (other.node.name === "JumpArea") {
-            cc.tween(self.node)
-                .to(0.5, { y: self.node.y + 500 })
-                .start();
-            cc.log('JumpArea triggered, moving up 500');
-        }
-    }
 }

@@ -645,13 +645,13 @@
     "relativePath": "Animation\\Campfire.anim"
   },
   "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
-    "asset": 1749171163959,
-    "meta": 1749171164006,
+    "asset": 1749224611755,
+    "meta": 1749224611792,
     "relativePath": "Scene\\Scene000_StartScene.fire"
   },
   "0a3578cb-fc5e-44f8-84ee-a843d1350729": {
-    "asset": 1749171208970,
-    "meta": 1749171209004,
+    "asset": 1749229221380,
+    "meta": 1749229221410,
     "relativePath": "Scene\\Scene000_Menu.fire"
   },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
@@ -8969,16 +8969,6 @@
     "meta": 1749188167353,
     "relativePath": "Script\\firebase.js"
   },
-  "72e9dcfd-c19a-4e9b-8121-589f577db762": {
-    "asset": 1749188895994,
-    "meta": 1749188905646,
-    "relativePath": "Script\\Signup.ts"
-  },
-  "dba57c00-9d03-478e-86b4-f251f1bbaf58": {
-    "asset": 1749188997261,
-    "meta": 1749189000680,
-    "relativePath": "Script\\Login.ts"
-  },
   "dca4788a-9300-48d4-8533-3dafc7a11bbf": {
     "asset": 1749189647843,
     "meta": 1749189659655,
@@ -8988,16 +8978,6 @@
     "asset": 1749189653411,
     "meta": 1749189659709,
     "relativePath": "Script\\VideoPlayerController.ts"
-  },
-  "11d5a93a-8d62-4621-82d1-d88caa7ff378": {
-    "asset": 1749208442328,
-    "meta": 1749208442366,
-    "relativePath": "Scene\\Scene101_Ch1.fire"
-  },
-  "c3feebd7-18a9-41a7-bb1f-e66291ad7abb": {
-    "asset": 1749190984504,
-    "meta": 1749191294932,
-    "relativePath": "Script\\Switch.ts"
   },
   "78235937-eba5-4e77-bfba-467a0e000b3e": {
     "asset": 1749191606315,
@@ -9179,24 +9159,199 @@
     "meta": 1749220663448,
     "relativePath": "Image\\ch1\\lake.png"
   },
+  "dba57c00-9d03-478e-86b4-f251f1bbaf58": {
+    "asset": 1749224693848,
+    "meta": 1749224717658,
+    "relativePath": "Script\\Login.ts"
+  },
+  "378afc7a-05ee-4750-a6a9-c5ca942364f5": {
+    "asset": 1749227015848,
+    "meta": 1749227045060,
+    "relativePath": "Script\\ProgressManager.ts"
+  },
+  "72e9dcfd-c19a-4e9b-8121-589f577db762": {
+    "asset": 1749227042495,
+    "meta": 1749227045113,
+    "relativePath": "Script\\Signup.ts"
+  },
   "78e899ac-be52-4048-9333-8b00e3f10a7d": {
-    "asset": 1749220876572,
-    "meta": 1749220975392,
+    "asset": 1749224504000,
+    "meta": 1749229168617,
     "relativePath": "Script\\Fire.ts"
   },
   "1513774c-0e73-4c34-b5d4-c87b7edfb0a4": {
-    "asset": 1749221377537,
-    "meta": 1749221383536,
+    "asset": 1749225408000,
+    "meta": 1749229168657,
     "relativePath": "Script\\Lake.ts"
   },
   "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749222355284,
-    "meta": 1749222356815,
+    "asset": 1749229166562,
+    "meta": 1749229168863,
     "relativePath": "Script\\Player.ts"
   },
+  "c3feebd7-18a9-41a7-bb1f-e66291ad7abb": {
+    "asset": 1749190984000,
+    "meta": 1749229168917,
+    "relativePath": "Script\\Switch.ts"
+  },
   "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749222353129,
-    "meta": 1749222356998,
+    "asset": 1749228410000,
+    "meta": 1749229169153,
     "relativePath": "Script\\Wind.ts"
+  },
+  "6406f957-f7e3-4677-8afc-ccb66d29ded6": {
+    "asset": 1749225610000,
+    "meta": 1749229169237,
+    "relativePath": "Script\\Water.ts"
+  },
+  "11d5a93a-8d62-4621-82d1-d88caa7ff378": {
+    "asset": 1749228422000,
+    "meta": 1749229169258,
+    "relativePath": "Scene\\Scene101_Ch1.fire"
+  },
+  "aa7f8c99-0a3e-43fa-a41b-3e2f32090453": {
+    "asset": 1749229858894,
+    "meta": 1749229858921,
+    "relativePath": "Prefab\\Campfire.prefab"
+  },
+  "b2da83a2-f543-4d33-a33a-dddc07864eb0": {
+    "asset": 1749230324792,
+    "meta": 1749230446759,
+    "relativePath": "Animation\\Log2.anim"
+  },
+  "88f0cd5c-79e9-4c02-a9e7-cccb23508b84": {
+    "asset": 1749230446737,
+    "meta": 1749230446764,
+    "relativePath": "Image\\logSkill"
+  },
+  "302dd336-1eb1-4752-a5bb-cc2d30af91f2": {
+    "asset": 1749229788575,
+    "meta": 1749230446767,
+    "relativePath": "Image\\logSkill\\fireSkill"
+  },
+  "c975e00d-001d-4c27-af10-6a6759fbe095": {
+    "asset": 1749229788331,
+    "meta": 1749230446769,
+    "relativePath": "Image\\logSkill\\logSkill"
+  },
+  "f27b6751-6bcf-4aa7-96e1-7c9b1292953a": {
+    "asset": 1749230324736,
+    "meta": 1749230446797,
+    "relativePath": "Animation\\Log2.anim\\Fire2.anim"
+  },
+  "15bbeab5-5045-4755-bd55-871cc4b272cb": {
+    "asset": 1749230324668,
+    "meta": 1749230446801,
+    "relativePath": "Animation\\Log2.anim\\Fire1.anim"
+  },
+  "3825a291-b402-4c47-ac2e-5790e625540a": {
+    "asset": 1749230324772,
+    "meta": 1749230446805,
+    "relativePath": "Animation\\Log2.anim\\Log1.anim"
+  },
+  "4e3a93f5-44e8-4ca2-824e-9f21e486c4bc": {
+    "asset": 1749230324798,
+    "meta": 1749230446809,
+    "relativePath": "Animation\\Log2.anim\\Log2.anim"
+  },
+  "850d3b45-f6b4-4fbd-a876-cc6ea80b5417": {
+    "asset": 1749229788379,
+    "meta": 1749230446946,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-1.png"
+  },
+  "156abb6b-837c-4cba-9e6b-f73f684b4404": {
+    "asset": 1749229788406,
+    "meta": 1749230446951,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-2.png"
+  },
+  "4f363a97-6490-4b69-b47b-f012a918aa6b": {
+    "asset": 1749229788358,
+    "meta": 1749230446956,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-0.png"
+  },
+  "df75b976-1bc0-442d-a418-e95668b61f52": {
+    "asset": 1749229788449,
+    "meta": 1749230446959,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-4.png"
+  },
+  "642c974c-4467-43e7-b20a-ff3fd33fd4d2": {
+    "asset": 1749229788521,
+    "meta": 1749230446995,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-7.png"
+  },
+  "83c4acd4-e3a5-44f7-bc5b-1b29b1a00a0b": {
+    "asset": 1749229788489,
+    "meta": 1749230446998,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-6.png"
+  },
+  "3f32ded2-0294-447e-bafa-0ca88058e632": {
+    "asset": 1749229788428,
+    "meta": 1749230447002,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-3.png"
+  },
+  "2ad00eb3-e467-4b96-ad88-3aac8f4c3fc4": {
+    "asset": 1749229788568,
+    "meta": 1749230447005,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-9.png"
+  },
+  "21cbdc30-9b71-43c5-a823-246109b81ec3": {
+    "asset": 1749229788118,
+    "meta": 1749230447016,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-1.png"
+  },
+  "e3f56967-156d-405e-bb1a-4b751795dfbc": {
+    "asset": 1749229788544,
+    "meta": 1749230447019,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-8.png"
+  },
+  "7fe61911-be64-439f-b19d-53d5a3414c61": {
+    "asset": 1749229788468,
+    "meta": 1749230447024,
+    "relativePath": "Image\\logSkill\\fireSkill\\cc4295b9-217f-4678-bb55-638d2398f5bf-5.png"
+  },
+  "a95e05b6-2fdd-4fe2-b434-4878c4aced26": {
+    "asset": 1749229788074,
+    "meta": 1749230447032,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-0.png"
+  },
+  "2f4de156-4497-4cd9-b258-06f15befcd52": {
+    "asset": 1749229788148,
+    "meta": 1749230447066,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-2.png"
+  },
+  "143bd69b-eb53-4c66-b469-9465cb205eb9": {
+    "asset": 1749229788225,
+    "meta": 1749230447070,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-5.png"
+  },
+  "d07505c7-0cca-467c-a3c2-b9165885e8c0": {
+    "asset": 1749229788176,
+    "meta": 1749230447073,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-3.png"
+  },
+  "253c1a3a-958f-4313-8eea-32fb0b238b37": {
+    "asset": 1749229788202,
+    "meta": 1749230447076,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-4.png"
+  },
+  "affccbfe-c5b7-4d28-a67d-cd880694cd9e": {
+    "asset": 1749229788281,
+    "meta": 1749230447124,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-7.png"
+  },
+  "ee9ede43-1d8a-480d-a532-6e6bf696bbe0": {
+    "asset": 1749229788325,
+    "meta": 1749230447127,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-9.png"
+  },
+  "1de2d034-5d80-4c8c-a2a6-6b084a988a49": {
+    "asset": 1749229788304,
+    "meta": 1749230447129,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-8.png"
+  },
+  "28d63410-8d8e-4560-b00f-1b9f09562fec": {
+    "asset": 1749229788251,
+    "meta": 1749230447131,
+    "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-6.png"
   }
 }

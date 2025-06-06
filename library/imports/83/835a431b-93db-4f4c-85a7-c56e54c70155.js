@@ -43,16 +43,21 @@ var NewClass = /** @class */ (function (_super) {
         _this.crateNodes = [];
         _this.regionNode = null; // Region 節點
         _this.groundNode = null; // Ground 節點
-        _this.iceImageNode = null; // 新增：冰塊圖片節點
+        _this.iceImageNode = null; // 原本的冰塊圖片節點
+        _this.lakeIceImageNode = null; // 新增：湖泊的冰塊圖片節點
+        _this.lakeNode = null; // 湖泊節點
+        _this.groundNode2 = null; // 湖泊的Ground節點
         _this.bridgeNode = null;
         _this.switchNode = null;
-        _this.becomeIceAudio = null; // 新增：冰塊音效
+        _this.becomeIceAudio = null; // 冰塊音效
         _this.animation_idx = 0;
         _this.lastMoveDir = 1;
         _this.isBlowing = false;
         _this.iceEffectTimeout = null;
-        _this.iceCreated = false; // 新增：冰塊是否已經生成
+        _this.iceCreated = false; // 原本的冰塊是否已經生成
         _this.iceRemoveTimeout = null;
+        _this.lakeIceCreated = false; // 湖泊冰塊是否已經生成
+        _this.lakeIceRemoveTimeout = null; // 湖泊冰塊的移除計時器
         _this.isRising = true; // 控制橋的升降狀態
         return _this;
         // update (dt) {}
@@ -76,9 +81,23 @@ var NewClass = /** @class */ (function (_super) {
             if (boxCollider)
                 boxCollider.enabled = false;
         }
-        // 新增：遊戲開始時隱藏冰塊圖片
+        // 遊戲開始時隱藏冰塊圖片
         if (this.iceImageNode) {
             this.iceImageNode.active = false;
+        }
+        // 遊戲開始時隱藏湖泊冰塊圖片
+        if (this.lakeIceImageNode) {
+            this.lakeIceImageNode.active = false;
+        }
+        // 遊戲開始時禁用湖泊的Ground節點
+        if (this.groundNode2) {
+            this.groundNode2.active = false;
+            var rigidBody = this.groundNode2.getComponent(cc.RigidBody);
+            if (rigidBody)
+                rigidBody.enabled = false;
+            var boxCollider = this.groundNode2.getComponent(cc.PhysicsBoxCollider);
+            if (boxCollider)
+                boxCollider.enabled = false;
         }
     };
     NewClass.prototype.update = function (dt) {
@@ -146,7 +165,7 @@ var NewClass = /** @class */ (function (_super) {
             if (distance < 300) {
                 if (this.isRising) {
                     if (this.bridgeNode.y < 1200) {
-                        this.bridgeNode.y += 50 * dt; // 每秒上升100單位
+                        this.bridgeNode.y += 80 * dt; // 每秒上升100單位
                     }
                     else {
                         this.isRising = false;
@@ -154,7 +173,7 @@ var NewClass = /** @class */ (function (_super) {
                 }
                 else {
                     if (this.bridgeNode.y > 100) {
-                        this.bridgeNode.y -= 50 * dt; // 每秒下降100單位
+                        this.bridgeNode.y -= 80 * dt; // 每秒下降100單位
                     }
                     else {
                         this.isRising = true;
@@ -184,7 +203,7 @@ var NewClass = /** @class */ (function (_super) {
     NewClass.prototype.onKeyDown = function (event) {
         var _this = this;
         if (event.keyCode === cc.macro.KEY.f) {
-            // 風動畫和吹箱子功能（這裡不判斷 iceCreated）
+            // 風動畫和吹箱子功能
             if (!this.node.active) {
                 this.node.active = true;
                 // 播放第一個動畫
@@ -205,9 +224,79 @@ var NewClass = /** @class */ (function (_super) {
                 }
             }
             this.isBlowing = true;
-            // 只有冰塊生成這段要判斷 iceCreated
-            if (!this.iceCreated &&
-                this.regionNode && this.groundNode && this.playerNode && this.iceImageNode) {
+            // 檢查是否可以讓湖泊結冰
+            if (!this.lakeIceCreated && this.lakeNode && this.playerNode && this.lakeIceImageNode) {
+                // 檢查湖泊是否可見
+                if (this.lakeNode.active) {
+                    var lakePos = this.lakeNode.convertToWorldSpaceAR(cc.v2(0, 0));
+                    var playerPos = this.playerNode.convertToWorldSpaceAR(cc.v2(0, 0));
+                    var dx = lakePos.x - playerPos.x;
+                    var dy = lakePos.y - playerPos.y;
+                    var distance = Math.sqrt(dx * dx + dy * dy);
+                    if ((distance < 500 && dx > 0 && this.playerNode.scaleX > 0) ||
+                        (distance < 500 && dx < 0 && this.playerNode.scaleX < 0)) {
+                        // 顯示湖泊冰塊圖片
+                        this.lakeIceImageNode.active = true;
+                        // 啟用湖泊的Ground節點
+                        if (this.groundNode2) {
+                            this.groundNode2.active = true;
+                            var rigidBody = this.groundNode2.getComponent(cc.RigidBody);
+                            if (rigidBody)
+                                rigidBody.enabled = true;
+                            var boxCollider = this.groundNode2.getComponent(cc.PhysicsBoxCollider);
+                            if (boxCollider)
+                                boxCollider.enabled = true;
+                        }
+                        // 生成時播放音效
+                        if (this.becomeIceAudio) {
+                            cc.audioEngine.playEffect(this.becomeIceAudio, false);
+                        }
+                        var sprite = this.lakeIceImageNode.getComponent(cc.Sprite);
+                        if (sprite) {
+                            sprite.node.opacity = 0;
+                            cc.tween(sprite.node)
+                                .to(1.5, { opacity: 255 })
+                                .start();
+                        }
+                        this.lakeIceCreated = true;
+                        // 5秒後淡出並隱藏湖泊冰塊
+                        if (this.lakeIceRemoveTimeout) {
+                            clearTimeout(this.lakeIceRemoveTimeout);
+                        }
+                        this.lakeIceRemoveTimeout = setTimeout(function () {
+                            var sprite = _this.lakeIceImageNode.getComponent(cc.Sprite);
+                            if (sprite) {
+                                cc.tween(sprite.node)
+                                    .to(1.5, { opacity: 0 })
+                                    .call(function () {
+                                    _this.lakeIceImageNode.active = false;
+                                })
+                                    .start();
+                            }
+                            else {
+                                _this.lakeIceImageNode.active = false;
+                            }
+                            // 禁用湖泊的Ground節點
+                            if (_this.groundNode2) {
+                                _this.groundNode2.active = false;
+                                var rigidBody = _this.groundNode2.getComponent(cc.RigidBody);
+                                if (rigidBody)
+                                    rigidBody.enabled = false;
+                                var boxCollider = _this.groundNode2.getComponent(cc.PhysicsBoxCollider);
+                                if (boxCollider)
+                                    boxCollider.enabled = false;
+                            }
+                            // 消失時也播放音效
+                            if (_this.becomeIceAudio) {
+                                cc.audioEngine.playEffect(_this.becomeIceAudio, false);
+                            }
+                            _this.lakeIceCreated = false;
+                        }, 5000);
+                    }
+                }
+            }
+            // 原有的冰塊生成邏輯
+            if (!this.iceCreated && this.regionNode && this.groundNode && this.playerNode && this.iceImageNode) {
                 // 以世界座標計算距離
                 var regionPos = this.regionNode.convertToWorldSpaceAR(cc.v2(0, 0));
                 var playerPos = this.playerNode.convertToWorldSpaceAR(cc.v2(0, 0));
@@ -321,6 +410,15 @@ var NewClass = /** @class */ (function (_super) {
     __decorate([
         property(cc.Node)
     ], NewClass.prototype, "iceImageNode", void 0);
+    __decorate([
+        property(cc.Node)
+    ], NewClass.prototype, "lakeIceImageNode", void 0);
+    __decorate([
+        property(cc.Node)
+    ], NewClass.prototype, "lakeNode", void 0);
+    __decorate([
+        property(cc.Node)
+    ], NewClass.prototype, "groundNode2", void 0);
     __decorate([
         property({ type: cc.Node })
     ], NewClass.prototype, "bridgeNode", void 0);

@@ -27,10 +27,10 @@ export default class NewClass extends cc.Component {
     }
 
     private onKeyDown(event: cc.Event.EventKeyboard) {
-        // 測試用，按G可以讓火熄滅
-        if (event.keyCode === cc.macro.KEY.g) {
-            this.fadeOutAndDeactivate();
-        }
+        // // 測試用，按G可以讓火熄滅
+        // if (event.keyCode === cc.macro.KEY.g) {
+        //     this.fadeOutAndDeactivate();
+        // }
     }
 
     start () {

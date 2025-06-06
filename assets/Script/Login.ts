@@ -8,6 +8,8 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
+import ProgressManager from "./ProgressManager";
+
 const { ccclass, property } = cc._decorator;
 
 // Import firebase if using modules, or declare it if included via script tag
@@ -60,7 +62,7 @@ export default class Login extends cc.Component {
     private loginNow() {
         const email = cc.find("small_canvas_bg/email/TEXT_LABEL").getComponent(cc.Label).string;
         const password = cc.find("small_canvas_bg/password/TEXT_LABEL").getComponent(cc.Label).string;
-
+        ProgressManager.instance.setUserEmail(email);
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(() => {
                 alert("Login Success");

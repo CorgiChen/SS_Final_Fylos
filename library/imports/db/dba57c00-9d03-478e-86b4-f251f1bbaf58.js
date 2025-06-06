@@ -32,6 +32,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var ProgressManager_1 = require("./ProgressManager");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Login = /** @class */ (function (_super) {
     __extends(Login, _super);
@@ -62,6 +63,7 @@ var Login = /** @class */ (function (_super) {
     Login.prototype.loginNow = function () {
         var email = cc.find("small_canvas_bg/email/TEXT_LABEL").getComponent(cc.Label).string;
         var password = cc.find("small_canvas_bg/password/TEXT_LABEL").getComponent(cc.Label).string;
+        ProgressManager_1.default.instance.setUserEmail(email);
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(function () {
             alert("Login Success");

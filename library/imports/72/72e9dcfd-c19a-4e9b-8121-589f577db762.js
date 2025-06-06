@@ -79,11 +79,12 @@ var Signup = /** @class */ (function (_super) {
             .then(function (result) {
             // Store user data in Firebase Database
             var usersRef = firebase.database().ref('user_list/');
-            var emailKey = email.replace(".", "-");
+            var emailKey = email.replace(/\./g, "-").replace(/@/g, "-AT-");
             usersRef.child(emailKey).set({
                 username: username,
                 email: email,
-                max_stage: "Scene001_Home_Outside",
+                max_stage: "default",
+                current_stage: "default",
                 death_count: 0,
                 play_time: 0
             });

@@ -33,10 +33,10 @@ export default class NewClass extends cc.Component {
     }
 
     private onKeyDown(event: cc.Event.EventKeyboard) {
-        // 測試用，按H可以讓水出現
-        if (event.keyCode === cc.macro.KEY.h) {
-            this.fadeInAndActivate();
-        }
+        // // 測試用，按H可以讓水出現
+        // if (event.keyCode === cc.macro.KEY.h) {
+        //     this.fadeInAndActivate();
+        // }
     }
 
     /**

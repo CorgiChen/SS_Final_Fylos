@@ -347,15 +347,6 @@ var PlayerController = /** @class */ (function (_super) {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     };
-    PlayerController.prototype.onCollisionEnter = function (other, self) {
-        cc.log('onCollisionEnter:', other.node.name);
-        if (other.node.name === "JumpArea") {
-            cc.tween(self.node)
-                .to(0.5, { y: self.node.y + 500 })
-                .start();
-            cc.log('JumpArea triggered, moving up 500');
-        }
-    };
     __decorate([
         property(cc.AudioClip)
     ], PlayerController.prototype, "footstepSound", void 0);

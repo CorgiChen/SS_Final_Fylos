@@ -36,23 +36,28 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     groundNode: cc.Node = null; // Ground 節點
     @property(cc.Node)
-    iceImageNode: cc.Node = null; // 新增：冰塊圖片節點
-
+    iceImageNode: cc.Node = null; // 原本的冰塊圖片節點
+    @property(cc.Node)
+    lakeIceImageNode: cc.Node = null; // 新增：湖泊的冰塊圖片節點
+    @property(cc.Node)
+    lakeNode: cc.Node = null; // 湖泊節點
+    @property(cc.Node)
+    groundNode2: cc.Node = null; // 湖泊的Ground節點
     @property({ type: cc.Node })
     bridgeNode: cc.Node = null;
-
     @property({ type: cc.Node })
     switchNode: cc.Node = null;
-
     @property({ type: cc.AudioClip })
-    becomeIceAudio: cc.AudioClip = null; // 新增：冰塊音效
+    becomeIceAudio: cc.AudioClip = null; // 冰塊音效
 
     private animation_idx: number = 0;
     private lastMoveDir: number = 1;
     private isBlowing: boolean = false;
     private iceEffectTimeout: any = null;
-    private iceCreated: boolean = false; // 新增：冰塊是否已經生成
+    private iceCreated: boolean = false; // 原本的冰塊是否已經生成
     private iceRemoveTimeout: any = null;
+    private lakeIceCreated: boolean = false; // 湖泊冰塊是否已經生成
+    private lakeIceRemoveTimeout: any = null; // 湖泊冰塊的移除計時器
     private isRising: boolean = true;  // 控制橋的升降狀態
 
     // LIFE-CYCLE CALLBACKS:
@@ -73,9 +78,21 @@ export default class NewClass extends cc.Component {
             const boxCollider = this.groundNode.getComponent(cc.PhysicsBoxCollider);
             if (boxCollider) boxCollider.enabled = false;
         }
-        // 新增：遊戲開始時隱藏冰塊圖片
+        // 遊戲開始時隱藏冰塊圖片
         if (this.iceImageNode) {
             this.iceImageNode.active = false;
+        }
+        // 遊戲開始時隱藏湖泊冰塊圖片
+        if (this.lakeIceImageNode) {
+            this.lakeIceImageNode.active = false;
+        }
+        // 遊戲開始時禁用湖泊的Ground節點
+        if (this.groundNode2) {
+            this.groundNode2.active = false;
+            const rigidBody = this.groundNode2.getComponent(cc.RigidBody);
+            if (rigidBody) rigidBody.enabled = false;
+            const boxCollider = this.groundNode2.getComponent(cc.PhysicsBoxCollider);
+            if (boxCollider) boxCollider.enabled = false;
         }
     }
 
@@ -141,14 +158,14 @@ export default class NewClass extends cc.Component {
             if (distance < 300) {
                 if(this.isRising) {
                     if(this.bridgeNode.y < 1200) {
-                        this.bridgeNode.y += 50 * dt; // 每秒上升100單位
+                        this.bridgeNode.y += 80 * dt; // 每秒上升100單位
                     }
                     else {
                         this.isRising = false;
                     }
                 } else {
                     if(this.bridgeNode.y > 100) {
-                        this.bridgeNode.y -= 50 * dt; // 每秒下降100單位
+                        this.bridgeNode.y -= 80 * dt; // 每秒下降100單位
                     }
                     else {
                         this.isRising = true;
@@ -178,7 +195,7 @@ export default class NewClass extends cc.Component {
 
     onKeyDown(event: cc.Event.EventKeyboard) {
         if (event.keyCode === cc.macro.KEY.f) {
-            // 風動畫和吹箱子功能（這裡不判斷 iceCreated）
+            // 風動畫和吹箱子功能
             if (!this.node.active) {
                 this.node.active = true;
                 // 播放第一個動畫
@@ -199,11 +216,77 @@ export default class NewClass extends cc.Component {
             }
             this.isBlowing = true;
 
-            // 只有冰塊生成這段要判斷 iceCreated
-            if (
-                !this.iceCreated &&
-                this.regionNode && this.groundNode && this.playerNode && this.iceImageNode
-            ) {
+            // 檢查是否可以讓湖泊結冰
+            if (!this.lakeIceCreated && this.lakeNode && this.playerNode && this.lakeIceImageNode) {
+                // 檢查湖泊是否可見
+                if (this.lakeNode.active) {
+                    const lakePos = this.lakeNode.convertToWorldSpaceAR(cc.v2(0, 0));
+                    const playerPos = this.playerNode.convertToWorldSpaceAR(cc.v2(0, 0));
+                    const dx = lakePos.x - playerPos.x;
+                    const dy = lakePos.y - playerPos.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if ((distance < 500 && dx > 0 && this.playerNode.scaleX > 0) ||
+                        (distance < 500 && dx < 0 && this.playerNode.scaleX < 0)) {
+                        // 顯示湖泊冰塊圖片
+                        this.lakeIceImageNode.active = true;
+                        // 啟用湖泊的Ground節點
+                        if (this.groundNode2) {
+                            this.groundNode2.active = true;
+                            const rigidBody = this.groundNode2.getComponent(cc.RigidBody);
+                            if (rigidBody) rigidBody.enabled = true;
+                            const boxCollider = this.groundNode2.getComponent(cc.PhysicsBoxCollider);
+                            if (boxCollider) boxCollider.enabled = true;
+                        }
+                        // 生成時播放音效
+                        if (this.becomeIceAudio) {
+                            cc.audioEngine.playEffect(this.becomeIceAudio, false);
+                        }
+                        let sprite = this.lakeIceImageNode.getComponent(cc.Sprite);
+                        if (sprite) {
+                            sprite.node.opacity = 0;
+                            cc.tween(sprite.node)
+                                .to(1.5, { opacity: 255 })
+                                .start();
+                        }
+                        this.lakeIceCreated = true;
+
+                        // 5秒後淡出並隱藏湖泊冰塊
+                        if (this.lakeIceRemoveTimeout) {
+                            clearTimeout(this.lakeIceRemoveTimeout);
+                        }
+                        this.lakeIceRemoveTimeout = setTimeout(() => {
+                            let sprite = this.lakeIceImageNode.getComponent(cc.Sprite);
+                            if (sprite) {
+                                cc.tween(sprite.node)
+                                    .to(1.5, { opacity: 0 })
+                                    .call(() => {
+                                        this.lakeIceImageNode.active = false;
+                                    })
+                                    .start();
+                            } else {
+                                this.lakeIceImageNode.active = false;
+                            }
+                            // 禁用湖泊的Ground節點
+                            if (this.groundNode2) {
+                                this.groundNode2.active = false;
+                                const rigidBody = this.groundNode2.getComponent(cc.RigidBody);
+                                if (rigidBody) rigidBody.enabled = false;
+                                const boxCollider = this.groundNode2.getComponent(cc.PhysicsBoxCollider);
+                                if (boxCollider) boxCollider.enabled = false;
+                            }
+                            // 消失時也播放音效
+                            if (this.becomeIceAudio) {
+                                cc.audioEngine.playEffect(this.becomeIceAudio, false);
+                            }
+                            this.lakeIceCreated = false;
+                        }, 5000);
+                    }
+                }
+            }
+
+            // 原有的冰塊生成邏輯
+            if (!this.iceCreated && this.regionNode && this.groundNode && this.playerNode && this.iceImageNode) {
                 // 以世界座標計算距離
                 const regionPos = this.regionNode.convertToWorldSpaceAR(cc.v2(0, 0));
                 const playerPos = this.playerNode.convertToWorldSpaceAR(cc.v2(0, 0));
