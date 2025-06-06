@@ -67,13 +67,15 @@ var Login = /** @class */ (function (_super) {
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(function () {
             alert("Login Success");
-            var transition = cc.find("Canvas/Transition");
-            if (transition) {
-                transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_StartScene");
-            }
-            else {
-                cc.director.loadScene("Scene000_StartScene");
-            }
+            ProgressManager_1.default.instance.loadProgressFromFirebase(function () {
+                var transition = cc.find("Canvas/Transition");
+                if (transition) {
+                    transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_StartScene");
+                }
+                else {
+                    cc.director.loadScene("Scene000_StartScene");
+                }
+            });
         })
             .catch(function (error) {
             // Show error message

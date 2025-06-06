@@ -7,6 +7,7 @@
 
 const { ccclass, property } = cc._decorator;
 import AudioManager from './AudioManager';
+import ProgressManager from "./ProgressManager";
 
 @ccclass
 export default class PlayerController extends cc.Component {
@@ -17,21 +18,25 @@ export default class PlayerController extends cc.Component {
     groundY: number = -300;
 
     public moveDirection: number = 0;
-    private onGround: boolean = false;
-    private isJumping: boolean = false;
-    private isFalling: boolean = false;
-    private anim: cc.Animation = null;
-    private verticalVelocity: number = 0;
-    private horizontalVelocity: number = 0;
-    private rigidbody: cc.RigidBody = null;
-    private collider: cc.PhysicsBoxCollider = null;
-    private currentAnimation: string = "idle";
-    private groundCheckDistance: number = 10;
-    private lastVerticalVelocity: number = 0; 
-    private footstepSoundId: number = -1; 
-    private lastFootstepTime: number = 0;
-    private footstepInterval: number = 0.3; 
-    private isDied: boolean = false;
+    public onGround: boolean = false;
+    public isJumping: boolean = false;
+    public isFalling: boolean = false;
+    public anim: cc.Animation = null;
+    public verticalVelocity: number = 0;
+    public horizontalVelocity: number = 0;
+    public rigidbody: cc.RigidBody = null;
+    public collider: cc.PhysicsBoxCollider = null;
+    public currentAnimation: string = "idle";
+    public groundCheckDistance: number = 10;
+    public lastVerticalVelocity: number = 0; 
+    public footstepSoundId: number = -1; 
+    public lastFootstepTime: number = 0;
+    public footstepInterval: number = 0.3; 
+    public isDied: boolean = false;
+    static wind: boolean = false;
+    static water: boolean = false;
+    static fire: boolean = false;
+    static plant: boolean = false;
     
 
     @property(cc.AudioClip)
@@ -208,6 +213,7 @@ export default class PlayerController extends cc.Component {
                 // 新增：碰到 DieArea 就 reload 當前場景
         if (otherCollider.node.name === 'DieArea') {
             this.isDied = true;
+            ProgressManager.instance && ProgressManager.instance.addDeathCount();
             const sceneName = cc.director.getScene().name;
             // 播放死亡音效
             if (this.dieSound) {

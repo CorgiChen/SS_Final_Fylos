@@ -645,18 +645,18 @@
     "relativePath": "Animation\\Campfire.anim"
   },
   "9bb871a8-1c9a-417d-a0ce-5a19bb752964": {
-    "asset": 1749224611755,
-    "meta": 1749224611792,
+    "asset": 1749235068412,
+    "meta": 1749235068446,
     "relativePath": "Scene\\Scene000_StartScene.fire"
   },
   "0a3578cb-fc5e-44f8-84ee-a843d1350729": {
-    "asset": 1749229221380,
-    "meta": 1749229221410,
+    "asset": 1749242380734,
+    "meta": 1749242380770,
     "relativePath": "Scene\\Scene000_Menu.fire"
   },
   "500ef6fc-e9c5-44be-a103-92611cd9fbb9": {
-    "asset": 1749199528897,
-    "meta": 1749199528917,
+    "asset": 1749237793736,
+    "meta": 1749237793770,
     "relativePath": "Scene\\Scene001_Home_Outside.fire"
   },
   "707e6675-23ee-4d85-8219-04b8040d487f": {
@@ -665,13 +665,13 @@
     "relativePath": "Scene\\Scene000_Leaderboard.fire"
   },
   "0e12cdab-e1d5-4e98-a2f6-a025f1fc9371": {
-    "asset": 1749171994959,
-    "meta": 1749171994991,
+    "asset": 1749244133146,
+    "meta": 1749244133185,
     "relativePath": "Scene\\Scene000_Login.fire"
   },
   "cf8adb0f-9295-4b79-a30d-fe97c0789552": {
-    "asset": 1749199532729,
-    "meta": 1749199532744,
+    "asset": 1749237898629,
+    "meta": 1749237898661,
     "relativePath": "Scene\\Scene001_Home_Outside2.fire"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
@@ -680,8 +680,8 @@
     "relativePath": "Scene\\Scene000_StartClip.fire"
   },
   "28a6a051-e065-40d6-b6ec-0637dc35e36a": {
-    "asset": 1749173423522,
-    "meta": 1749173423680,
+    "asset": 1749237909376,
+    "meta": 1749237909402,
     "relativePath": "Scene\\Scene002_Home_1F.fire"
   },
   "22f351ab-b07e-44af-a124-3a4bf77c7419": {
@@ -690,8 +690,8 @@
     "relativePath": "Scene\\Scene402_EndClip.fire"
   },
   "f00dce83-7448-4989-8fd7-6c1b1cd72e94": {
-    "asset": 1749173466000,
-    "meta": 1749173466568,
+    "asset": 1749238058097,
+    "meta": 1749238058125,
     "relativePath": "Scene\\Scene401_Mine.fire"
   },
   "91ae7c65-2a5f-41c6-b3af-329eef4e96cc": {
@@ -700,8 +700,8 @@
     "relativePath": "Scene\\Scene403_Chat.fire"
   },
   "0b86d1ee-2cc1-467b-81c9-613f80572d7d": {
-    "asset": 1749173428814,
-    "meta": 1749173428839,
+    "asset": 1749237954118,
+    "meta": 1749237954158,
     "relativePath": "Scene\\Scene002_Home_1F2.fire"
   },
   "c4c80c5d-a1f9-4314-a7b0-73f86b0a2cd8": {
@@ -710,23 +710,23 @@
     "relativePath": "Script\\CameraController.ts"
   },
   "af98db21-ff2c-4e1c-906a-fcbad7b52f8f": {
-    "asset": 1749173437987,
-    "meta": 1749173438095,
+    "asset": 1749237781538,
+    "meta": 1749237781569,
     "relativePath": "Scene\\Scene003_Home_B1_2.fire"
   },
   "bec5c6d7-ee21-4ef9-b5bf-582dba78b2bc": {
-    "asset": 1749179989574,
-    "meta": 1749179989621,
+    "asset": 1749238036504,
+    "meta": 1749238036537,
     "relativePath": "Scene\\Scene004_Subway_2.fire"
   },
   "4bc1cdef-3109-4ed6-a0a2-1f9106487aa8": {
-    "asset": 1749173433226,
-    "meta": 1749173433253,
+    "asset": 1749237759683,
+    "meta": 1749237759715,
     "relativePath": "Scene\\Scene003_Home_B1.fire"
   },
   "f13b8a9a-761e-409e-8126-969896cdf211": {
-    "asset": 1749180006150,
-    "meta": 1749180006179,
+    "asset": 1749237981758,
+    "meta": 1749237981786,
     "relativePath": "Scene\\Scene004_Subway.fire"
   },
   "6a136c93-1300-45cf-83cc-e6ce6adba869": {
@@ -780,8 +780,8 @@
     "relativePath": "2D Platformer Tileset\\Sprites\\Tileset"
   },
   "1f5f3caf-bb64-44e0-bc82-9e28095a3252": {
-    "asset": 1749179964616,
-    "meta": 1749179964664,
+    "asset": 1749238071397,
+    "meta": 1749238071429,
     "relativePath": "Scene\\Scene404_Final.fire"
   },
   "9da7b075-0c49-4298-8dba-54301471ab86": {
@@ -9054,16 +9054,6 @@
     "meta": 1749195069984,
     "relativePath": "Prefab"
   },
-  "5a6f68d8-a57b-4fca-9f59-6f412173c273": {
-    "asset": 1749195085200,
-    "meta": 1749195085220,
-    "relativePath": "Prefab\\DieArea.prefab"
-  },
-  "6c4033e1-e0fc-467c-a5d6-9ec0e74447f2": {
-    "asset": 1749195328901,
-    "meta": 1749195328920,
-    "relativePath": "Prefab\\Ground.prefab"
-  },
   "8535e2d4-1285-4420-9983-7c0235422890": {
     "asset": 1749199019844,
     "meta": 1749199060240,
@@ -9159,21 +9149,6 @@
     "meta": 1749220663448,
     "relativePath": "Image\\ch1\\lake.png"
   },
-  "dba57c00-9d03-478e-86b4-f251f1bbaf58": {
-    "asset": 1749224693848,
-    "meta": 1749224717658,
-    "relativePath": "Script\\Login.ts"
-  },
-  "378afc7a-05ee-4750-a6a9-c5ca942364f5": {
-    "asset": 1749227015848,
-    "meta": 1749227045060,
-    "relativePath": "Script\\ProgressManager.ts"
-  },
-  "72e9dcfd-c19a-4e9b-8121-589f577db762": {
-    "asset": 1749227042495,
-    "meta": 1749227045113,
-    "relativePath": "Script\\Signup.ts"
-  },
   "78e899ac-be52-4048-9333-8b00e3f10a7d": {
     "asset": 1749224504000,
     "meta": 1749229168617,
@@ -9184,35 +9159,15 @@
     "meta": 1749229168657,
     "relativePath": "Script\\Lake.ts"
   },
-  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749229166562,
-    "meta": 1749229168863,
-    "relativePath": "Script\\Player.ts"
-  },
   "c3feebd7-18a9-41a7-bb1f-e66291ad7abb": {
     "asset": 1749190984000,
     "meta": 1749229168917,
     "relativePath": "Script\\Switch.ts"
   },
-  "835a431b-93db-4f4c-85a7-c56e54c70155": {
-    "asset": 1749228410000,
-    "meta": 1749229169153,
-    "relativePath": "Script\\Wind.ts"
-  },
-  "6406f957-f7e3-4677-8afc-ccb66d29ded6": {
-    "asset": 1749225610000,
-    "meta": 1749229169237,
-    "relativePath": "Script\\Water.ts"
-  },
   "11d5a93a-8d62-4621-82d1-d88caa7ff378": {
-    "asset": 1749228422000,
-    "meta": 1749229169258,
+    "asset": 1749237701662,
+    "meta": 1749237701698,
     "relativePath": "Scene\\Scene101_Ch1.fire"
-  },
-  "aa7f8c99-0a3e-43fa-a41b-3e2f32090453": {
-    "asset": 1749229858894,
-    "meta": 1749229858921,
-    "relativePath": "Prefab\\Campfire.prefab"
   },
   "b2da83a2-f543-4d33-a33a-dddc07864eb0": {
     "asset": 1749230324792,
@@ -9353,5 +9308,220 @@
     "asset": 1749229788251,
     "meta": 1749230447131,
     "relativePath": "Image\\logSkill\\logSkill\\8fb8d69d-74d4-4cc0-879b-38f511e0e0ad-6.png"
+  },
+  "72e9dcfd-c19a-4e9b-8121-589f577db762": {
+    "asset": 1749230650232,
+    "meta": 1749231145659,
+    "relativePath": "Script\\Signup.ts"
+  },
+  "00a2d5ae-b587-4f00-a8b5-55bfe8e17074": {
+    "asset": 1749231913624,
+    "meta": 1749231953841,
+    "relativePath": "Image\\Start\\PressStart\\Suicide_0.png"
+  },
+  "cb6fcc2f-a0cd-4129-805d-a4a0180c7bed": {
+    "asset": 1749231933916,
+    "meta": 1749231953844,
+    "relativePath": "Image\\Start\\PressStart\\Suicide_1.png"
+  },
+  "a92fad39-0118-4281-8653-72d27ec3ee6d": {
+    "asset": 1749233512705,
+    "meta": 1749233515249,
+    "relativePath": "Script\\ReloadSceneButton.ts"
+  },
+  "425a578b-d2d6-491f-805a-8aa803448ff8": {
+    "asset": 1749234187435,
+    "meta": 1749234191654,
+    "relativePath": "Image\\Start\\PressStart\\Logout_1.png"
+  },
+  "92979bde-6584-4d2a-ac8d-b5cac5d8c148": {
+    "asset": 1749234164511,
+    "meta": 1749234191658,
+    "relativePath": "Image\\Start\\PressStart\\Logout_0.png"
+  },
+  "fe2bc383-4801-43d4-a9f9-af81056c4437": {
+    "asset": 1749234385881,
+    "meta": 1749234387621,
+    "relativePath": "Script\\LogoutButton.ts"
+  },
+  "b7a7d5bc-a54c-4590-ac92-35af65c4b129": {
+    "asset": 1749235056192,
+    "meta": 1749235056228,
+    "relativePath": "Image\\Spell"
+  },
+  "538dc731-9913-46ca-bdd9-a36a965e2b58": {
+    "asset": 1749235026229,
+    "meta": 1749235056343,
+    "relativePath": "Image\\Spell\\Wind_0.png"
+  },
+  "8babeec5-f401-4b5e-8069-97e754414cf9": {
+    "asset": 1749235052765,
+    "meta": 1749235056348,
+    "relativePath": "Image\\Spell\\Wind_1.png"
+  },
+  "50da7dbe-b980-48c9-bbb8-ba3f35c04287": {
+    "asset": 1749235351958,
+    "meta": 1749235356482,
+    "relativePath": "Image\\NPC\\Spell.png"
+  },
+  "57a7fa8b-8ce6-4b34-ab64-a78dd9c9c7d1": {
+    "asset": 1749236464680,
+    "meta": 1749236468162,
+    "relativePath": "Script\\GainWindController.ts"
+  },
+  "790b57e3-5a03-4c48-8e48-32cce90fc151": {
+    "asset": 1749236977796,
+    "meta": 1749236981492,
+    "relativePath": "Image\\Spell\\Water_0.png"
+  },
+  "861e6e48-07eb-4de3-a8c8-0b1d3224ffec": {
+    "asset": 1749237030885,
+    "meta": 1749237035798,
+    "relativePath": "Image\\Spell\\Water_1.png"
+  },
+  "2f5630bf-b021-4658-887c-c39abd38a0c8": {
+    "asset": 1749237510528,
+    "meta": 1749237677524,
+    "relativePath": "Script\\GainFireController.ts"
+  },
+  "7cbba388-cbcb-483c-8b4e-513501c9bcb5": {
+    "asset": 1749237659975,
+    "meta": 1749237677623,
+    "relativePath": "Script\\GainPlantController.ts"
+  },
+  "b89ade58-ce59-4c91-b236-5acca33d357b": {
+    "asset": 1749237241133,
+    "meta": 1749237677701,
+    "relativePath": "Script\\GainWaterController.ts"
+  },
+  "d18f2b1e-2cbb-4930-a893-49d42f3b4142": {
+    "asset": 1749238267713,
+    "meta": 1749238916776,
+    "relativePath": "Image\\Spell\\Fire_0.png"
+  },
+  "7af2362a-33b7-4603-bb20-6bbd40cfd4f0": {
+    "asset": 1749238396446,
+    "meta": 1749238916782,
+    "relativePath": "Image\\Spell\\Plant_0.png"
+  },
+  "476ee0f3-ff27-4b23-ade0-8db331f8eb65": {
+    "asset": 1749238417491,
+    "meta": 1749238916785,
+    "relativePath": "Image\\Spell\\Plant_1.png"
+  },
+  "4cf31e31-bf0e-4b19-a200-e1156c27d015": {
+    "asset": 1749238284812,
+    "meta": 1749238916789,
+    "relativePath": "Image\\Spell\\Fire_1.png"
+  },
+  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
+    "asset": 1749239724923,
+    "meta": 1749239730354,
+    "relativePath": "Script\\Player.ts"
+  },
+  "dba57c00-9d03-478e-86b4-f251f1bbaf58": {
+    "asset": 1749241239427,
+    "meta": 1749241282568,
+    "relativePath": "Script\\Login.ts"
+  },
+  "378afc7a-05ee-4750-a6a9-c5ca942364f5": {
+    "asset": 1749245147497,
+    "meta": 1749245153350,
+    "relativePath": "Script\\ProgressManager.ts"
+  },
+  "b581879f-5d15-4d44-8950-73be7cfdc1df": {
+    "asset": 1749245384246,
+    "meta": 1749245384308,
+    "relativePath": "Image\\ch2"
+  },
+  "281aca81-25b0-4239-b891-b9070b21f741": {
+    "asset": 1749245384249,
+    "meta": 1749245384384,
+    "relativePath": "Image\\ch2\\grow_0_0.png"
+  },
+  "31362e30-36b6-4d2d-a985-27e2883a2efb": {
+    "asset": 1749245384249,
+    "meta": 1749245384387,
+    "relativePath": "Image\\ch2\\grow_1_0.png"
+  },
+  "21f2a037-528b-444a-a070-1c49ff40990a": {
+    "asset": 1749245384250,
+    "meta": 1749245384391,
+    "relativePath": "Image\\ch2\\eat.png"
+  },
+  "fd6f7309-9269-46d4-8bd7-78f12f0e7444": {
+    "asset": 1749245384249,
+    "meta": 1749245384395,
+    "relativePath": "Image\\ch2\\grow_2_0.png"
+  },
+  "6e8b225d-f40b-475f-89db-c2b3297fdedf": {
+    "asset": 1749245384250,
+    "meta": 1749245384418,
+    "relativePath": "Image\\ch2\\spine_1.png"
+  },
+  "3d7f5501-f59d-4a3a-8998-c6dd1663627e": {
+    "asset": 1749245384253,
+    "meta": 1749245384423,
+    "relativePath": "Image\\ch2\\logssss.png"
+  },
+  "d9d8ec66-40c1-40fd-b29a-ce60e73318f0": {
+    "asset": 1749245384256,
+    "meta": 1749245384425,
+    "relativePath": "Image\\ch2\\woodblock.png"
+  },
+  "fe315b20-57b1-4cfa-b8be-e5e34b317eb8": {
+    "asset": 1749245384253,
+    "meta": 1749245384427,
+    "relativePath": "Image\\ch2\\logssss_fire.png"
+  },
+  "b5f087e0-fb0b-49f2-9a0d-5fe18fa6d0fb": {
+    "asset": 1749224758000,
+    "meta": 1749245462882,
+    "relativePath": "Prefab\\Campfire.prefab"
+  },
+  "f2ddf8ea-c268-420b-b2f2-e25fd1d8a438": {
+    "asset": 1749229028000,
+    "meta": 1749245462885,
+    "relativePath": "Prefab\\Ground.prefab"
+  },
+  "5a6f68d8-a57b-4fca-9f59-6f412173c273": {
+    "asset": 1749195084000,
+    "meta": 1749245462887,
+    "relativePath": "Prefab\\DieArea.prefab"
+  },
+  "789d3a1a-160e-4d46-9473-2273db48c73b": {
+    "asset": 1749245475318,
+    "meta": 1749245475703,
+    "relativePath": "Image\\Game_Home\\201_forest.png"
+  },
+  "17fe90dc-feec-4f15-bcac-37f985075cd4": {
+    "asset": 1749245486035,
+    "meta": 1749245486141,
+    "relativePath": "Script\\Camere_Ch2.ts"
+  },
+  "835a431b-93db-4f4c-85a7-c56e54c70155": {
+    "asset": 1749245511950,
+    "meta": 1749245512496,
+    "relativePath": "Script\\Wind.ts"
+  },
+  "6406f957-f7e3-4677-8afc-ccb66d29ded6": {
+    "asset": 1749245511954,
+    "meta": 1749245512625,
+    "relativePath": "Script\\Water.ts"
+  },
+  "f373b3c1-8455-4921-aae7-713d9a97f776": {
+    "asset": 1749245511946,
+    "meta": 1749245512825,
+    "relativePath": "Script\\Flame.ts"
+  },
+  "725213ec-efc8-4990-a942-4ce8f559e395": {
+    "asset": 1749245511948,
+    "meta": 1749245512920,
+    "relativePath": "Script\\Wood.ts"
+  },
+  "806c5e7c-a85d-4ae0-9fee-4d5ce9ecfc5f": {
+    "asset": 1749245678555,
+    "meta": 1749246165851,
+    "relativePath": "Scene\\Scene201_Ch2 .fire"
   }
 }

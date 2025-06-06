@@ -66,12 +66,14 @@ export default class Login extends cc.Component {
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(() => {
                 alert("Login Success");
-                const transition = cc.find("Canvas/Transition");
-                if (transition) {
-                    transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_StartScene");
-                } else {
-                    cc.director.loadScene("Scene000_StartScene");
-                }
+                ProgressManager.instance.loadProgressFromFirebase(() => {
+                    const transition = cc.find("Canvas/Transition");
+                    if (transition) {
+                        transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_StartScene");
+                    } else {
+                        cc.director.loadScene("Scene000_StartScene");
+                    }
+                });
             })
             .catch((error) => {
                 // Show error message

@@ -31,6 +31,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var AudioManager_1 = require("./AudioManager");
+var ProgressManager_1 = require("./ProgressManager");
 var PlayerController = /** @class */ (function (_super) {
     __extends(PlayerController, _super);
     function PlayerController() {
@@ -215,6 +216,7 @@ var PlayerController = /** @class */ (function (_super) {
         // 新增：碰到 DieArea 就 reload 當前場景
         if (otherCollider.node.name === 'DieArea') {
             this.isDied = true;
+            ProgressManager_1.default.instance && ProgressManager_1.default.instance.addDeathCount();
             var sceneName_1 = cc.director.getScene().name;
             // 播放死亡音效
             if (this.dieSound) {
@@ -347,6 +349,10 @@ var PlayerController = /** @class */ (function (_super) {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     };
+    PlayerController.wind = false;
+    PlayerController.water = false;
+    PlayerController.fire = false;
+    PlayerController.plant = false;
     __decorate([
         property(cc.AudioClip)
     ], PlayerController.prototype, "footstepSound", void 0);

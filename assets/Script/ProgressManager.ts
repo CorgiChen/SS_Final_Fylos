@@ -4,6 +4,8 @@ declare const firebase: any;
 
 const { ccclass, property } = cc._decorator;
 
+import PlayerController from "./Player";
+
 @ccclass
 export default class ProgressManager extends cc.Component {
     private static _instance: ProgressManager = null;
@@ -15,6 +17,8 @@ export default class ProgressManager extends cc.Component {
     private _currentScene: string = "";
     private _furthestScene: string = "";
     private userEmail: string = "";
+    private deathCount: number = 0;
+    private isLoaded: boolean = false;
 
     onLoad() {
         if (ProgressManager._instance == null) {
@@ -88,7 +92,12 @@ export default class ProgressManager extends cc.Component {
         const userRef = firebase.database().ref(`user_list/${this.userEmail}`);
         userRef.update({
             max_stage: this._furthestScene,
-            current_stage: this._currentScene
+            current_stage: this._currentScene,
+            wind: PlayerController.wind,
+            water: PlayerController.water,
+            fire: PlayerController.fire,
+            plant: PlayerController.plant,
+            death_count: this.deathCount
         }).then(() => {
             console.log("Progress saved to Firebase!");
         }).catch((error) => {
@@ -97,19 +106,78 @@ export default class ProgressManager extends cc.Component {
     }
 
     // 從 Firebase 載入進度
-    public loadProgressFromFirebase() {
-        // TODO: 實作 Firebase 讀取
-        // 例如: firebase.database().ref(`users/${userId}/progress`).once('value').then((snapshot) => {
-        //   const data = snapshot.val();
-        //   this._currentScene = data.currentScene;
-        //   this._furthestScene = data.furthestScene;
-        // });
+   // 改进的 onSceneChanged 方法
+private onSceneChanged() {
+    const sceneName = cc.director.getScene().name;
+    cc.log("[ProgressManager] 切換到場景:", sceneName);
+
+    // 如果不是起始场景，先加载数据，加载完成后再处理当前场景
+    if (!sceneName.startsWith("Scene000")) {
+        this.loadProgressFromFirebase(() => {
+            // 加载完成后，再设置当前场景（这会触发保存）
+            this.setCurrentScene(sceneName);
+        });
+    } else {
+         // 对于起始场景 (Scene000 系列)，可能不需要立即加载或保存
+         // 根据你的游戏逻辑决定这里是否需要加载或做其他处理
+         // 例如，如果登录/注册场景不需要加载用户进度，可以跳过
+    }
+}
+
+// 修改 loadProgressFromFirebase，确保 callback 在数据加载和赋值完成后执行
+public loadProgressFromFirebase(callback?: () => void) {
+    if (!this.userEmail) {
+        console.warn("User email not set or sanitized, cannot load progress.");
+         if (callback) callback(); // 如果无法加载，也调用回调
+        return;
+    }
+    const userRef = firebase.database().ref(`user_list/${this.userEmail}`);
+    userRef.once('value').then((snapshot) => {
+        if (snapshot.exists()) {
+            const data = snapshot.val();
+             // 在这里打印获取到的原始数据，帮助调试
+             cc.log('[TEST] loadProgressFromFirebase 获取到的原始数据:', data);
+
+            cc.log(`[TEST] 从 Firebase 获取到用户 ${this.userEmail} 的数据：max_stage=${data.max_stage}, current_stage=${data.current_stage}, death_count=${data.death_count}`);
+            this._furthestScene = data.max_stage || "";
+            this._currentScene = data.current_stage || "";
+            this.deathCount = data.death_count || 0;
+
+             // 在这里添加其他属性的加载，例如 fire, water, plant, wind
+             // 确保 PlayerController 已经可以访问或有方法来设置这些属性
+             if (PlayerController) { // 确保 PlayerController 已加载或可用
+                 PlayerController.wind = data.wind ?? false; // 使用 ?? 运算符更安全地处理 false
+                 PlayerController.water = data.water ?? false;
+                 PlayerController.fire = data.fire ?? false;
+                 PlayerController.plant = data.plant ?? false;
+             }
+
+        } else {
+            cc.log('[TEST] 未找到用户数据：', this.userEmail);
+            this._furthestScene = "";
+            this._currentScene = "";
+            this.deathCount = 0;
+            // 如果是新用户，也需要初始化 PlayerController 的属性
+             if (PlayerController) {
+                 PlayerController.wind = false;
+                 PlayerController.water = false;
+                 PlayerController.fire = false;
+                 PlayerController.plant = false;
+             }
+        }
+         // 在数据加载和赋值完成后调用回调
+        if (callback) callback();
+    });
+}
+
+    // 持續自動同步四個屬性到 firebase
+    update(dt) {
+
+        this.saveProgressToFirebase();
     }
 
-    // 新增這個方法
-    private onSceneChanged() {
-        const sceneName = cc.director.getScene().name;
-        cc.log("[ProgressManager] 切換到場景:", sceneName);
-        this.setCurrentScene(sceneName);
+    public addDeathCount() {
+        this.deathCount += 1;
+        this.saveProgressToFirebase();
     }
 }
