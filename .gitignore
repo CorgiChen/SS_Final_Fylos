@@ -1,7 +1,10 @@
 # Cocos Creator temporary files
+library/
 temp/
 local/
 settings/
+*.meta
+*.map
 
 # Cocos Creator build files
 build/
