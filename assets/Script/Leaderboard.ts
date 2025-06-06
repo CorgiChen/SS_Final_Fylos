@@ -62,29 +62,40 @@ export default class Leaderboard extends cc.Component {
         firebase.auth().onAuthStateChanged(function (user) {
             var usersRef = firebase.database().ref("user_list/");
             usersRef.once('value').then(function (snapshot) {
+                leaderboardList = [];
                 snapshot.forEach(function (element) {
-                    leaderboardList.push({ score: element.val().score, email: element.key });
+                    leaderboardList.push({
+                        email: element.val().email || "",
+                        play_time: element.val().play_time || 0,
+                        death_count: element.val().death_count || 0
+                    });
                 });
             }).then(function () {
-                sortedList = leaderboardList.sort(function (a, b) { return b.score - a.score });
+                sortedList = leaderboardList.sort(function (a, b) { return a.death_count - b.death_count; });
             }).then(function () {
                 isLeaderboardReady = true;
-            })
+            });
         });
     }
+    
 
     // Update leaderboard UI with sorted data
     private updateLeaderboardDisplay() {
-        if (sortedList.length < 6) {
-            for (var i = 0; i < sortedList.length; i++) {
-                cc.find("Canvas/leaderboard_background/" + (i + 1) + "/email").getComponent(cc.Label).string = sortedList[i].email;
-                cc.find("Canvas/leaderboard_background/" + (i + 1) + "/score").getComponent(cc.Label).string = sortedList[i].score;
+        for (var i = 0; i < Math.min(sortedList.length, 5); i++) {
+            const basePath = "Canvas/leaderboard_background/" + (i + 1) + "/";
+            const emailNode = cc.find(basePath + "email");
+            const deathCountNode = cc.find(basePath + "death_count");
+    
+            if (!emailNode || !deathCountNode) {
+                cc.error(`找不到第${i+1}名的節點`);
+                continue;
             }
-        } else {
-            for (var i = 0; i < 5; i++) {
-                cc.find("Canvas/leaderboard_background/" + (i + 1) + "/email").getComponent(cc.Label).string = sortedList[i].email;
-                cc.find("Canvas/leaderboard_background/" + (i + 1) + "/score").getComponent(cc.Label).string = sortedList[i].score;
-            }
+    
+            const emailLabel = emailNode.getComponent(cc.Label);
+            const deathCountLabel = deathCountNode.getComponent(cc.Label);
+
+            emailLabel.string = sortedList[i].email;
+            deathCountLabel.string = sortedList[i].death_count;
         }
     }
 }

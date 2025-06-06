@@ -65,12 +65,11 @@ export default class ChangePicture extends cc.Component {
 
     private loadNextScene() {
         cc.log("Loading next scene:", this.nextScene);
-        cc.director.loadScene(this.nextScene, (err, scene) => {
-            if (err) {
-                cc.error("Failed to load scene:", err);
-                return;
-            }
-            cc.log("Scene loaded successfully");
-        });
+        const transition = cc.find("Canvas/Transition");
+        if (transition) {
+            transition.getComponent("TransitionManager").playTransOutAndChangeScene(this.nextScene);
+        } else {
+            cc.director.loadScene(this.nextScene);
+        }
     }
 } 

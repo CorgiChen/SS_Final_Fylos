@@ -59,12 +59,17 @@ export default class Login extends cc.Component {
      */
     private loginNow() {
         const email = cc.find("small_canvas_bg/email/TEXT_LABEL").getComponent(cc.Label).string;
-        const password = cc.find("small_canvas_bg/password").getComponent(cc.EditBox).string;
+        const password = cc.find("small_canvas_bg/password/TEXT_LABEL").getComponent(cc.Label).string;
 
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(() => {
                 alert("Login Success");
-                cc.director.loadScene("Scene000_StartScene");
+                const transition = cc.find("Canvas/Transition");
+                if (transition) {
+                    transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_StartScene");
+                } else {
+                    cc.director.loadScene("Scene000_StartScene");
+                }
             })
             .catch((error) => {
                 // Show error message
@@ -76,7 +81,12 @@ export default class Login extends cc.Component {
      * Load the menu scene
      */
     loadMenuScene() {
-        cc.director.loadScene("Scene000_Menu");
+        const transition2 = cc.find("Canvas/Transition");
+        if (transition2) {
+            transition2.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_Menu");
+        } else {
+            cc.director.loadScene("Scene000_Menu");
+        }
     }
 
     // /**

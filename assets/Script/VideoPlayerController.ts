@@ -55,13 +55,12 @@ export default class VideoPlayerController extends cc.Component {
     }
 
     private loadScene() {
-        cc.director.loadScene(this.nextScene, (err, scene) => {
-            if (err) {
-                cc.error("Failed to load scene:", err);
-                return;
-            }
-            cc.log("Scene loaded successfully");
-        });
+        const transition = cc.find("Canvas/Transition");
+        if (transition) {
+            transition.getComponent("TransitionManager").playTransOutAndChangeScene(this.nextScene);
+        } else {
+            cc.director.loadScene(this.nextScene);
+        }
     }
 
     onVideoPlayerEvent(videoPlayer: cc.VideoPlayer, eventType: cc.VideoPlayer.EventType, customEventData: string) {

@@ -1,4 +1,5 @@
 const { ccclass, property } = cc._decorator;
+import AudioManager from './AudioManager';
 
 @ccclass
 export default class ChatBubbleController extends cc.Component {
@@ -101,7 +102,7 @@ export default class ChatBubbleController extends cc.Component {
             this.chatImage.active = true;
             // 播放 Open.mp3 音效，音量設為 5
             if (this.openSound) {
-                cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.openSound, false), 3);
+                cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.openSound, false), cc.audioEngine.getVolume(AudioManager.audioId));
             }
         }
     }

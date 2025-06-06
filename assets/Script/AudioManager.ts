@@ -3,12 +3,12 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class AudioManager extends cc.Component {
     private static _instance: AudioManager = null;
-    private audioId: number = -1;
+    public static audioId: number = -1;
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     normalBGM: cc.AudioClip = null;
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     endingBGM: cc.AudioClip = null;
 
     @property
@@ -24,11 +24,10 @@ export default class AudioManager extends cc.Component {
     onLoad() {
         if (AudioManager._instance === null) {
             AudioManager._instance = this;
-            
-            // 保持節點在場景切換時不被銷毀
             cc.game.addPersistRootNode(this.node);
-            // 開始播放普通背景音樂
+            // 只在第一次 persist 時自動播放
             this.playNormalBGM();
+            cc.log(AudioManager.audioId);
         } else {
             this.node.destroy();
         }
@@ -37,29 +36,41 @@ export default class AudioManager extends cc.Component {
     playNormalBGM() {
         if (this.normalBGM) {
             this.stopBGM();
-            this.audioId = cc.audioEngine.play(this.normalBGM, this.loop, this.volume);
+            AudioManager.audioId = cc.audioEngine.play(this.normalBGM, this.loop, this.volume);
         }
     }
 
     playEndingBGM() {
         if (this.endingBGM) {
             this.stopBGM();
-            this.audioId = cc.audioEngine.play(this.endingBGM, this.loop, this.volume);
+            AudioManager.audioId = cc.audioEngine.play(this.endingBGM, this.loop, this.volume);
         }
     }
 
     stopBGM() {
-        if (this.audioId !== -1) {
-            cc.audioEngine.stop(this.audioId);
-            this.audioId = -1;
+        if (AudioManager.audioId !== -1) {
+            cc.audioEngine.stop(AudioManager.audioId);
+            AudioManager.audioId = -1;
         }
     }
 
     setVolume(volume: number) {
         this.volume = volume;
-        if (this.audioId !== -1) {
-            cc.audioEngine.setVolume(this.audioId, volume);
+        // 只要有正在播放的 BGM，立即調整音量
+        if (AudioManager.audioId !== -1) {
+            cc.audioEngine.setVolume(AudioManager.audioId, volume);
         }
+    }
+
+    // 可選：切換 BGM 時自動用目前 volume
+    switchToNormalBGM() {
+        this.playNormalBGM();
+        this.setVolume(this.volume);
+    }
+
+    switchToEndingBGM() {
+        this.playEndingBGM();
+        this.setVolume(this.volume);
     }
 
     onDestroy() {

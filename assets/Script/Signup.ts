@@ -33,7 +33,12 @@ export default class Signup extends cc.Component {
 
     // Loads the menu scene
     loadMenuScene() {
-        cc.director.loadScene("Scene000_Menu");
+        const transition = cc.find("Canvas/Transition");
+        if (transition) {
+            transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_Menu");
+        } else {
+            cc.director.loadScene("Scene000_Menu");
+        }
     }
 
     // Called every frame, logs the current username input
@@ -55,8 +60,8 @@ export default class Signup extends cc.Component {
             .getComponent(cc.Label).string;
         const username = cc.find("small_canvas_bg/username/TEXT_LABEL")
             .getComponent(cc.Label).string;
-        const password = cc.find("small_canvas_bg/password")
-            .getComponent(cc.EditBox).string;
+        const password = cc.find("small_canvas_bg/password/TEXT_LABEL")
+            .getComponent(cc.Label).string;
 
         // Create user with Firebase Authentication
         firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -65,14 +70,20 @@ export default class Signup extends cc.Component {
                 const usersRef = firebase.database().ref('user_list/');
                 const emailKey = email.replace(".", "-");
                 usersRef.child(emailKey).set({
-                    coin: 0,
-                    life: 3,
-                    score: 0,
-                    big_mario: 0
+                    username: username,
+                    email: email,
+                    max_stage: "Scene001_Home_Outside",
+                    death_count: 0,
+                    play_time: 0
                 });
 
                 alert("You have successfully created the account!");
-                cc.director.loadScene("Scene000_Login");
+                const transition2 = cc.find("Canvas/Transition");
+                if (transition2) {
+                    transition2.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_Login");
+                } else {
+                    cc.director.loadScene("Scene000_Login");
+                }
 
                 // Update user profile with username
                 return result.user.updateProfile({

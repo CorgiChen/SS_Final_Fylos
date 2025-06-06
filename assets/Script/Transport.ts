@@ -1,4 +1,5 @@
 const { ccclass, property } = cc._decorator;
+import AudioManager from './AudioManager';
 
 @ccclass
 export default class Door_to_002 extends cc.Component {
@@ -72,10 +73,15 @@ export default class Door_to_002 extends cc.Component {
     private onPromptClicked() {
         // 播放 Open.mp3 音效，音量設為 2
         if (this.transportSound) {
-            cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.transportSound, false), 2);
+            cc.audioEngine.setVolume(cc.audioEngine.playEffect(this.transportSound, false), cc.audioEngine.getVolume(AudioManager.audioId));
         }
         // 切換到場景 Scene002_Home_1F
-        cc.director.loadScene(this.destinationScene);
+        const transition = cc.find("Canvas/Transition");
+        if (transition) {
+            transition.getComponent("TransitionManager").playTransOutAndChangeScene(this.destinationScene);
+        } else {
+            cc.director.loadScene(this.destinationScene);
+        }
     }
 
     update() {

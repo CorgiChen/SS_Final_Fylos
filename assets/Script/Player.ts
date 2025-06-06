@@ -6,12 +6,13 @@
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
 const { ccclass, property } = cc._decorator;
+import AudioManager from './AudioManager';
 
 @ccclass
 export default class PlayerController extends cc.Component {
     moveSpeed: number = 300;
     jumpForce: number = 800;
-    gravity: number = 1200;
+    gravity: number = 1500;
     maxFallSpeed: number = 800;
     groundY: number = -300;
 
@@ -37,21 +38,8 @@ export default class PlayerController extends cc.Component {
     @property(cc.AudioClip)
     jumpSound: cc.AudioClip = null;  // 跳跃音效
 
-    @property({
-        tooltip: "走路音效的音量 (0.0 - 2.0)",
-        min: 0,
-        max: 2,
-        step: 0.1
-    })
-    footstepVolume: number = 2;  // 走路音效的音量，默认设置为 0.3（30%）
-
-    @property({
-        tooltip: "跳跃音效的音量 (0.0 - 5.0)",
-        min: 0,
-        max: 5,
-        step: 0.1
-    })
-    jumpVolume: number = 3;  // 跳跃音效的音量
+    @property({ type: cc.AudioClip })
+    dieSound: cc.AudioClip = null; // 新增：死亡音效
 
     onLoad() {
         // 初始化物理系統
@@ -178,7 +166,7 @@ export default class PlayerController extends cc.Component {
 
     private playJumpSound() {
         if (this.jumpSound) {
-            cc.audioEngine.play(this.jumpSound, false, this.jumpVolume);
+            cc.audioEngine.play(this.jumpSound, false, cc.audioEngine.getVolume(AudioManager.audioId));
         }
     }
 
@@ -210,6 +198,21 @@ export default class PlayerController extends cc.Component {
                 }
             }
         }
+                // 新增：碰到 DieArea 就 reload 當前場景
+        if (otherCollider.node.name === 'DieArea') {
+            const sceneName = cc.director.getScene().name;
+            // 播放死亡音效
+            if (this.dieSound) {
+                cc.audioEngine.playEffect(this.dieSound, false);
+            }
+            // 讓玩家慢慢跌倒（0.5秒內旋轉90度）
+            cc.tween(this.node)
+                .to(0.5, { angle: 90 })
+                .start();
+            setTimeout(() => {
+                cc.director.loadScene(sceneName);
+            }, 2000);
+        }
     }
 
     onEndContact(contact: cc.PhysicsContact, selfCollider: cc.PhysicsCollider, otherCollider: cc.PhysicsCollider) {
@@ -224,6 +227,7 @@ export default class PlayerController extends cc.Component {
                 }
             }
         }
+
     }
 
     private playFootstepSound() {
@@ -235,7 +239,7 @@ export default class PlayerController extends cc.Component {
                     cc.audioEngine.stop(this.footstepSoundId);
                 }
                 // 播放新的音效，使用配置的音量
-                this.footstepSoundId = cc.audioEngine.play(this.footstepSound, false, this.footstepVolume);
+                this.footstepSoundId = cc.audioEngine.play(this.footstepSound, false, cc.audioEngine.getVolume(AudioManager.audioId));
                 this.lastFootstepTime = currentTime;
             }
         }

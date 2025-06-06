@@ -10,7 +10,12 @@ export default class PressStart extends cc.Component {
 
     onButtonClick() {
         // 切換場景
-        cc.director.loadScene("Scene001_Home_Outside");
+        const transition = cc.find("Canvas/Transition");
+        if (transition) {
+            transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene001_Home_Outside");
+        } else {
+            cc.director.loadScene("Scene001_Home_Outside");
+        }
     }
 
     onDestroy() {

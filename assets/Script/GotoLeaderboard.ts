@@ -10,7 +10,12 @@ export default class GotoLeaderboard extends cc.Component {
 
     onButtonClick() {
         // 切換場景
-        cc.director.loadScene("Scene000_Leaderboard");
+        const transition = cc.find("Canvas/Transition");
+        if (transition) {
+            transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_Leaderboard");
+        } else {
+            cc.director.loadScene("Scene000_Leaderboard");
+        }
     }
 
     onDestroy() {

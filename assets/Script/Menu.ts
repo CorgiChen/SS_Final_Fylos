@@ -37,14 +37,24 @@ export default class Menu extends cc.Component {
    * Load the login scene
    */
   loadLoginScene(): void {
-    cc.director.loadScene("Scene000_Login");
+    const transition = cc.find("Canvas/Transition");
+    if (transition) {
+        transition.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_Login");
+    } else {
+        cc.director.loadScene("Scene000_Login");
+    }
   }
 
   /**
    * Load the signup scene
    */
   loadSignupScene(): void {
-    cc.director.loadScene("Scene000_Signup");
+    const transition2 = cc.find("Canvas/Transition");
+    if (transition2) {
+        transition2.getComponent("TransitionManager").playTransOutAndChangeScene("Scene000_Signup");
+    } else {
+        cc.director.loadScene("Scene000_Signup");
+    }
   }
 
   // /**

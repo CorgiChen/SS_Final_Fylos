@@ -24,22 +24,27 @@ export default class NewClass extends cc.Component {
         let playerPos = this.player.getPosition();
         // Offset the camera to the left by 100 units (adjust as needed)
         let targetPos = playerPos.clone();
-        targetPos.x -= 200;
-        targetPos.y -= 600;
+        targetPos.x -= 400;
+        targetPos.y -= 400;
 
         // Get the current camera position
         let cameraPos = this.node.getPosition();
         // Smoothly interpolate camera position towards target position
         cameraPos.lerp(targetPos, 0.1, cameraPos);
 
-        // Clamp the camera's y position between 0 and 100
-        cameraPos.y = cc.misc.clampf(targetPos.y, 0, 100);
+        // Smoothly interpolate camera's y position towards target y (for softer vertical movement)
+        cameraPos.y = cc.misc.lerp(cameraPos.y, targetPos.y, 0.5);
 
         // Clamp the camera's x position between 0 and 8000
         if (cameraPos.x < 0) {
             cameraPos.x = 0;
-        } else if (cameraPos.x > 8000) {
-            cameraPos.x = 8000;
+        } else if (cameraPos.x > 3072) {
+            cameraPos.x = 3072;
+        }
+        if (cameraPos.y < 0) {
+            cameraPos.y = 0;
+        } else if (cameraPos.y > 2500) {
+            cameraPos.y = 2500;
         }
         // Set the camera's new position
         this.node.setPosition(cameraPos);
