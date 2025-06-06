@@ -5,6 +5,7 @@ require('./assets/Script/CameraController');
 require('./assets/Script/ChangePicture');
 require('./assets/Script/ChatBubbleController');
 require('./assets/Script/Crate');
+require('./assets/Script/Fire');
 require('./assets/Script/GotoLeaderboard');
 require('./assets/Script/Leaderboard');
 require('./assets/Script/Login');

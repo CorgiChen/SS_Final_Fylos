@@ -1519,11 +1519,6 @@
     "meta": 1749136643764,
     "relativePath": "Image\\Start\\Elements.png"
   },
-  "c6b361c1-6f7f-4a2d-8af2-346a561a74bf": {
-    "asset": 1749078039478,
-    "meta": 1749136643866,
-    "relativePath": "Image\\Game_Home\\101_cave_0.png"
-  },
   "9edc949b-df86-4037-a881-bec3dd0826d8": {
     "asset": 1749078031166,
     "meta": 1749136643888,
@@ -8995,8 +8990,8 @@
     "relativePath": "Script\\VideoPlayerController.ts"
   },
   "11d5a93a-8d62-4621-82d1-d88caa7ff378": {
-    "asset": 1749199488324,
-    "meta": 1749199488348,
+    "asset": 1749208442328,
+    "meta": 1749208442366,
     "relativePath": "Scene\\Scene101_Ch1.fire"
   },
   "c3feebd7-18a9-41a7-bb1f-e66291ad7abb": {
@@ -9043,11 +9038,6 @@
     "asset": 1749190984390,
     "meta": 1749193090279,
     "relativePath": "Script\\Camera.ts"
-  },
-  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
-    "asset": 1749193549660,
-    "meta": 1749193551571,
-    "relativePath": "Script\\Player.ts"
   },
   "ab66fbb6-096c-43a3-a506-ef6166a46764": {
     "asset": 1749193595015,
@@ -9108,5 +9098,90 @@
     "asset": 1749199276535,
     "meta": 1749199277683,
     "relativePath": "Script\\Wind.ts"
+  },
+  "f4da6efb-cbcf-42a1-8691-a3965adc4077": {
+    "asset": 1749206798549,
+    "meta": 1749206807528,
+    "relativePath": "Script\\Player.ts"
+  },
+  "c6b361c1-6f7f-4a2d-8af2-346a561a74bf": {
+    "asset": 1749208424436,
+    "meta": 1749208426667,
+    "relativePath": "Image\\Game_Home\\101_cave_0.png"
+  },
+  "78e899ac-be52-4048-9333-8b00e3f10a7d": {
+    "asset": 1749209899583,
+    "meta": 1749209901236,
+    "relativePath": "Script\\Fire.ts"
+  },
+  "e9279a92-6cd0-474f-93c8-1a229cf10e45": {
+    "asset": 1749210427248,
+    "meta": 1749210428924,
+    "relativePath": "Image\\ch1\\water.png"
+  },
+  "c28553c0-d4f5-4331-8ced-0fe6e0abadd9": {
+    "asset": 1749211247290,
+    "meta": 1749211247293,
+    "relativePath": "Animation\\Water"
+  },
+  "6fb21b3d-6cc8-4fbc-afcc-085853ec8820": {
+    "asset": 1749182370000,
+    "meta": 1749211247377,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-3.png"
+  },
+  "1f565cc8-6de9-4206-9cf6-4b703e555bd0": {
+    "asset": 1749182370000,
+    "meta": 1749211247379,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-0.png"
+  },
+  "12137b25-d18c-4242-8c62-30462970c54f": {
+    "asset": 1749182370000,
+    "meta": 1749211247381,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-6.png"
+  },
+  "f3040af0-2dc1-42eb-83a2-5b1d4e69fcfb": {
+    "asset": 1749182370000,
+    "meta": 1749211247385,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-2.png"
+  },
+  "7b8019d6-3c85-41dd-9448-2f1de7b8554c": {
+    "asset": 1749182370000,
+    "meta": 1749211247398,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-8.png"
+  },
+  "3409b5ff-c1b9-4ee2-a8f5-6758fe12afeb": {
+    "asset": 1749182370000,
+    "meta": 1749211247400,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-7.png"
+  },
+  "d1669ab6-9f92-4e60-b4ea-8c3c79672d62": {
+    "asset": 1749182370000,
+    "meta": 1749211247403,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-1.png"
+  },
+  "7ed96918-9bb4-40b8-a4c9-31cc9cc79843": {
+    "asset": 1749182370000,
+    "meta": 1749211247405,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-5.png"
+  },
+  "91e1e609-a3ff-4b05-aa24-61cf0d9b4477": {
+    "asset": 1749182370000,
+    "meta": 1749211247428,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-9.png"
+  },
+  "c10f7579-702a-4d9d-8fee-2b543f197b82": {
+    "asset": 1749182370000,
+    "meta": 1749211247429,
+    "relativePath": "Animation\\Water\\fa0c4965-4508-4f32-8b3e-0fdbf91babf9-4.png"
+  },
+  "f9ea87cb-199e-48a4-931a-6467e790e670": {
+    "asset": 1749211434042,
+    "meta": 1749211434060,
+    "relativePath": "Animation\\Water1.anim"
+  },
+  "498e280d-3cc4-4bec-9052-415bb4510cf7": {
+    "asset": 1749211729129,
+    "meta": 1749211729143,
+    "relativePath": "Animation\\Water2.anim"
   }
 }

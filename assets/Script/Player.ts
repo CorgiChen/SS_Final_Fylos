@@ -11,7 +11,7 @@ import AudioManager from './AudioManager';
 @ccclass
 export default class PlayerController extends cc.Component {
     moveSpeed: number = 300;
-    jumpForce: number = 800;
+    jumpForce: number = 850;
     gravity: number = 1500;
     maxFallSpeed: number = 800;
     groundY: number = -300;
@@ -31,6 +31,7 @@ export default class PlayerController extends cc.Component {
     private footstepSoundId: number = -1; 
     private lastFootstepTime: number = 0;
     private footstepInterval: number = 0.3; 
+    private isDied: boolean = false;
 
     @property(cc.AudioClip)
     footstepSound: cc.AudioClip = null;  // 走路音效
@@ -42,6 +43,8 @@ export default class PlayerController extends cc.Component {
     dieSound: cc.AudioClip = null; // 新增：死亡音效
 
     onLoad() {
+        this.isDied = false;
+        cc.director.getCollisionManager().enabled = true;
         // 初始化物理系統
         const manager = cc.director.getPhysicsManager();
         manager.enabled = true;
@@ -93,6 +96,7 @@ export default class PlayerController extends cc.Component {
     }
 
     private playAnimation(animName: string) {
+        if (this.isDied) return;
         if (this.anim && this.currentAnimation !== animName) {
             const state = this.anim.getAnimationState(animName);
             if (state) {
@@ -105,6 +109,7 @@ export default class PlayerController extends cc.Component {
     }
 
     onKeyDown(event: cc.Event.EventKeyboard) {
+        if (this.isDied) return;
         switch (event.keyCode) {
             case cc.macro.KEY.left:
             case cc.macro.KEY.a:
@@ -113,7 +118,7 @@ export default class PlayerController extends cc.Component {
                 if (!this.isJumping) {
                     this.playAnimation("move");
                 }
-                if (this.node.scaleX > 0) {
+                if (this.node.scaleX > 0 && !cc.director.isPaused()) {
                     this.node.scaleX *= -1;
                 }
                 break;
@@ -124,7 +129,7 @@ export default class PlayerController extends cc.Component {
                 if (!this.isJumping) {
                     this.playAnimation("move");
                 }
-                if (this.node.scaleX < 0) {
+                if (this.node.scaleX < 0 && !cc.director.isPaused()) {
                     this.node.scaleX *= -1;
                 }
                 break;
@@ -138,6 +143,7 @@ export default class PlayerController extends cc.Component {
     }
 
     onKeyUp(event: cc.Event.EventKeyboard) {
+        if (this.isDied) return;
         switch (event.keyCode) {
             case cc.macro.KEY.left:
             case cc.macro.KEY.a:
@@ -200,6 +206,7 @@ export default class PlayerController extends cc.Component {
         }
                 // 新增：碰到 DieArea 就 reload 當前場景
         if (otherCollider.node.name === 'DieArea') {
+            this.isDied = true;
             const sceneName = cc.director.getScene().name;
             // 播放死亡音效
             if (this.dieSound) {
@@ -213,6 +220,7 @@ export default class PlayerController extends cc.Component {
                 cc.director.loadScene(sceneName);
             }, 2000);
         }
+
     }
 
     onEndContact(contact: cc.PhysicsContact, selfCollider: cc.PhysicsCollider, otherCollider: cc.PhysicsCollider) {
@@ -253,6 +261,7 @@ export default class PlayerController extends cc.Component {
     }
 
     update(dt: number) {
+        if (this.isDied) return;
         // 檢查是否在地面上
         if (!this.onGround) {
             const startPos = cc.v2(this.node.position.x, this.node.position.y);
@@ -341,5 +350,15 @@ export default class PlayerController extends cc.Component {
     onDestroy() {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+    }
+
+    onCollisionEnter(other, self) {
+        cc.log('onCollisionEnter:', other.node.name);
+        if (other.node.name === "JumpArea") {
+            cc.tween(self.node)
+                .to(0.5, { y: self.node.y + 500 })
+                .start();
+            cc.log('JumpArea triggered, moving up 500');
+        }
     }
 }

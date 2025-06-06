@@ -36,7 +36,7 @@ var PlayerController = /** @class */ (function (_super) {
     function PlayerController() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.moveSpeed = 300;
-        _this.jumpForce = 800;
+        _this.jumpForce = 850;
         _this.gravity = 1500;
         _this.maxFallSpeed = 800;
         _this.groundY = -300;
@@ -55,12 +55,15 @@ var PlayerController = /** @class */ (function (_super) {
         _this.footstepSoundId = -1;
         _this.lastFootstepTime = 0;
         _this.footstepInterval = 0.3;
+        _this.isDied = false;
         _this.footstepSound = null; // 走路音效
         _this.jumpSound = null; // 跳跃音效
         _this.dieSound = null; // 新增：死亡音效
         return _this;
     }
     PlayerController.prototype.onLoad = function () {
+        this.isDied = false;
+        cc.director.getCollisionManager().enabled = true;
         // 初始化物理系統
         var manager = cc.director.getPhysicsManager();
         manager.enabled = true;
@@ -104,6 +107,8 @@ var PlayerController = /** @class */ (function (_super) {
         }
     };
     PlayerController.prototype.playAnimation = function (animName) {
+        if (this.isDied)
+            return;
         if (this.anim && this.currentAnimation !== animName) {
             var state = this.anim.getAnimationState(animName);
             if (state) {
@@ -115,6 +120,8 @@ var PlayerController = /** @class */ (function (_super) {
         }
     };
     PlayerController.prototype.onKeyDown = function (event) {
+        if (this.isDied)
+            return;
         switch (event.keyCode) {
             case cc.macro.KEY.left:
             case cc.macro.KEY.a:
@@ -123,7 +130,7 @@ var PlayerController = /** @class */ (function (_super) {
                 if (!this.isJumping) {
                     this.playAnimation("move");
                 }
-                if (this.node.scaleX > 0) {
+                if (this.node.scaleX > 0 && !cc.director.isPaused()) {
                     this.node.scaleX *= -1;
                 }
                 break;
@@ -134,7 +141,7 @@ var PlayerController = /** @class */ (function (_super) {
                 if (!this.isJumping) {
                     this.playAnimation("move");
                 }
-                if (this.node.scaleX < 0) {
+                if (this.node.scaleX < 0 && !cc.director.isPaused()) {
                     this.node.scaleX *= -1;
                 }
                 break;
@@ -147,6 +154,8 @@ var PlayerController = /** @class */ (function (_super) {
         }
     };
     PlayerController.prototype.onKeyUp = function (event) {
+        if (this.isDied)
+            return;
         switch (event.keyCode) {
             case cc.macro.KEY.left:
             case cc.macro.KEY.a:
@@ -205,6 +214,7 @@ var PlayerController = /** @class */ (function (_super) {
         }
         // 新增：碰到 DieArea 就 reload 當前場景
         if (otherCollider.node.name === 'DieArea') {
+            this.isDied = true;
             var sceneName_1 = cc.director.getScene().name;
             // 播放死亡音效
             if (this.dieSound) {
@@ -252,6 +262,8 @@ var PlayerController = /** @class */ (function (_super) {
         }
     };
     PlayerController.prototype.update = function (dt) {
+        if (this.isDied)
+            return;
         // 檢查是否在地面上
         if (!this.onGround) {
             var startPos = cc.v2(this.node.position.x, this.node.position.y);
@@ -334,6 +346,15 @@ var PlayerController = /** @class */ (function (_super) {
     PlayerController.prototype.onDestroy = function () {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+    };
+    PlayerController.prototype.onCollisionEnter = function (other, self) {
+        cc.log('onCollisionEnter:', other.node.name);
+        if (other.node.name === "JumpArea") {
+            cc.tween(self.node)
+                .to(0.5, { y: self.node.y + 500 })
+                .start();
+            cc.log('JumpArea triggered, moving up 500');
+        }
     };
     __decorate([
         property(cc.AudioClip)
